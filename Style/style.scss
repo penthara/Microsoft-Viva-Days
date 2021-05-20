@@ -1,0 +1,13 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Animate state between .navbar and .navbar-ontop */
+.navbar  {
+    transition: background-color .5s ease-out;
+  }
+  
+  .navbar-ontop {
+    background-color: transparent !important;
+  }
