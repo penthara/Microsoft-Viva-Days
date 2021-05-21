@@ -8640,7 +8640,7 @@ body > * {
 }
 
 /* Sessions */
-
+/*
 .session-container .col-md-4:nth-child(1) {
   padding: 0 0 0 30px;
 }
@@ -8666,8 +8666,7 @@ body > * {
 .list-group-item {
    min-height: 153px;
 }
-
-
+*/
 
 
 
@@ -8710,4 +8709,115 @@ body > * {
   flex-wrap: wrap;
 }
 
+
+/* Sessions tab design code */
+
+.sessions-wrap{
+  height: 1050px;
+}
+
+@media (min-width: 576px) {
+  .sessions-wrap{
+    height: 950px;
+  }
+}
+@media (min-width: 1232px) {
+  .sessions-wrap{
+    height: 750px;
+  }
+}
+html, body {
+  width: 100%;
+  margin: 0px; }
+
+.tab-wrap {
+  width: 70%;
+  position: relative;
+  display: flex;
+  margin: auto;
+ }
+
+input[type="radio"][name="tabs"] {
+  position: absolute;
+  z-index: -1; }
+
+  input[type="radio"][name="tabs"]:checked + .tab-label-content label {
+    color: white; }
+
+  input[type="radio"][name="tabs"]:checked + .tab-label-content .tab-content {
+    display: block; }
+
+
+  input[type="radio"][name="tabs"]:nth-of-type(1):checked ~ .slide {
+    left: calc((100% / 3) * 0); }
+  input[type="radio"][name="tabs"]:nth-of-type(2):checked ~ .slide {
+    left: calc((100% / 3) * 1); }
+  input[type="radio"][name="tabs"]:nth-of-type(3):checked ~ .slide {
+    left: calc((100% / 3) * 2); }
+
+  input[type="radio"][name="tabs"]:first-of-type:checked ~ .slide {
+    left: 0; }
+
+label {
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
+  background-color: #173270;
+  box-sizing: border-box;
+  display: inline-flex;
+  font-size: 2rem;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  height: 100px;
+  transition: color 0.2s ease;
+  width: 100%; }
+
+.slide {
+  background: #fff;
+  width: calc(100% / 3);
+  height: 6px;
+  position: absolute;
+  left: 0;
+  /*top: calc(100% - 4px);*/
+  top: 94px;
+  transition: left 0.3s ease-out; }
+
+.tab-label-content {
+  width: 100%; }
+  .tab-label-content .tab-content {
+    position: absolute;
+    width: 100%;
+    line-height: 130%;
+    display: none; 
+  }
+  .tab-content{
+    left: 0;
+  }
+  .tab-content a{
+    text-decoration: none;
+  }
+  .track--session__active{
+    color: #fff;
+    background-color: #4f70ce;
+    border: solid 2px #4f70ce;
+  }
+  .track--session{
+    color: #000;
+    border: solid 2px #00000030;
+  }
+
+@media screen and (max-width: 800px) {
+
+  .tab-wrap {
+    width: 80%;
+    margin-left: 10%; } }
+
+
+
+@media screen and (max-width: 800px) {
+  .follow {
+    margin: 400px auto 0; } }
+
+
+/* Sessions tab design code */
 /* Added code END */
