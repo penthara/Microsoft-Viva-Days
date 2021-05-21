@@ -137,7 +137,7 @@
         </div>
       </div>
       <!-- Schedule -->
-      <div class="py-3" id="sessions">
+      <div class="py-5" id="sessions">
         <div class="container">
           <div class="row">
             <div class="col-md-12">
@@ -146,240 +146,114 @@
           </div>
         </div>
       </div>
-      <div class="py-2">
-        <div class="session-container">
-          <div class="row">
-              <!-- Track - 1-->
-            <div class="col-md-4">
-              <div class="list-group">
-                <a class="list-group-item list-group-item-action flex-column align-items-start active" href="#sessions">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
-                  </div>
-                  <h1 class="" id="reg">Registrations</h1>
-                </a>
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session1" data-toggle="modal">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">10:00 &nbsp;- &nbsp;10:45 &nbsp;AM</h5>
-                  </div>
-                  <h1 class=""> Keynote and Introductions</h1>
-                  <p class="lead">Gourav Manchanda & Jasjit Chopra</p>
-                </a>
-                <a> </a>
-    
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-target="#session2" data-toggle="modal">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">11:00 &nbsp;- &nbsp;11:45 &nbsp;AM</h5>
-                  </div>
-                  <h1 class="">How to get started with Office 365 Development </h1>
-                  <p class="lead">Jasjit Chopra (MVP)</p>
-                </a>
-    
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session3" data-toggle="modal">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">12:00 &nbsp;- &nbsp;12:45 &nbsp;PM</h5>
-                  </div>
-                  <h1 class="">Office365 + PowerShell = Delivering Excellence!</h1>
-                  <p class="lead">Chendrayan Venkatesan (MVP)</p>
-                </a>
-    
-                    <a href="#session" class="list-group-item list-group-item-action flex-column align-items-start active" >
-             
-                  <div class="d-flex w-100 justify-content-between">
-             <h5 class="mb-1">12:45 &nbsp;- &nbsp;01:30 &nbsp;PM</h5>
-                    </div>
-                  <h1 class="">Lunch Break</h1>
-                </a>
-    
-    
-                 <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session4" data-toggle="modal">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">01:30 &nbsp;- &nbsp;02:15 &nbsp;PM</h5>
-                  </div>
-                  <h1 class="">Unleash The Power of PowerApps</h1>
-                 <p class="lead">Gaurav Madaan</p>
-                </a>
-               
-              
-                <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-target="#session5" data-toggle="modal">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">02:30 &nbsp;- &nbsp;03:15 &nbsp;PM</h5>
-                  </div>
-                  <h1 class="">Getting started with MS Graph API</h1>
-                  <p class="lead">Jasjit Chopra (MVP)</p>
-                </a>
-        <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session6" data-toggle="modal">
-                  <div class="d-flex w-100 justify-content-between">
-     <h5 class="mb-1">03:30 &nbsp;- &nbsp;04:15 &nbsp;PM</h5>
-    
-                  
-                  </div>
-                  <h1 class="">Empowering office 365 with PowerBI</h1>
-                  <p class="lead">Varun Chauhan</p>
-                </a>
-     <a href="#session" class="list-group-item list-group-item-action flex-column align-items-start active">
-                  <div class="d-flex w-100 justify-content-between">
-                    <h5 class="mb-1">04:30 &nbsp;- &nbsp;05:30 &nbsp;PM</h5>
-                  </div>
-                  <h1 class="">Networking, Raffle and Prize Distribution</h1>
-      
-                </a>
-              </div>
+
+      <!--session-->
+
+      <div class="sessions-wrap" id="Session">
+
+        <div class="tab-wrap">
+  
+          <input type="radio" name="tabs" id="tab1" checked>
+          <div class="tab-label-content" id="tab1-content">
+            <label for="tab1" onclick="sessionheightTrack1()">Track 1</label>
+            <div class="tab-content">
+                    <a href="#" >
+                      <div class="track--session__active p-2">
+                        <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                      <h1> Registrations </h1>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="track--session p-2">
+                        <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                      <h1> Keynote and Introductions </h1>
+                      <p class="lead">Gourav Manchanda & Jasjit Chopra</p>
+                      </div>
+                    </a>
+                    <a href="#">
+                      <div class="track--session__active p-2">
+                        <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                      <h1> How to get started with Office 365 Development </h1>
+                      <p class="lead"> Gaurav Madaan </p>
+                      </div>
+                    </a>
+                      <div class="track--session p-2">
+                        <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                      <h1> Office365 + PowerShell = Delivering Excellence!</h1>
+                      <p class="lead"> Chendrayan Venkatesan (MVP) </p>
+                      </div>
+                    </a>
             </div>
-            <!-- Track - 2-->
-            <div class="col-md-4">
-                <div class="list-group">
-                  <a class="list-group-item list-group-item-action flex-column align-items-start active" href="#sessions">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
-                    </div>
-                    <h1 class="" id="reg">Registrations</h1>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session1" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">10:00 &nbsp;- &nbsp;10:45 &nbsp;AM</h5>
-                    </div>
-                    <h1 class=""> Keynote and Introductions</h1>
-                    <p class="lead">Gourav Manchanda & Jasjit Chopra</p>
-                  </a>
-                  <a> </a>
-      
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-target="#session2" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">11:00 &nbsp;- &nbsp;11:45 &nbsp;AM</h5>
-                    </div>
-                    <h1 class="">How to get started with Office 365 Development </h1>
-                    <p class="lead">Jasjit Chopra (MVP)</p>
-                  </a>
-      
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session3" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">12:00 &nbsp;- &nbsp;12:45 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Office365 + PowerShell = Delivering Excellence!</h1>
-                    <p class="lead">Chendrayan Venkatesan (MVP)</p>
-                  </a>
-      
-                      <a href="#session" class="list-group-item list-group-item-action flex-column align-items-start active" >
-               
-                    <div class="d-flex w-100 justify-content-between">
-               <h5 class="mb-1">12:45 &nbsp;- &nbsp;01:30 &nbsp;PM</h5>
-                      </div>
-                    <h1 class="">Lunch Break</h1>
-                  </a>
-      
-      
-                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session4" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">01:30 &nbsp;- &nbsp;02:15 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Unleash The Power of PowerApps</h1>
-                   <p class="lead">Gaurav Madaan</p>
-                  </a>
-                 
-                
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-target="#session5" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">02:30 &nbsp;- &nbsp;03:15 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Getting started with MS Graph API</h1>
-                    <p class="lead">Jasjit Chopra (MVP)</p>
-                  </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session6" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-       <h5 class="mb-1">03:30 &nbsp;- &nbsp;04:15 &nbsp;PM</h5>
-      
-                    
-                    </div>
-                    <h1 class="">Empowering office 365 with PowerBI</h1>
-                    <p class="lead">Varun Chauhan</p>
-                  </a>
-       <a href="#session" class="list-group-item list-group-item-action flex-column align-items-start active">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">04:30 &nbsp;- &nbsp;05:30 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Networking, Raffle and Prize Distribution</h1>
-        
-                  </a>
-                </div>
-              </div>
-              <!-- Track - 3-->
-              <div class="col-md-4">
-                <div class="list-group">
-                  <a class="list-group-item list-group-item-action flex-column align-items-start active" href="#sessions">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
-                    </div>
-                    <h1 class="" id="reg">Registrations</h1>
-                  </a>
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session1" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">10:00 &nbsp;- &nbsp;10:45 &nbsp;AM</h5>
-                    </div>
-                    <h1 class=""> Keynote and Introductions</h1>
-                    <p class="lead">Gourav Manchanda & Jasjit Chopra</p>
-                  </a>
-                  <a> </a>
-      
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-target="#session2" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">11:00 &nbsp;- &nbsp;11:45 &nbsp;AM</h5>
-                    </div>
-                    <h1 class="">How to get started with Office 365 Development </h1>
-                    <p class="lead">Jasjit Chopra (MVP)</p>
-                  </a>
-      
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session3" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">12:00 &nbsp;- &nbsp;12:45 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Office365 + PowerShell = Delivering Excellence!</h1>
-                    <p class="lead">Chendrayan Venkatesan (MVP)</p>
-                  </a>
-      
-                      <a href="#session" class="list-group-item list-group-item-action flex-column align-items-start active" >
-               
-                    <div class="d-flex w-100 justify-content-between">
-               <h5 class="mb-1">12:45 &nbsp;- &nbsp;01:30 &nbsp;PM</h5>
-                      </div>
-                    <h1 class="">Lunch Break</h1>
-                  </a>
-      
-      
-                   <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session4" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">01:30 &nbsp;- &nbsp;02:15 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Unleash The Power of PowerApps</h1>
-                   <p class="lead">Gaurav Madaan</p>
-                  </a>
-                 
-                
-                  <a href="#" class="list-group-item list-group-item-action flex-column align-items-start active" data-target="#session5" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">02:30 &nbsp;- &nbsp;03:15 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Getting started with MS Graph API</h1>
-                    <p class="lead">Jasjit Chopra (MVP)</p>
-                  </a>
-          <a href="#" class="list-group-item list-group-item-action flex-column align-items-start" data-target="#session6" data-toggle="modal">
-                    <div class="d-flex w-100 justify-content-between">
-       <h5 class="mb-1">03:30 &nbsp;- &nbsp;04:15 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Empowering office 365 with PowerBI</h1>
-                    <p class="lead">Varun Chauhan</p>
-                  </a>
-       <a href="#session" class="list-group-item list-group-item-action flex-column align-items-start active">
-                    <div class="d-flex w-100 justify-content-between">
-                      <h5 class="mb-1">04:30 &nbsp;- &nbsp;05:30 &nbsp;PM</h5>
-                    </div>
-                    <h1 class="">Networking, Raffle and Prize Distribution</h1>
-                  </a>
-                </div>
-              </div>
           </div>
+           
+          <input type="radio" name="tabs" id="tab2">
+          <div class="tab-label-content" id="tab2-content">
+            <label for="tab2" onclick="sessionheightTrack2()">Track 2</label>
+            <div class="tab-content">
+              <a href="#" >
+                <div class="track--session__active p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> Unleash The Power of PowerApps</h1>
+                <p class="lead">Gaurav Madaan</p>
+                </div>
+              </a>
+              <a href="#">
+                <div class="track--session p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> Empowering office 365 with PowerBI</h1>
+                <p class="lead">Varun Chauhan</p>
+
+                </div>
+              </a>
+              <a href="#">
+                <div class="track--session__active p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> How to get started with Office 365 Development </h1>
+                <p class="lead">Jasjit Chopra (MVP)</p>
+                </div>
+              </a>
+                <div class="track--session p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> How to get started with Office 365 Development </h1>
+                <p class="lead">Jasjit Chopra (MVP)</p>
+                </div>
+              </a>
+            </div>
+          </div>
+          
+          <input type="radio" name="tabs" id="tab3">
+          <div class="tab-label-content" id="tab3-content">
+            <label for="tab3" onclick="sessionheightTrack3()">Track 3</label>
+            <div class="tab-content">
+              <a href="#" >
+                <div class="track--session__active p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> Registrations </h1>
+                </div>
+              </a>
+              <a href="#">
+                <div class="track--session p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> Registrations </h1>
+                </div>
+              </a>
+              <a href="#">
+                <div class="track--session__active p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> Registrations </h1>
+                </div>
+              </a>
+                <div class="track--session p-2">
+                  <h5>09:00 &nbsp;- &nbsp;09:45 &nbsp;AM</h5>
+                <h1> Registrations </h1>
+                </div>
+              </a>
+            </div>
+          </div>
+          <div class="slide"></div>
         </div>
       </div>
+
       <!-- Sponsor logos -->
       <div class="section bg-faded bg-light py-4" id="sponsors">
         <div class="container">
@@ -497,4 +371,17 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
     <!-- Script: Smooth scrolling between anchors in a same page -->
     <script src="js/smooth-scroll.js"></script>
+    <script>
+      function sessionheightTrack1() {
+        document.getElementById("Session").style.height="750px";
+      }
+      function sessionheightTrack2() {
+              document.getElementById("Session").style.height="800px";
+
+      }
+      function sessionheightTrack3() {
+              document.getElementById("Session").style.height="650px";
+      }
+
+    </script>
 </body>
