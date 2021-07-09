@@ -1,0 +1,198 @@
+$base-color-blue: #41b2f1;
+
+.agenda {
+  text-align: center;
+
+  .agenda-heading {
+    padding: 5rem 0 4rem 0;
+    color: #636363;
+    font-size: 40px;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      bottom: 20px;
+      width: 80px;
+      height: 2px;
+      background-color: #00a1f1;
+    }
+  }
+  .agenda-para-text-1,
+  .agenda-para-text-2 {
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+  }
+  .track-list {
+    padding-top: 4rem;
+    .tracks {
+      color: #fff;
+      padding: 0 2rem;
+
+      .track-data {
+        background-color: rgba(65, 178, 241, 0.1);
+        color: rgba(54, 51, 51, 1);
+        padding: 1rem 0rem 1.4rem 0rem;
+      }
+      .track-head {
+        font-size: 36px;
+        letter-spacing: 2px;
+        .track-head-span {
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+  .trackdata {
+    padding: 2rem 2rem 0rem 2rem;
+  }
+
+  .trackdata-bg:last-child {
+    border: none;
+  }
+  .trackdata-bg {
+    border-bottom: 1px solid #dddddd;
+    box-shadow: 0px 4px 10px 2px #0000001a;
+    padding: 1.6rem 0.6rem;
+    .event-time {
+      font-size: 20px;
+      opacity: 90%;
+      padding: 15px 0 0 0;
+    }
+    .event-desc {
+      font-size: 1.3rem;
+      text-align: left;
+      line-height: 1.8rem;
+      padding: 15px 25px;
+      font-weight: 600;
+      letter-spacing: 0rem;
+      color: #000;
+    }
+    .speaker-head {
+      font-size: 1.4rem;
+      opacity: 100%;
+      color: #363333;
+      padding-bottom: 20px;
+    }
+    .event-teams {
+      a{
+        text-decoration: none;
+      }
+      
+      .join-here-head {
+        font-size: 1.4rem;
+        opacity: 100%;
+        color: #363333;
+        padding-bottom: 20px;
+      }
+      .teams-image {
+        height: 60px;
+      }
+      .teams-img__description{
+        color: #000000;
+        font-size: 20px;
+        visibility: hidden;
+        opacity: 0;
+        transition: opacity .2s, visibility .2s;
+      }
+      &:hover .teams-img__description {
+        visibility: visible;
+        opacity: 1;
+      }
+    }
+  }
+}.agenda-speaker-img {
+  // display: inline-block;
+  height: 56px;
+  width: 46px;
+  object-fit: cover;
+  border-radius: 30px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.agenda-speaker-name {
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
+// for only Desktop
+@media only screen and (min-width: 1025px) {
+  .agenda {
+    padding: 2rem 8%;
+  }
+}
+
+// for only Mobile
+@media only screen and (max-width: 767px) {
+  .agenda {
+    padding: 15px;
+    .trackdata-bg {
+      text-align: left;
+      .event-time {
+        font-size: 20px;
+      }
+      .event-desc {
+        font-size: 20px;
+        padding: 20px 0 0 0;
+      }
+      .event-speakers {
+        font-size: 24px;
+        font-weight: 600;
+        padding: 40px 0 0 0;
+        .agenda-speaker-name {
+          font-size: 15px;
+        }
+      }
+    }
+    .track-list {
+      padding-top: 60px;
+      .track-row {
+        padding: 0;
+      }
+      .tracks {
+        padding: 0px;
+        margin: 0px;
+        font-size: 10px;
+        .track-data {
+          padding: 10px 0px;
+          .track-head {
+            font-size: 22px;
+            font-weight: 500;
+            letter-spacing: 1px;
+          }
+          .track-span {
+            font-size: 12px;
+          }
+        }
+      }
+    }
+    .trackdata {
+      padding: 15px 0;
+    }
+  }
+}
+//for ipad pro only
+@media only screen and (min-device-width: 768px) and (max-device-width: 1023px) {
+  .agenda {
+    .trackdata-bg .event-time {
+      text-align: left;
+      padding: 0 0 0 25px;
+    }
+    .event-speakers {
+      padding-top: 40px;
+    }
+    .track-list .tracks .track-head {
+      font-size: 28px;
+    }
+  }
+}
+
+//for ipad pro only
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) {
+  .agenda {
+    padding: 0;
+  }
+}

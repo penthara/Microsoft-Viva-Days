@@ -1,0 +1,65 @@
+$base-color-blue: #00a1f1;
+
+.about {
+  text-align: center;
+  padding: 0 1rem;
+  .about-heading {
+    padding-top: 8rem;
+    font-size: 40px;
+    color: #636363;
+    position: relative;
+    // padding-bottom: 15px;
+    // border-bottom-style: solid;
+    // border-bottom-width: 3.1px;
+    // width: fit-content;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      bottom: -40px;
+      width: 80px;
+      height: 2px;
+      background-color: #00a1f1;
+    }
+  }
+  .one-day-event {
+    font-size: 2.8125rem;
+    padding-top: 5rem;
+    opacity: 90%;
+    position: relative;
+    &::after {
+      content: "";
+      position: absolute;
+      left: 50%;
+      margin-left: -40px;
+      bottom: -40px;
+      width: 80px;
+      height: 2px;
+      background-color: #00a1f1;
+    }
+    span {
+      color: $base-color-blue;
+    }
+  }
+  .about-para-text {
+    padding-top: 5rem;
+    line-height: 1.9rem;
+    font-size: 1.3rem;
+  }
+  .registration-text {
+    padding-top: 5rem;
+
+    a {
+      color: $base-color-blue;
+      font-size: 2rem;
+    }
+  }
+}
+
+// for only Desktop
+@media only screen and (min-width: 1025px) {
+  .about {
+    padding: 0 22rem;
+  }
+}

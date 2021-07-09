@@ -1,0 +1,107 @@
+.keynote,.speakers{
+  padding: 2rem 24rem;
+}
+.speakers{
+  background-color: rgba(245, 246, 246, 0.56);
+  ;
+}
+.keynote-heading,.speaker-heading{
+  font-size: 2.5rem;
+  color: #636363;
+  margin: 4rem 0;
+  text-transform: uppercase;
+  position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            left: 50%;
+            margin-left: -40px;
+            bottom: -40px;
+            width: 80px;
+            height: 2px;
+            background-color: #00A1F1;
+          }
+}
+h3{
+  font-size: 2.125rem;
+}
+.keynote-card{
+  border: none;
+  
+
+  .card-body{
+    background-color: rgba(65, 178, 241, 0.16);
+    min-height: 170px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    
+    h3{
+      font-size: 28px;
+    }
+    p{
+      font-size: 22px;
+      font-weight: 500;
+      
+    }
+    .card-linkedIn{
+      width: 32px;
+      z-index: 15;
+    }
+  }
+}
+.speaker-card-wrapper{
+  padding: 24px;
+}
+.speaker-card{
+  border: none;
+  height: 100%;
+  .card-title-wrapper{
+    min-height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #41B2F1;
+  }
+  .card-title{
+    color: #ffffff;
+    font-size: 2rem;
+  }
+  .card-body{
+    background-color: #ffffff;
+    .row{
+      gap: 20px;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+    .card-linkedIn{
+      width: 32px;
+    }
+    .card-text{
+      font-weight: 600;
+    }
+  }
+}
+.nopadding {
+  padding: 0 !important;
+}
+.keynote-image, .speaker-image{
+  object-fit: cover;
+  height: 350px;
+}
+@media only screen and ( max-width: 1750px){
+  .keynote,.speakers{
+    padding: 2rem 12rem;
+  }
+}
+@media only screen and ( max-width: 1350px){
+  .keynote,.speakers{
+    padding: 2rem 4rem;
+  }
+}
+@media only screen and ( max-width: 576px){
+  .keynote,.speakers{
+    padding: 2rem 1rem;
+  }
+}

@@ -1,0 +1,57 @@
+$base-color-blue: #00a1f1;
+
+.donate {
+  padding-top: 5rem;
+  .donate-bg {
+    text-align: center;
+    padding: 0 1rem;
+    background-color: $base-color-blue;
+    color: #fff;
+    // padding: 0 2.2rem;
+    .donate-heading {
+      padding-top: 3rem;
+      font-size: 40px;
+      position: relative;
+      &::after {
+        content: "";
+        position: absolute;
+        left: 50%;
+        margin-left: -40px;
+        bottom: -40px;
+        width: 80px;
+        height: 2px;
+        background-color: #ffffff;
+      }
+    }
+    .donate-para-text {
+      padding: 7rem 0 4rem 0;
+      line-height: 1.9rem;
+      font-size: 1.3rem;
+    }
+    .donate-btn {
+      padding-bottom: 4rem;
+      button {
+        background-color: #fff;
+        color: $base-color-blue;
+        padding: 0.8rem 2.5rem;
+        border-radius: 50px;
+        border: 0;
+        font-size: 1.5rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
+
+// for only Desktop
+@media only screen and (min-width: 1025px) {
+  .donate .donate-bg {
+    padding: 2rem 22rem 0 22rem;
+  }
+}
+// // for only mobiile
+// @media only screen and (min-width: 1024px) {
+//   .donate-bg {
+//     padding: 2rem 10rem 0 10rem;
+//   }
+// }

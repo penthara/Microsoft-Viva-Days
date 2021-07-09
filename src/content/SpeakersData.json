@@ -1,0 +1,98 @@
+[
+    {
+      "speakerId": "1",
+      "speakerName": "Jasjit Chopra",
+      "speakerImage": "./images/speakers/Speaker1.jpg",
+      "speakerAltText": "Jasjit Chopra",
+      "keynoteSpeaker": "false",
+      "speakerTitle": "Product Designer",
+      "speakerSubTitle": "Tesla",
+      "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+      "speakerTwitter": "Jasjit Chopra",
+      "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+    },
+    {
+        "speakerId": "2",
+        "speakerName": "Nivedietta",
+        "speakerImage": "./images/speakers/Speaker2.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "true",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      },
+      {
+        "speakerId": "3",
+        "speakerName": "Tarun Reddy",
+        "speakerImage": "./images/speakers/Speaker3.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "true",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      },
+      {
+        "speakerId": "4",
+        "speakerName": "Nidhi Pandey",
+        "speakerImage": "./images/speakers/Speaker4.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "true",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      },
+      {
+        "speakerId": "5",
+        "speakerName": "Samiksha Gupta",
+        "speakerImage": "./images/speakers/Speaker5.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "false",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      },
+      {
+        "speakerId": "6",
+        "speakerName": "Akhil Ohri",
+        "speakerImage": "./images/speakers/Speaker6.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "false",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      },
+      {
+        "speakerId": "7",
+        "speakerName": "Aneesh Kumar",
+        "speakerImage": "./images/speakers/Speaker7.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "false",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      },
+      {
+        "speakerId": "8",
+        "speakerName": "Ankur Jarial",
+        "speakerImage": "./images/speakers/Speaker8.jpg",
+        "speakerAltText": "11111111111111",
+        "keynoteSpeaker": "true",
+        "speakerTitle": "Product Designer",
+        "speakerSubTitle": "Tesla",
+        "speakerLinkedIn": "https://www.linkedin.com/in/jasjitchopra/",
+        "speakerTwitter": "Jasjit Chopra",
+        "speakerInformation": "Jasjit Chopra is a Senior Cloud Solutions Architect at Penthara Technologies and a Microsoft Azure MVP, with a strong background in SharePoint, Azure, and Office 365. As a SharePoint expert, he has worked with many multinational clients in the United States. He has also worked with clients around the world and has expertise in business processes for many industries, including manufacturing, nuclear, pharmaceutical, and music, along with state government. Jasjit holds a Master of Business Administration in Technology and Management from SKEMA Business School, Sophia Antipolis, France. In his free time, he loves pursuing photography, in addition to geeky DIY projects based on Raspberry Pi and new innovative sensor technologies."
+      }
+  ]
