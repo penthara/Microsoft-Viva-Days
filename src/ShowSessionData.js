@@ -37,7 +37,7 @@ export const ShowSessionData = (props) => {
           return (
             <>
               <Row className=" trackdata-bg " key={data.event}>
-                {ShowSessionUrl == "false" ? (
+                {ShowSessionUrl === "false" ? (
                   <>
                     <Col
                       md={12}
@@ -57,71 +57,9 @@ export const ShowSessionData = (props) => {
                     </Col>
                     <Col md={12} lg={4} className="event-speakers">
                       <div className="speaker-head"> Speakers </div>
-                      <Row>
-                        {data.speaker1Id != null ? (
-                          <Col>
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker1Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                require(`${
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker1Id
-                                  )[0].speakerImage
-                                }`).default
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
-                            <span className="agenda-speaker-name">
-                              {
-                                Speakers.filter(
-                                  (s) => s.speakerId == data.speaker1Id
-                                )[0].speakerName
-                              }
-                            </span>
-                          </Col>
-                        ) : null}
-                        {data.speaker2Id != null ? (
-                          <Col>
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker2Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                require(`${
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker2Id
-                                  )[0].speakerImage
-                                }`).default
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
-                            <span className="agenda-speaker-name">
-                              {
-                                Speakers.filter(
-                                  (s) => s.speakerId == data.speaker2Id
-                                )[0].speakerName
-                              }
-                            </span>
-                          </Col>
-                        ) : null}
+                      <div>
                         {data.speaker3Id != null ? (
-                          <Col>
+                          <div className="speaker3">
                             <img
                               onClick={() =>
                                 SpeakerModaltoggle(
@@ -149,90 +87,92 @@ export const ShowSessionData = (props) => {
                                 )[0].speakerName
                               }
                             </span>
-                          </Col>
+                          </div>
                         ) : null}
-                      </Row>
+                        {data.speaker2Id != null ? (
+                          <div className="speaker2">
+                            <img
+                              onClick={() =>
+                                SpeakerModaltoggle(
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker2Id
+                                  )[0]
+                                )
+                              }
+                              src={
+                                require(`${
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker2Id
+                                  )[0].speakerImage
+                                }`).default
+                              }
+                              alt="sxdcfvgbhnjk"
+                              width="50px"
+                              height="50px"
+                              className="agenda-speaker-img"
+                            />
+                            <span className="agenda-speaker-name">
+                              {
+                                Speakers.filter(
+                                  (s) => s.speakerId == data.speaker2Id
+                                )[0].speakerName
+                              }
+                            </span>
+                          </div>
+                        ) : null}
+
+                        {data.speaker1Id != null ? (
+                          <div className="speaker1">
+                            <img
+                              onClick={() =>
+                                SpeakerModaltoggle(
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker1Id
+                                  )[0]
+                                )
+                              }
+                              src={
+                                require(`${
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker1Id
+                                  )[0].speakerImage
+                                }`).default
+                              }
+                              alt="sxdcfvgbhnjk"
+                              width="50px"
+                              height="50px"
+                              className="agenda-speaker-img"
+                            />
+                            <span className="agenda-speaker-name">
+                              {
+                                Speakers.filter(
+                                  (s) => s.speakerId == data.speaker1Id
+                                )[0].speakerName
+                              }
+                            </span>
+                          </div>
+                        ) : null}
+                      </div>
                     </Col>
                   </>
                 ) : (
                   <>
-                    <Col md={2} onClick={() => toggle(data)}>
+                    <Col md={12} lg={2} onClick={() => toggle(data)}>
                       <div className="event-time"> {data.sessionTime} </div>
                     </Col>
                     <Col
-                      md={5}
+                      md={12}
+                      lg={6}
                       className=" event-desc"
                       onClick={() => toggle(data)}
                     >
                       {data.sessionTitle}
                     </Col>
-                    <Col md={3} className="event-speakers">
+                    <Col md={12} lg={4} className="event-speakers">
                       <div className="speaker-head"> Speakers </div>
-                      <Row>
-                        {data.speaker1Id != null ? (
-                          <Col>
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker1Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                require(`${
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker1Id
-                                  )[0].speakerImage
-                                }`).default
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
-                            <span className="agenda-speaker-name">
-                              {
-                                Speakers.filter(
-                                  (s) => s.speakerId == data.speaker1Id
-                                )[0].speakerName
-                              }
-                            </span>
-                          </Col>
-                        ) : null}
-                        {data.speaker2Id != null ? (
-                          <Col>
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker2Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                require(`${
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker2Id
-                                  )[0].speakerImage
-                                }`).default
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
-                            <span className="agenda-speaker-name">
-                              {
-                                Speakers.filter(
-                                  (s) => s.speakerId == data.speaker2Id
-                                )[0].speakerName
-                              }
-                            </span>
-                          </Col>
-                        ) : null}
+                      <div className="speaker-wrapper-teams">
                         {data.speaker3Id != null ? (
-                          <Col>
+                          <div className="speaker3">
                             <img
                               onClick={() =>
                                 SpeakerModaltoggle(
@@ -260,19 +200,87 @@ export const ShowSessionData = (props) => {
                                 )[0].speakerName
                               }
                             </span>
-                          </Col>
+                          </div>
                         ) : null}
-                      </Row>
-                    </Col>
-                    <Col md={2} className="event-teams">
-                      <a
-                        href={data.sessionUrl}
-                        target="_blank"
-                        rel="noreferrer"
-                      >
-                        <img src={MicrosoftTeams} alt="MicrosoftTeams" className="teams-image" />
-                        <p class="teams-img__description">JOIN HERE</p>
-                      </a>
+                        {data.speaker2Id != null ? (
+                          <div className="speaker2">
+                            <img
+                              onClick={() =>
+                                SpeakerModaltoggle(
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker2Id
+                                  )[0]
+                                )
+                              }
+                              src={
+                                require(`${
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker2Id
+                                  )[0].speakerImage
+                                }`).default
+                              }
+                              alt="sxdcfvgbhnjk"
+                              width="50px"
+                              height="50px"
+                              className="agenda-speaker-img"
+                            />
+                            <span className="agenda-speaker-name">
+                              {
+                                Speakers.filter(
+                                  (s) => s.speakerId == data.speaker2Id
+                                )[0].speakerName
+                              }
+                            </span>
+                          </div>
+                        ) : null}
+
+                        {data.speaker1Id != null ? (
+                          <div className="speaker1">
+                            <img
+                              onClick={() =>
+                                SpeakerModaltoggle(
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker1Id
+                                  )[0]
+                                )
+                              }
+                              src={
+                                require(`${
+                                  Speakers.filter(
+                                    (s) => s.speakerId == data.speaker1Id
+                                  )[0].speakerImage
+                                }`).default
+                              }
+                              alt="sxdcfvgbhnjk"
+                              width="50px"
+                              height="50px"
+                              className="agenda-speaker-img"
+                            />
+                            <span className="agenda-speaker-name">
+                              {
+                                Speakers.filter(
+                                  (s) => s.speakerId == data.speaker1Id
+                                )[0].speakerName
+                              }
+                            </span>
+                          </div>
+                        ) : null}
+                        <div className="event-teams">
+                          <a
+                            href={data.sessionUrl}
+                            target="_blank"
+                            rel="noreferrer"
+                          >
+                            <img
+                            title="Click here to join the session"
+                              src={MicrosoftTeams}
+                              alt="MicrosoftTeams"
+                              className="teams-image"
+                            />
+                            <p class="teams-img__description">J</p>
+                          </a>
+                        </div>
+                      </div>
                     </Col>
                   </>
                 )}

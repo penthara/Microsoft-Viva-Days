@@ -2,7 +2,7 @@ $base-color-blue: #41b2f1;
 
 .agenda {
   text-align: center;
-
+  background-color: rgba(245, 246, 246, 0.56);
   .agenda-heading {
     padding: 5rem 0 4rem 0;
     color: #636363;
@@ -45,7 +45,7 @@ $base-color-blue: #41b2f1;
     }
   }
   .trackdata {
-    padding: 2rem 2rem 0rem 2rem;
+    padding: 0 2rem 0rem 2rem;
   }
 
   .trackdata-bg:last-child {
@@ -53,8 +53,10 @@ $base-color-blue: #41b2f1;
   }
   .trackdata-bg {
     border-bottom: 1px solid #dddddd;
-    box-shadow: 0px 4px 10px 2px #0000001a;
+    box-shadow: -4px -2px 10px 4px #0000001a;
     padding: 1.6rem 0.6rem;
+    margin: 1.5rem 0;
+    background-color: #fff;
     .event-time {
       font-size: 20px;
       opacity: 90%;
@@ -76,10 +78,13 @@ $base-color-blue: #41b2f1;
       padding-bottom: 20px;
     }
     .event-teams {
-      a{
+      margin: auto;
+      display: inline-block;
+      padding-left: 20px;
+      a {
         text-decoration: none;
       }
-      
+
       .join-here-head {
         font-size: 1.4rem;
         opacity: 100%;
@@ -89,20 +94,16 @@ $base-color-blue: #41b2f1;
       .teams-image {
         height: 60px;
       }
-      .teams-img__description{
-        color: #000000;
+      .teams-img__description {
+        color: #fff;
         font-size: 20px;
         visibility: hidden;
         opacity: 0;
-        transition: opacity .2s, visibility .2s;
-      }
-      &:hover .teams-img__description {
-        visibility: visible;
-        opacity: 1;
       }
     }
   }
-}.agenda-speaker-img {
+}
+.agenda-speaker-img {
   // display: inline-block;
   height: 56px;
   width: 46px;
@@ -121,7 +122,7 @@ $base-color-blue: #41b2f1;
 // for only Desktop
 @media only screen and (min-width: 1025px) {
   .agenda {
-    padding: 2rem 8%;
+    padding: 0 8% 5rem 8%;
   }
 }
 
@@ -134,6 +135,10 @@ $base-color-blue: #41b2f1;
       .event-time {
         font-size: 20px;
       }
+      .event-teams {
+        padding-top: 60px;
+        text-align: center;
+      }
       .event-desc {
         font-size: 20px;
         padding: 20px 0 0 0;
@@ -142,6 +147,11 @@ $base-color-blue: #41b2f1;
         font-size: 24px;
         font-weight: 600;
         padding: 40px 0 0 0;
+        .speaker-head{
+          font-weight: 700; 
+          text-align: center;
+ 
+        }
         .agenda-speaker-name {
           font-size: 15px;
         }
@@ -172,6 +182,12 @@ $base-color-blue: #41b2f1;
     .trackdata {
       padding: 15px 0;
     }
+    .speaker-wrapper-teams {
+      float: left;
+    }
+    .event-teams{
+      padding: 0 !important;
+    }
   }
 }
 //for ipad pro only
@@ -182,7 +198,7 @@ $base-color-blue: #41b2f1;
       padding: 0 0 0 25px;
     }
     .event-speakers {
-      padding-top: 40px;
+      padding: 40px 0;
     }
     .track-list .tracks .track-head {
       font-size: 28px;
@@ -195,4 +211,14 @@ $base-color-blue: #41b2f1;
   .agenda {
     padding: 0;
   }
+}
+
+.speaker1,
+.speaker2,
+.speaker3 {
+  display: inline-block;
+  padding: 10px;
+}
+.speaker-wrapper-teams {
+  float: right;
 }

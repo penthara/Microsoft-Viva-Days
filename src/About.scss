@@ -2,9 +2,10 @@ $base-color-blue: #00a1f1;
 
 .about {
   text-align: center;
-  padding: 0 1rem;
+  padding: 0 1rem 4rem 1rem;
+  background-color: rgba(245, 246, 246, 0.56);
   .about-heading {
-    padding-top: 8rem;
+    padding-top: 4rem;
     font-size: 40px;
     color: #636363;
     position: relative;
@@ -60,6 +61,6 @@ $base-color-blue: #00a1f1;
 // for only Desktop
 @media only screen and (min-width: 1025px) {
   .about {
-    padding: 0 22rem;
+    padding: 0 22rem 4rem 22rem;
   }
 }

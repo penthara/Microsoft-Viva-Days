@@ -83,7 +83,9 @@ export const Header = () => {
                 <Row className="registrationBtn">
                   <Col>
                     <button className="register-btn">
-                      <a href={data.registrationLink} target="_blank">{data.registrationBtn}</a>
+                      <a href={data.registrationLink} target="_blank">
+                        {data.registrationBtn}
+                      </a>
                     </button>
                   </Col>
                 </Row>
@@ -95,14 +97,29 @@ export const Header = () => {
               >
                 <Row className="handles col-7">
                   <Col className="row flex-nowrap">
-                    <img alt="Twitter logo" src={twitterLogo} />
-                    <span className="twitterHashTag">
-                      {data.twitterHashTag}
-                    </span>
+                    <a
+                      href={
+                        "https://twitter.com/search?q=" +
+                        encodeURIComponent(data.twitterHashTag)
+                      }
+                      target="_blank"
+                    >
+                      <img alt="Twitter logo" src={twitterLogo} />
+                      <span className="twitterHashTag">
+                        {data.twitterHashTag}
+                      </span>
+                    </a>
                   </Col>
                   <Col className="row flex-nowrap">
-                    <img alt="Twitter logo" src={twitterLogo} />
-                    <span className="twitterHandle">{data.twitterHandle}</span>
+                    <a
+                      href={"https://twitter.com/" + data.twitterHandle}
+                      target="_blank"
+                    >
+                      <img alt="Twitter logo" src={twitterLogo} />
+                      <span className="twitterHandle">
+                        {data.twitterHandle}
+                      </span>
+                    </a>
                   </Col>
                 </Row>
                 <Row className="eventDate justify-content-center">

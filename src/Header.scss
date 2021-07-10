@@ -1,6 +1,8 @@
 $White: #ffffff;
 $havlock-blue: #479cda;
-
+body::-webkit-scrollbar {
+  display: none;
+}
 .header {
   background: linear-gradient(
       rgba(0, 150, 234, 0.7) 100%,
@@ -32,6 +34,9 @@ $havlock-blue: #479cda;
   }
   .nav-item {
     padding: 0 30px;
+    .nav-link:hover {
+      color: #fff;
+    }
   }
   a {
     color: #ffffff;
@@ -67,19 +72,16 @@ $havlock-blue: #479cda;
     .register-btn {
       border-radius: 40px;
       border: none;
-      
-      
-      
+
       padding: 15px 70px;
-      a{
+      a {
         font-size: 25px;
-      text-transform: uppercase;
-      color: #479cda !important;
-      text-decoration: none;
-      font-weight: 700;
+        text-transform: uppercase;
+        color: #479cda !important;
+        text-decoration: none;
+        font-weight: 700;
       }
     }
-
   }
   .content-left {
     grid-gap: 4rem !important;
@@ -93,6 +95,9 @@ $havlock-blue: #479cda;
   .handles {
     row-gap: 25px;
     margin: 0 auto;
+    a {
+      text-decoration: none;
+    }
     img {
       width: 32px;
       padding: 0;
