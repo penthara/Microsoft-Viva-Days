@@ -22,7 +22,7 @@ export const UserGroups = () => {
               >
                 <div className="col-3 col-xs-2 group-img">
                   <img
-                    src={require(`${data.groupImage}`).default}
+                    src={`${data.groupImage}`}
                     alt={data.groupAltText}
                   />
                 </div>

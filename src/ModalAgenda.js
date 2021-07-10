@@ -29,7 +29,7 @@ const ModalAgenda = ({ modal, toggle, data }) => {
                 {data.speaker1Id != null ? 
                 <div className="col">
                 <img
-                  src={require(`${Speakers.filter(s=> s.speakerId == data.speaker1Id)[0].speakerImage}`).default}
+                  src={`${Speakers.filter(s=> s.speakerId == data.speaker1Id)[0].speakerImage}`}
                   className="speaker-img mb-3"
                   alt="speaker image"
                 />
@@ -42,7 +42,7 @@ const ModalAgenda = ({ modal, toggle, data }) => {
 {data.speaker2Id != null ? 
                 <div className="col">
                 <img
-                  src={require(`${Speakers.filter(s=> s.speakerId == data.speaker2Id)[0].speakerImage}`).default}
+                  src={`${Speakers.filter(s=> s.speakerId == data.speaker2Id)[0].speakerImage}`}
                   className="speaker-img mb-3"
                   alt="speaker image"
                 />
@@ -55,7 +55,7 @@ const ModalAgenda = ({ modal, toggle, data }) => {
 {data.speaker3Id != null ? 
                 <div className="col">
                 <img
-                  src={require(`${Speakers.filter(s=> s.speakerId == data.speaker3Id)[0].speakerImage}`).default}
+                  src={`${Speakers.filter(s=> s.speakerId == data.speaker3Id)[0].speakerImage}`}
                   className="speaker-img mb-3"
                   alt="speaker image"
                 />

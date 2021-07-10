@@ -19,7 +19,7 @@ export const Sponsor = () => {
                 <img
                   className="sponsor-img"
                   alt={data.sponsorAltText}
-                  src={require(`${data.sponsorImage}`).default}
+                  src={`${data.sponsorImage}`}
                 />
               </a>
             </div>

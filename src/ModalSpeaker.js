@@ -18,7 +18,7 @@ const ModalSpeaker = ({ modal, toggle, data }) => {
         <ModalBody className="nopadding">
           <div className="p-5 text-center">
             <img
-              src={require(`${data.speakerImage}`).default}
+              src={`${data.speakerImage}`}
               alt={data.speakerAltText}
               className="modal-image"
             />

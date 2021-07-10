@@ -69,11 +69,11 @@ export const ShowSessionData = (props) => {
                                 )
                               }
                               src={
-                                require(`${
+                                `${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker3Id
                                   )[0].speakerImage
-                                }`).default
+                                }`
                               }
                               alt="sxdcfvgbhnjk"
                               width="50px"
@@ -100,11 +100,11 @@ export const ShowSessionData = (props) => {
                                 )
                               }
                               src={
-                                require(`${
+                                `${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker2Id
                                   )[0].speakerImage
-                                }`).default
+                                }`
                               }
                               alt="sxdcfvgbhnjk"
                               width="50px"
@@ -132,11 +132,11 @@ export const ShowSessionData = (props) => {
                                 )
                               }
                               src={
-                                require(`${
+                                `${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker1Id
                                   )[0].speakerImage
-                                }`).default
+                                }`
                               }
                               alt="sxdcfvgbhnjk"
                               width="50px"
@@ -182,11 +182,11 @@ export const ShowSessionData = (props) => {
                                 )
                               }
                               src={
-                                require(`${
+                                `${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker3Id
                                   )[0].speakerImage
-                                }`).default
+                                }`
                               }
                               alt="sxdcfvgbhnjk"
                               width="50px"
@@ -213,11 +213,11 @@ export const ShowSessionData = (props) => {
                                 )
                               }
                               src={
-                                require(`${
+                                `${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker2Id
                                   )[0].speakerImage
-                                }`).default
+                                }`
                               }
                               alt="sxdcfvgbhnjk"
                               width="50px"
@@ -245,11 +245,11 @@ export const ShowSessionData = (props) => {
                                 )
                               }
                               src={
-                                require(`${
+                                `${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker1Id
                                   )[0].speakerImage
-                                }`).default
+                                }`
                               }
                               alt="sxdcfvgbhnjk"
                               width="50px"

@@ -38,7 +38,7 @@ export const Speaker = () => {
                         onClick={() => toggle(data)}
                         top
                         className="img-fluid speaker-image"
-                        src={require(`${data.speakerImage}`).default}
+                        src={`${data.speakerImage}`}
                         alt={data.speakerAltText}
                       />
                       <div className="card-title-wrapper">

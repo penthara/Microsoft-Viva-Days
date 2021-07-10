@@ -30,7 +30,7 @@ export const KeyNoteSpeaker = () => {
                         className="keynote-image"
                         top
                         width="100%"
-                        src={require(`${data.speakerImage}`).default}
+                        src={`${data.speakerImage}`}
                         alt={data.speakerAltText}
                         onClick={() => toggle(data)}
                       />
