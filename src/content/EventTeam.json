@@ -1,0 +1,74 @@
+[
+  {
+    "OrganizerID": "1",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "John Doe",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "2",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Alex Weber",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "3",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Megan Bowan",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "4",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Tarun Reddy",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "5",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Jasjit Chopra",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "6",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Ankur Jarial",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "1",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "John Doe",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "2",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Alex Weber",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "3",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Megan Bowan",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "4",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Tarun Reddy",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "5",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Jasjit Chopra",
+    "isVolunteer": "false"
+  },
+  {
+    "OrganizerID": "6",
+    "OrganizerImage": "./images/website/Speaker1.jpg",
+    "OrganizerName": "Ankur Jarial",
+    "isVolunteer": "false"
+  }
+]

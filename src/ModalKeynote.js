@@ -9,7 +9,6 @@ const ModalKeynote = ({ modal, toggle, data }) => {
   const closeBtn = <button className="close" onClick={toggle}></button>;
   console.log("modal data", data);
   return (
-    
     <div>
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader toggle={toggle} close={closeBtn}>
@@ -27,12 +26,12 @@ const ModalKeynote = ({ modal, toggle, data }) => {
           <div className="bg-grey p-5">
             <h4 className="mb-4">BIO</h4>
             <p className="speaker-information">{data.speakerInformation}</p>
-            <div className="divider"></div>
+            {/* <div className="divider"></div>
             <h4 className="mb-4">SESSIONS</h4>
             <p className="speaker-session">
               How to get started with Office 365 Development
             </p>
-            <p className="speaker-session">Getting started with MS Graph API</p>
+            <p className="speaker-session">Getting started with MS Graph API</p> */}
             <div className="divider"></div>
             <div className="image-array">
               <a href={data.speakerLinkedIn}>

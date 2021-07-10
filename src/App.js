@@ -10,7 +10,7 @@ import { UserGroups } from "./UserGroups";
 import { Footer } from "./Footer";
 import { KeyNoteSpeaker } from "./KeyNoteSpeaker";
 import { CountDownTimer } from "./CountDownTimer";
-import { HamburgerMenu } from "./HamburgerMenu";
+import { EventTeam } from "./EventTeam";
 
 function App() {
   return (
@@ -18,12 +18,13 @@ function App() {
       <Header />
       <CountDownTimer />
       <About />
-      <Donate />
+      {/* <Donate /> */}
       {/* <Agenda />
       <KeyNoteSpeaker /> */}
       <Speaker />
       <Sponsor />
       <UserGroups />
+      <EventTeam />
       <Footer />
     </div>
   );
