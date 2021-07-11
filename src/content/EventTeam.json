@@ -26,5 +26,12 @@
     "OrganizerName": "Manpreet Singh",
     "isVolunteer": "false",
 	"speakerLinkedIn": "https://www.linkedin.com/in/manpreethere/"
+  },
+  {
+    "OrganizerID": "5",
+    "OrganizerImage": "./images/website/Kamlesh.jpg",
+    "OrganizerName": "Kamlesh Rao",
+    "isVolunteer": "false",
+	"speakerLinkedIn": "https://www.linkedin.com/in/kamleshrao/"
   }
 ]

@@ -26,7 +26,7 @@ export const EventTeam = () => {
                             <img
                             src={LinkedInlogo}
                             alt="LinkedIn logo"
-                            className="card-linkedIn nopadding align-self-start"
+                            className="card-linkedIn align-self-start"
                            />
                   </a>
                 </div>

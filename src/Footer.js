@@ -52,10 +52,10 @@ export const Footer = () => {
                   <a className="social-media-icon" target="_blank" href={data.linkedInLink}>
                     <img src={linkedInLogo} />
                   </a>
-                  <a className="social-media-icon" target="_blank" href={data.linkedInLink}>
+                  <a className="social-media-icon" target="_blank" href={data.TwitterLink}>
                     <img src={TwitterLogo} />
                   </a>
-                  <a className="social-media-icon" target="_blank" href={data.linkedInLink}>
+                  <a className="social-media-icon" target="_blank" href={data.facebookLink}>
                     <img src={FaceboolLogo} />
                   </a>
                 </div>
