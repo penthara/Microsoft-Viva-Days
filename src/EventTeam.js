@@ -2,6 +2,7 @@ import React from "react";
 import HeaderData from "./content/HeaderData.json";
 import "./EventTeam.scss";
 import EventTeams from "./content/EventTeam.json";
+import LinkedInlogo from "./images/website/LinkedInlogo.png";
 
 export const EventTeam = () => {
   return (
@@ -21,6 +22,13 @@ export const EventTeam = () => {
                   <h4 className="organizer-name">
                     <span>{data.OrganizerName}</span>
                   </h4>
+                  <a href={data.speakerLinkedIn} target="_blank" className="col-2 nopadding">
+                            <img
+                            src={LinkedInlogo}
+                            alt="LinkedIn logo"
+                            className="card-linkedIn nopadding align-self-start"
+                           />
+                  </a>
                 </div>
               ) : null}
             </>

@@ -34,11 +34,11 @@ const ModalSpeaker = ({ modal, toggle, data }) => {
             <p className="speaker-session">Getting started with MS Graph API</p> */}
             <div className="divider"></div>
             <div className="image-array">
-              <a href={data.speakerLinkedIn}>
+              <a href={data.speakerLinkedIn} target="_blank">
                 <img src={LinkedInlogo} alt="LinkedIn logo" className="mr-4" />
               </a>
-              <a href={data.speakerTwitter}>
-                <img src={twitterlogo} alt="LinkedIn logo" />
+              <a href={data.speakerTwitter} target="_blank">
+                <img src={twitterlogo} alt="Twitter logo" />
               </a>
             </div>
           </div>

@@ -136,7 +136,7 @@ export const Header = () => {
                         <span>SPEAKERS</span>
                       </Col>
                       <Col className="trackNumber">
-                        <span>{Sessions.length}</span>
+                        <span>32</span>
                         <span>SESSIONS</span>
                       </Col>
                       <Col className="sponserNumber">
