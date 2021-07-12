@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import "./Header.scss";
 import Sessions from "./content/Sessions.json";
 import Sponsors from "./content/SponsorData.json";
@@ -15,6 +15,16 @@ import hamburgerclose from "./images/website/close.png";
 import { Speaker } from "./Speaker";
 
 export const Header = () => {
+  const [HamburgerOpen, setHamburgerOpen] = useState({ menuOpen: false });
+  const handleHambugerMenuStateChange = (state) => {
+    setHamburgerOpen({ menuOpen: state.isOpen });
+  };
+  const closeHamburgerMenu = () => {
+    setHamburgerOpen({ menuOpen: false });
+  };
+  const toggleHamburgerMenu = () => {
+    setHamburgerOpen({ menuOpen: !HamburgerOpen.menuOpen });
+  };
   return (
     <div className="header" id="header">
       <Row className="head-nav">
@@ -26,15 +36,25 @@ export const Header = () => {
             <Col xs={6}> </Col>
             <Col>
               <Menu
+                isOpen={HamburgerOpen.menuOpen}
+                onStateChange={(state) => handleHambugerMenuStateChange(state)}
                 right
                 width={"100%"}
                 customCrossIcon={
-                  <img src={hamburgerclose} alt="hamburger-menu" />
+                  <img
+                    src={hamburgerclose}
+                    onClick={toggleHamburgerMenu}
+                    alt="hamburger-menu"
+                  />
                 }
               >
                 {NavbarData.map((data) => {
                   return (
-                    <a className="menu-item" href={data.url}>
+                    <a
+                      className="menu-item"
+                      href={data.url}
+                      onClick={() => closeHamburgerMenu()}
+                    >
                       {data.title}
                     </a>
                   );
@@ -83,7 +103,11 @@ export const Header = () => {
                 <Row className="registrationBtn">
                   <Col>
                     <button className="register-btn">
-                      <a href={data.registrationLink} target="_blank">
+                      <a
+                        href={data.registrationLink}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         {data.registrationBtn}
                       </a>
                     </button>
@@ -103,6 +127,7 @@ export const Header = () => {
                         encodeURIComponent(data.twitterHashTag)
                       }
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img alt="Twitter logo" src={twitterLogo} />
                       <span className="twitterHashTag">
@@ -114,6 +139,7 @@ export const Header = () => {
                     <a
                       href={"https://twitter.com/" + data.twitterHandle}
                       target="_blank"
+                      rel="noreferrer"
                     >
                       <img alt="Twitter logo" src={twitterLogo} />
                       <span className="twitterHandle">
