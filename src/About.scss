@@ -55,20 +55,25 @@ $base-color-blue: #00a1f1;
   }
   .registration-text {
     padding-top: 5rem;
-    a {
-      color: white;
-      font-size: 2rem;
-      padding: 15px 70px;
+    
+      .registration-button{
+        padding: 15px 5%;
       background-color: $base-color-blue;
       border-radius: 40px;
-      text-decoration: none;
-    }
+      display: inline-block;
+      a {
+        color: white;
+        font-size: 2rem;
+        text-decoration: none;
+      }
+      }
+    
   }
 }
 
 // for only Desktop
 @media only screen and (min-width: 1025px) {
   .about {
-    padding: 0 22rem 4rem 22rem;
+    padding: 0 15% 4rem 15%;
   }
 }

@@ -28,7 +28,7 @@ export const Header = () => {
   return (
     <div className="header" id="header">
       <Row className="head-nav">
-        <Col xs={4}>
+        <Col xs={3}>
           <img src={logo} alt="ICSS-logo" className="nav-bar-logo" />
         </Col>
         {isMobile ? (
@@ -63,7 +63,7 @@ export const Header = () => {
             </Col>
           </>
         ) : (
-          <Col xs={8} className="nav-items">
+          <Col xs={9} className="nav-items">
             <Navbar>
               <Nav navbar>
                 {NavbarData.map((data) => {
@@ -92,7 +92,8 @@ export const Header = () => {
               >
                 <Row className="siteTitle">
                   <Col>
-                    <h5>Microsoft 365 , Power Platform & Cloud Security India User group</h5>
+                  <span>Microsoft 365 , Power Platform </span>
+                  <span>& Cloud Security India User group</span>
                     <h1>{data.siteTitle}</h1>
                   </Col>
                 </Row>

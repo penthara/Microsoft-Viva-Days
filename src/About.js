@@ -23,14 +23,17 @@ export const About = () => {
         community leaders.
       </div>
       <div className="registration-text">
-        <a
+      <div className="registration-button">
+      <a
           href={HeaderData[0].registrationLink}
           target="_blank"
           rel="noreferrer"
-          className="registration-button"
+          
         >
           Registrations are free !
         </a>
+      </div>
+        
       </div>
     </div>
   );

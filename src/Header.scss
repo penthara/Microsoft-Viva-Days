@@ -57,7 +57,7 @@ body::-webkit-scrollbar {
 
 .head-data {
   min-height: 70vh;
-  padding: 0 5%;
+  padding: 0 5% 2% 5%;
 
   .siteTitle {
     color: #fff;
@@ -96,10 +96,16 @@ body::-webkit-scrollbar {
   }
   .handles {
     margin: 0 auto;
+    &:first-child{
+      a{
+        padding-bottom: 15px;
+      }
+    }
     a {
       text-decoration: none;
       display: flex;
       flex-wrap: nowrap;
+      justify-content: center;
     }
     img {
       width: 32px;
@@ -108,6 +114,7 @@ body::-webkit-scrollbar {
     .twitterHashTag {
       color: #fff;
       font-size: 22px;
+      
     }
     .twitterHandle {
       color: #fff;
