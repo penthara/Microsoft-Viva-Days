@@ -2,45 +2,49 @@ $base-color-blue: #00a1f1;
 $base-color-black: #636363;
 .countDown {
   text-align: center;
-  padding: 6rem 380px 6rem 380px;
+  padding: 4rem 0;
+  margin: auto;
+  max-width: 60%;
   .countDown-row {
     padding: 35px 0px;
     border-radius: 40px;
     background-color: hsl(0, 0%, 97%);
     background: linear-gradient(0.25turn, #00a3ff, 1%, white);
     box-shadow: 0px 4px 10px 2px #0000001a;
+    // min-width: 50%;
+    // margin: auto;
     .timer-date {
       color: $base-color-black;
       font-weight: 600;
-      font-size: 42px;
+      font-size: 2.2vw;
       letter-spacing: 2px !important;
     }
     .timer-title {
       color: $base-color-black;
       font-weight: 400;
-      font-size: 20px;
+      font-size: 1.1vw;
     }
     .react-countdown {
       li {
-        padding: 0 30px;
+        padding: 0 4%;
         margin: auto;
       }
       .digit {
-        font-size: 46px !important;
+        font-size: 2vw;
         color: $base-color-black;
       }
       .text {
-        font-size: 24px !important;
+        font-size: 1.1vw;
         color: $base-color-blue !important;
         text-transform: capitalize !important;
         letter-spacing: 3px !important;
-        margin-top: -9px !important;
+        margin-top: 0vw;
       }
       li:after {
         position: absolute;
-        top: -16px;
+        top: -1vw;
         right: -7px;
-        font-size: 60px;
+        font-size: 3vw;
         color: #c4c4c4;
       }
     }
@@ -103,21 +107,30 @@ $base-color-black: #636363;
 // for tablet
 @media only screen and (min-device-width: 768px) and (max-device-width: 1366px) {
   .countDown {
-    text-align: center;
-    padding: 60px 10px 10px 10px;
+    max-width: 70%;
     .countDown-row .react-countdown li {
       padding: 0 14px;
       margin: auto;
     }
-    .countDown-row .timer-date {
-      font-size: 36px;
+    .countDown-row {
+      .timer-date {
+        font-size: 3.2vw;
+      }
+      .timer-title {
+        font-size: 1.5vw;
+      }
     }
-    .countDown-row .react-countdown .digit {
-      font-size: 44px !important;
+    .countDown-row .react-countdown {
+      .digit {
+        font-size: 3vw;
+      }
+      .text {
+        font-size: 1.6vw;
+      }
     }
-    .countDown-row .react-countdown li:after {
-      top: -18px;
-      right: -6px;
-    }
+    // .countDown-row .react-countdown li:after {
+    //   top: -18px;
+    //   right: -6px;
+    // }
   }
 }
