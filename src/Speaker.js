@@ -3,6 +3,9 @@ import "./Speaker.scss";
 import SpeakersData from "./content/SpeakersData.json";
 import ModalSpeaker from "./ModalSpeaker";
 import LinkedInlogo from "./images/website/LinkedInlogo.png";
+import MVPlogo from "./images/website/mvp.jpg";
+import Microsoftlogo from "./images/website/microsoft.jpg"
+import Twitterlogo from "./images/website/twitterblue.png";
 import {
   Card,
   CardImg,
@@ -55,15 +58,49 @@ export const Speaker = () => {
                           >
                             {data.speakerTitle}
                           </CardSubtitle>
+                          
+                        </div>
+                        <CardText onClick={() => toggle(data)}>{data.speakerSubTitle}</CardText>
+
+                        <div className="social-media-array">
+                        {data.CompanyURL !== null ? (
+                          <a href={data.CompanyURL} target="_blank" className="col-2 nopadding">
+                            <img
+                            src={`${data.CompanyURL}`}
+                            alt="MVP logo"
+                            className="card-socialmedia nopadding align-self-start"
+                          />
+                          </a>
+                        )
+                        :
+                        <></>
+                        }
+                          {data.speakerLinkedIn !== null ? (
                           <a href={data.speakerLinkedIn} target="_blank" className="col-2 nopadding">
                             <img
                             src={LinkedInlogo}
                             alt="LinkedIn logo"
-                            className="card-linkedIn nopadding align-self-start"
+                            className="card-socialmedia nopadding align-self-start"
                           />
                           </a>
+                        )
+                        :
+                        <></>
+                        }
+                        {data.speakerTwitter !== null ? (
+                          <a href={data.speakerLinkedIn} target="_blank" className="col-2 nopadding">
+                            <img
+                            src={Twitterlogo}
+                            alt="Twitter logo"
+                            className="card-socialmedia nopadding align-self-start"
+                          />
+                          </a>
+                        )
+                        :
+                        <></>
+                        }
+                          
                         </div>
-                        <CardText onClick={() => toggle(data)}>{data.speakerSubTitle}</CardText>
                       </CardBody>
                     </Card>
                   </div>

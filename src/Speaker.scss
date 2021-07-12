@@ -75,11 +75,22 @@ h3{
     p{
       font-size: 1.5rem;
     }
-    .card-linkedIn{
-      width: 32px;
-    }
+    
     .card-text{
       font-weight: 600;
+    }
+    .social-media-array{
+      padding: 20px;
+      display: flex;
+      flex-wrap: nowrap;
+      a{
+        margin: 10px;
+        .card-socialmedia{
+          width: 40px;
+          height: 40px;
+          object-fit: contain;
+        }
+      }
     }
   }
 }

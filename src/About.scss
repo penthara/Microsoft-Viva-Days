@@ -46,13 +46,22 @@ $base-color-blue: #00a1f1;
     padding-top: 5rem;
     line-height: 1.9rem;
     font-size: 1.3rem;
+    span{
+      a{
+        color: $base-color-blue;
+        
+      }
+    }
   }
   .registration-text {
     padding-top: 5rem;
-
     a {
-      color: $base-color-blue;
+      color: white;
       font-size: 2rem;
+      padding: 15px 70px;
+      background-color: $base-color-blue;
+      border-radius: 40px;
+      text-decoration: none;
     }
   }
 }

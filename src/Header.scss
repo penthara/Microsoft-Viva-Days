@@ -47,7 +47,10 @@ body::-webkit-scrollbar {
 .navbar-expand-md {
   justify-content: flex-end !important;
 }
-
+.content-left{
+  flex-direction: column;
+  justify-content: center;
+}
 .head-nav {
   min-height: 110px;
 }
@@ -67,8 +70,10 @@ body::-webkit-scrollbar {
   .subTitle {
     color: #fff;
     font-size: 25px;
+    padding-top: 5rem;
   }
   .registrationBtn {
+    padding-top: 5rem;
     .register-btn {
       border-radius: 40px;
       border: none;
@@ -83,20 +88,17 @@ body::-webkit-scrollbar {
       }
     }
   }
-  .content-left {
-    grid-gap: 4rem !important;
-    gap: 5rem !important;
-  }
   .content-right {
     padding-top: 80px;
-    grid-gap: 4rem !important;
-    gap: 5rem !important;
+    flex-direction: column;
+    justify-content: center;
   }
   .handles {
-    row-gap: 25px;
     margin: 0 auto;
     a {
       text-decoration: none;
+      display: flex;
+      flex-wrap: nowrap;
     }
     img {
       width: 32px;
@@ -112,6 +114,8 @@ body::-webkit-scrollbar {
     }
   }
   .eventDate {
+    padding-top: 5rem;
+    justify-content: center;
     text-align: center;
     .eventData-border {
       border: 6px solid #ffffff;
@@ -130,6 +134,7 @@ body::-webkit-scrollbar {
   .fields {
     color: #ffffff;
     text-align: center;
+    padding-top: 5rem;
     .col:nth-child(1) {
       max-width: 70%;
       margin: auto;
