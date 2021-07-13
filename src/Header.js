@@ -55,7 +55,7 @@ export const Header = () => {
                       href={data.url}
                       onClick={() => closeHamburgerMenu()}
                     >
-                      {data.title}
+                      <span>{data.title}</span>
                     </a>
                   );
                 })}
