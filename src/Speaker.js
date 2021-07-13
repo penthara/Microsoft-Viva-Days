@@ -67,19 +67,34 @@ export const Speaker = () => {
                         </div>
 
                         <div className="social-media-array">
-                          {data.CompanyURL !== null ? (
-                            <a href={data.CompanyURL} target="_blank">
+                          {data.MVPstatus === "true" ? (
+                            <div>
                               <img
-                                src={`${data.CompanyImage}`}
-                                alt="MVP logo"
+                                src={MVPlogo}
+                                alt="MVP"
                                 className="card-socialmedia nopadding align-self-start"
                               />
-                            </a>
+                            </div>
+                          ) : (
+                            <></>
+                          )}
+                          {data.MicrosoftPartner === "true" ? (
+                            <div>
+                              <img
+                                src={Microsoftlogo}
+                                alt="Microsoft"
+                                className="card-socialmedia nopadding align-self-start"
+                              />
+                            </div>
                           ) : (
                             <></>
                           )}
                           {data.speakerLinkedIn !== null ? (
-                            <a href={data.speakerLinkedIn} target="_blank">
+                            <a
+                              href={data.speakerLinkedIn}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <img
                                 src={LinkedInlogo}
                                 alt="LinkedIn logo"
@@ -90,7 +105,11 @@ export const Speaker = () => {
                             <></>
                           )}
                           {data.speakerTwitter !== null ? (
-                            <a href={data.speakerLinkedIn} target="_blank">
+                            <a
+                              href={data.speakerLinkedIn}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
                               <img
                                 src={Twitterlogo}
                                 alt="Twitter logo"
