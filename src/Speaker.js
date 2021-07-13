@@ -82,7 +82,7 @@ export const Speaker = () => {
                             <div>
                               <img
                                 src={Microsoftlogo}
-                                alt="Microsoft"
+                                alt="Microsoft Employee"
                                 className="card-socialmedia nopadding align-self-start"
                               />
                             </div>

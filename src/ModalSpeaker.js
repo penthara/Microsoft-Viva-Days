@@ -7,14 +7,12 @@ import Sessions from "./content/Sessions.json";
 
 const ModalSpeaker = ({ modal, toggle, data }) => {
   const closeBtn = <button className="close" onClick={toggle}></button>;
-  console.log("modal speaker data", data);
   const CurrentSessions = Sessions.filter(
     (s) =>
       s.speaker1Id == data.speakerId ||
       s.speaker2Id == data.speakerId ||
       s.speaker3Id == data.speakerId
   );
-  console.log("Speaker Modal CurrentSessions", CurrentSessions);
   return (
     <div>
       <Modal isOpen={modal} toggle={toggle}>
