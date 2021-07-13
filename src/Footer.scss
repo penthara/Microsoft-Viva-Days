@@ -2,7 +2,6 @@
   background-color: #479cda;
   color: #ffffff;
   .footer-wrapper {
-    row-gap: 20px;
     padding: 4rem 6rem;
     justify-content: center;
   }
@@ -12,26 +11,6 @@
   .footerlogo {
     width: 70%;
     align-self: center;
-  }
-  .quick-links-wrapper {
-    padding: 40px 0 0 0;
-    margin: 0 auto;
-    h4 {
-      font-size: 30px;
-      text-align: center;
-      padding: 0 0 20px 0;
-    }
-    .row {
-      margin: auto;
-      row-gap: 25px;
-      text-align: center;
-    }
-    .quick-links {
-      color: #ffffff;
-      text-decoration: underline;
-      font-size: 1rem;
-      font-weight: 500;
-    }
   }
   .contact-us-wrapper {
     padding: 40px 0 0 0;

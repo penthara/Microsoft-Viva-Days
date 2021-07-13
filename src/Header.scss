@@ -47,28 +47,42 @@ body::-webkit-scrollbar {
 .navbar-expand-md {
   justify-content: flex-end !important;
 }
-
+.content-left {
+  flex-direction: column;
+  justify-content: center;
+}
 .head-nav {
   min-height: 110px;
 }
 
 .head-data {
   min-height: 70vh;
-  padding: 0 5%;
+  padding: 0 5% 2% 5%;
 
   .siteTitle {
     color: #fff;
-    text-transform: uppercase;
-    letter-spacing: 3px;
+
+    span {
+      display: block;
+      font-size: 20px;
+    }
     h1 {
       font-size: 60px;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      max-width: 570px;
+      padding-top: 30px;
     }
   }
   .subTitle {
     color: #fff;
     font-size: 25px;
+    padding-top: 5rem;
+    width: 570px;
+    max-width: 570px;
   }
   .registrationBtn {
+    padding-top: 5rem;
     .register-btn {
       background-color: #fff;
       border-radius: 40px;
@@ -84,20 +98,23 @@ body::-webkit-scrollbar {
       }
     }
   }
-  .content-left {
-    grid-gap: 4rem !important;
-    gap: 5rem !important;
-  }
   .content-right {
     padding-top: 80px;
-    grid-gap: 4rem !important;
-    gap: 5rem !important;
+    flex-direction: column;
+    justify-content: center;
   }
   .handles {
-    row-gap: 25px;
     margin: 0 auto;
+    &:first-child {
+      a {
+        padding-bottom: 15px;
+      }
+    }
     a {
       text-decoration: none;
+      display: flex;
+      flex-wrap: nowrap;
+      justify-content: center;
     }
     img {
       width: 32px;
@@ -113,6 +130,8 @@ body::-webkit-scrollbar {
     }
   }
   .eventDate {
+    padding-top: 5rem;
+    justify-content: center;
     text-align: center;
     .eventData-border {
       border: 6px solid #ffffff;
@@ -131,6 +150,7 @@ body::-webkit-scrollbar {
   .fields {
     color: #ffffff;
     text-align: center;
+    padding-top: 5rem;
     .col:nth-child(1) {
       max-width: 70%;
       margin: auto;
@@ -195,17 +215,17 @@ body::-webkit-scrollbar {
   span:nth-child(1) {
     top: 24% !important;
     height: 3% !important;
-    width: 58%;
+    width: 50%;
   }
   span:nth-child(2) {
     top: 37% !important;
     height: 4% !important;
-    width: 58%;
+    width: 50%;
   }
   span:nth-child(3) {
     top: 51% !important;
     height: 4% !important;
-    width: 58%;
+    width: 50%;
   }
 }
 
@@ -296,7 +316,12 @@ Note: Beware of modifying this element as it can break the animations - you shou
     .siteTitle {
       h1 {
         font-size: 40px;
+        max-width: none;
       }
+    }
+    .subTitle {
+      width: auto;
+      max-width: none;
     }
   }
   .head-data {

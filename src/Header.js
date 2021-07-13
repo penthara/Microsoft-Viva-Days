@@ -28,7 +28,7 @@ export const Header = () => {
   return (
     <div className="header" id="header">
       <Row className="head-nav">
-        <Col xs={4}>
+        <Col xs={3}>
           <img src={logo} alt="ICSS-logo" className="nav-bar-logo" />
         </Col>
         {isMobile ? (
@@ -63,7 +63,7 @@ export const Header = () => {
             </Col>
           </>
         ) : (
-          <Col xs={8} className="nav-items">
+          <Col xs={9} className="nav-items">
             <Navbar>
               <Nav navbar>
                 {NavbarData.map((data) => {
@@ -85,13 +85,13 @@ export const Header = () => {
         {HeaderData.map((data) => {
           return (
             <>
-              <Col
-                md={12}
-                xl={6}
-                className=" content-left row flex-column justify-content-center"
-              >
+              <Col md={12} xl={6} className=" content-left row">
                 <Row className="siteTitle">
                   <Col>
+                    <span>
+                      Microsoft 365 , Power Platform <br></br>& Cloud Security
+                      India User group
+                    </span>
                     <h1>{data.siteTitle}</h1>
                   </Col>
                 </Row>
@@ -114,13 +114,9 @@ export const Header = () => {
                   </Col>
                 </Row>
               </Col>
-              <Col
-                md={12}
-                xl={6}
-                className="row content-right flex-column justify-content-center"
-              >
+              <Col md={12} xl={6} className="row content-right">
                 <Row className="handles col-7">
-                  <Col className="row flex-nowrap">
+                  <Col>
                     <a
                       href={
                         "https://twitter.com/search?q=" +
@@ -135,7 +131,7 @@ export const Header = () => {
                       </span>
                     </a>
                   </Col>
-                  <Col className="row flex-nowrap">
+                  <Col>
                     <a
                       href={"https://twitter.com/" + data.twitterHandle}
                       target="_blank"
@@ -148,7 +144,7 @@ export const Header = () => {
                     </a>
                   </Col>
                 </Row>
-                <Row className="eventDate justify-content-center">
+                <Row className="eventDate">
                   <Col md={5} className="eventData-border">
                     <span>{data.eventDate}</span>
                   </Col>
