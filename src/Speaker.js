@@ -68,13 +68,9 @@ export const Speaker = () => {
 
                         <div className="social-media-array">
                           {data.CompanyURL !== null ? (
-                            <a
-                              href={data.CompanyURL}
-                              target="_blank"
-                              className="col-2 nopadding"
-                            >
+                            <a href={data.CompanyURL} target="_blank">
                               <img
-                                src={`${data.CompanyURL}`}
+                                src={`${data.CompanyImage}`}
                                 alt="MVP logo"
                                 className="card-socialmedia nopadding align-self-start"
                               />
@@ -83,11 +79,7 @@ export const Speaker = () => {
                             <></>
                           )}
                           {data.speakerLinkedIn !== null ? (
-                            <a
-                              href={data.speakerLinkedIn}
-                              target="_blank"
-                              className="col-2 nopadding"
-                            >
+                            <a href={data.speakerLinkedIn} target="_blank">
                               <img
                                 src={LinkedInlogo}
                                 alt="LinkedIn logo"
@@ -98,11 +90,7 @@ export const Speaker = () => {
                             <></>
                           )}
                           {data.speakerTwitter !== null ? (
-                            <a
-                              href={data.speakerLinkedIn}
-                              target="_blank"
-                              className="col-2 nopadding"
-                            >
+                            <a href={data.speakerLinkedIn} target="_blank">
                               <img
                                 src={Twitterlogo}
                                 alt="Twitter logo"

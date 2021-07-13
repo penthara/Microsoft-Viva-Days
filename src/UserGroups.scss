@@ -30,6 +30,8 @@
           border-right: 1px solid #00a1f1;
           img {
             height: 80px;
+            width: 100px;
+            object-fit: contain;
           }
         }
         .group-name {
@@ -79,9 +81,10 @@
   }
   .user-groups .group-wrapper .group-card .group-border .group-img img {
     height: 42px;
-}
-.user-groups .group-wrapper .group-card .group-border {
-  min-height: 162px;}
+  }
+  .user-groups .group-wrapper .group-card .group-border {
+    min-height: 162px;
+  }
 }
 
 // // for ipad pro
@@ -109,6 +112,5 @@
         }
       }
     }
-    
-}
+  }
 }
