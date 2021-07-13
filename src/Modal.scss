@@ -55,8 +55,11 @@ $base-color-blue: #41b2f1;
 // .modal-header .close{
 //   display: none !important;
 // }
+.speaker-details {
+  padding: 50px 10%;
+}
 .modal-image {
-  width: 70%;
+  width: 90%;
   height: 350px;
   object-fit: cover;
 }
@@ -83,12 +86,47 @@ $base-color-blue: #41b2f1;
 .divider {
   height: 3px;
   background-color: #60606033;
-  margin: 40px auto 20px auto;
+  margin: 20px auto;
 }
 .speaker-session {
   color: #41b2f1;
   font-weight: 400;
   font-size: 1.3rem;
+}
+
+.speaker-session-details {
+  .divider {
+    margin: 20px auto;
+  }
+  .row {
+    padding-bottom: 15px;
+    .modal-track-num {
+      background-color: $base-color-blue;
+      padding: 5px 0;
+      color: #fff;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 20px;
+    }
+    .speaker-session-time {
+      span {
+        background-color: rgba(65, 178, 241, 0.1);
+        padding: 5px 15px;
+        color: #000;
+        justify-content: center;
+        font-weight: 400;
+        border-radius: 20px;
+      }
+    }
+    div {
+      display: flex;
+    }
+  }
+  .speaker-session-title {
+    color: $base-color-blue;
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 576px) {
