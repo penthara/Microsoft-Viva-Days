@@ -19,8 +19,8 @@ function App() {
       <CountDownTimer />
       <About />
       {/* <Donate /> */}
-      <Agenda />
-      <KeyNoteSpeaker />
+      {/* <Agenda />
+      <KeyNoteSpeaker /> */}
       <Speaker />
       <Sponsor />
       <UserGroups />
