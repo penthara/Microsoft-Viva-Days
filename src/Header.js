@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import "./Header.scss";
-import Sessions from "./content/Sessions.json";
 import Sponsors from "./content/SponsorData.json";
 import Speakers from "./content/SpeakersData.json";
+import Sessions from "./content/Sessions.json";
 import NavbarData from "./content/NavbarData.json";
 import HeaderData from "./content/HeaderData.json";
 // import bgImg from "./images/website/bg-img.png";
@@ -12,7 +12,6 @@ import { Navbar, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
 import { isDesktop, isMobile } from "react-device-detect";
 import { slide as Menu } from "react-burger-menu";
 import hamburgerclose from "./images/website/close.png";
-import { Speaker } from "./Speaker";
 
 export const Header = () => {
   const [HamburgerOpen, setHamburgerOpen] = useState({ menuOpen: false });
@@ -158,7 +157,7 @@ export const Header = () => {
                         <span>SPEAKERS</span>
                       </Col>
                       <Col className="trackNumber">
-                        <span>32</span>
+                        <span>{Sessions.length}</span>
                         <span>SESSIONS</span>
                       </Col>
                       <Col className="sponserNumber">

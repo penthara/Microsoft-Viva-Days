@@ -55,6 +55,9 @@ $base-color-blue: #41b2f1;
 // .modal-header .close{
 //   display: none !important;
 // }
+.speaker-details {
+  padding: 50px 5%;
+}
 .modal-image {
   width: 70%;
   height: 350px;
@@ -89,6 +92,31 @@ $base-color-blue: #41b2f1;
   color: #41b2f1;
   font-weight: 400;
   font-size: 1.3rem;
+}
+
+.speaker-session-details {
+  .divider {
+    margin: 20px auto;
+  }
+  .row {
+    padding-bottom: 15px;
+    .modal-track-num {
+      background-color: $base-color-blue;
+      padding: 5px 0;
+      color: #fff;
+      justify-content: center;
+      font-weight: 500;
+      border-radius: 20px;
+    }
+    div {
+      display: flex;
+    }
+  }
+  .speaker-session-title {
+    color: $base-color-blue;
+    font-weight: 600;
+    font-size: 18px;
+  }
 }
 
 @media only screen and (min-width: 576px) {
