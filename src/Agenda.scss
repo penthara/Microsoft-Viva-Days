@@ -147,10 +147,9 @@ $base-color-blue: #41b2f1;
         font-size: 24px;
         font-weight: 600;
         padding: 40px 0 0 0;
-        .speaker-head{
-          font-weight: 700; 
+        .speaker-head {
+          font-weight: 700;
           text-align: center;
- 
         }
         .agenda-speaker-name {
           font-size: 15px;
@@ -185,7 +184,7 @@ $base-color-blue: #41b2f1;
     .speaker-wrapper-teams {
       float: left;
     }
-    .event-teams{
+    .event-teams {
       padding: 0 !important;
     }
   }
@@ -218,7 +217,4 @@ $base-color-blue: #41b2f1;
 .speaker3 {
   display: inline-block;
   padding: 10px;
-}
-.speaker-wrapper-teams {
-  float: right;
 }

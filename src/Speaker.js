@@ -4,7 +4,7 @@ import SpeakersData from "./content/SpeakersData.json";
 import ModalSpeaker from "./ModalSpeaker";
 import LinkedInlogo from "./images/website/LinkedInlogo.png";
 import MVPlogo from "./images/website/mvp.jpg";
-import Microsoftlogo from "./images/website/microsoft.jpg";
+import Microsoftlogo from "./images/website/microsoft_logo.png";
 import Twitterlogo from "./images/website/twitterblue.png";
 import {
   Card,

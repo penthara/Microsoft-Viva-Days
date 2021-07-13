@@ -22,12 +22,16 @@ export const EventTeam = () => {
                   <h4 className="organizer-name">
                     <span>{data.OrganizerName}</span>
                   </h4>
-                  <a href={data.speakerLinkedIn} target="_blank" className="col-2 nopadding">
-                            <img
-                            src={LinkedInlogo}
-                            alt="LinkedIn logo"
-                            className="card-linkedIn align-self-start"
-                           />
+                  <a
+                    href={data.speakerLinkedIn}
+                    target="_blank"
+                    className="col-2 nopadding"
+                  >
+                    <img
+                      src={LinkedInlogo}
+                      alt="LinkedIn logo"
+                      className="card-linkedIn align-self-start"
+                    />
                   </a>
                 </div>
               ) : null}
@@ -51,6 +55,17 @@ export const EventTeam = () => {
                       <h4 className="organizer-name">
                         <span>{data.OrganizerName}</span>
                       </h4>
+                      <a
+                        href={data.speakerLinkedIn}
+                        target="_blank"
+                        className="col-2 nopadding"
+                      >
+                        <img
+                          src={LinkedInlogo}
+                          alt="LinkedIn logo"
+                          className="card-linkedIn align-self-start"
+                        />
+                      </a>
                     </div>
                   ) : null}
                 </>

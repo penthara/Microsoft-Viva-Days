@@ -43,7 +43,7 @@ const ModalSpeaker = ({ modal, toggle, data }) => {
                         <div className="modal-track-num col-4">
                           Track {sdata.trackId}
                         </div>
-                        <div className="col-8 speaker-session-time">{sdata.sessionTime}</div>
+                        <div className="col-8 speaker-session-time"><span>{sdata.sessionTime}</span></div>
                       </div>
                       <div className="speaker-session-title">
                         {sdata.sessionTitle}
@@ -52,12 +52,7 @@ const ModalSpeaker = ({ modal, toggle, data }) => {
                   );
                 })
               : null}
-            {/* <div className="divider"></div>
-            <h4 className="mb-4">SESSIONS</h4>
-            <p className="speaker-session">
-              How to get started with Office 365 Development
-            </p>
-            <p className="speaker-session">Getting started with MS Graph API</p> */}
+
             <div className="divider"></div>
             <div className="image-array">
               <a href={data.speakerLinkedIn} target="_blank">
