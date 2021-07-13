@@ -33,5 +33,19 @@
     "OrganizerName": "Kamlesh Rao",
     "isVolunteer": "false",
 	"speakerLinkedIn": "https://www.linkedin.com/in/kamleshrao/"
+  },
+  {
+    "OrganizerID": "6",
+    "OrganizerImage": "./images/website/Lalit.jpg",
+    "OrganizerName": "Lalit Mohan",
+    "isVolunteer": "true",
+	"speakerLinkedIn": "https://www.linkedin.com/in/manpreethere/"
+  },
+  {
+    "OrganizerID": "7",
+    "OrganizerImage": "./images/website/Mythili.jpg",
+    "OrganizerName": "Mythili Ranganathan",
+    "isVolunteer": "true",
+	"speakerLinkedIn": "https://www.linkedin.com/in/kamleshrao/"
   }
 ]
