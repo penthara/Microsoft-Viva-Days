@@ -78,7 +78,7 @@ export const Speaker = () => {
                           ) : (
                             <></>
                           )}
-                          {data.MicrosoftPartner === "true" ? (
+                          {data.MicrosoftEmployee === "true" ? (
                             <div>
                               <img
                                 src={Microsoftlogo}
