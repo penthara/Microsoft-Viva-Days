@@ -105,10 +105,11 @@ $base-color-blue: #41b2f1;
 }
 .agenda-speaker-img {
   // display: inline-block;
-  height: 56px;
-  width: 46px;
+  height: 70px;
+  width: 70px;
   object-fit: cover;
-  border-radius: 30px;
+  object-position: top;
+  border-radius: 50%;
   display: block;
   margin-left: auto;
   margin-right: auto;

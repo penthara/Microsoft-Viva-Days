@@ -28,8 +28,6 @@ export const ShowSessionData = (props) => {
   const CurrentSessions = Sessions.filter(
     (d) => d.trackId.toString() == props.CurrentTrackID
   );
-  console.log("CurrentTrackID Prop=> ", props.CurrentTrackID);
-  console.log("Current Sessions=> ", CurrentSessions);
   return (
     <>
       <div className="container-fluid trackdata">

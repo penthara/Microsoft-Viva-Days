@@ -87,10 +87,7 @@ export const Header = () => {
               <Col md={12} xl={6} className=" content-left row">
                 <Row className="siteTitle">
                   <Col>
-                    <span>
-                      Microsoft 365 , Power Platform <br></br>& Cloud Security
-                      India User group
-                    </span>
+                    <span>{data.presentedUserGroup}</span>
                     <h1>{data.siteTitle}</h1>
                   </Col>
                 </Row>

@@ -26,7 +26,7 @@ export const Speaker = () => {
     <>
       <div className="speakers" id="speakers">
         <h1 className="speaker-heading text-center">Speakers</h1>
-        <div className="row justify-content-between">
+        <div className="row">
           {SpeakersData.map((data) => {
             return (
               <>
@@ -106,7 +106,7 @@ export const Speaker = () => {
                           )}
                           {data.speakerTwitter !== null ? (
                             <a
-                              href={data.speakerLinkedIn}
+                              href={data.speakerTwitter}
                               target="_blank"
                               rel="noreferrer"
                             >

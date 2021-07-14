@@ -41,7 +41,9 @@ const ModalSpeaker = ({ modal, toggle, data }) => {
                         <div className="modal-track-num col-4">
                           Track {sdata.trackId}
                         </div>
-                        <div className="col-8 speaker-session-time"><span>{sdata.sessionTime}</span></div>
+                        <div className="col-8 speaker-session-time">
+                          <span>{sdata.sessionTime}</span>
+                        </div>
                       </div>
                       <div className="speaker-session-title">
                         {sdata.sessionTitle}
@@ -53,12 +55,24 @@ const ModalSpeaker = ({ modal, toggle, data }) => {
 
             <div className="divider"></div>
             <div className="image-array">
-              <a href={data.speakerLinkedIn} target="_blank">
-                <img src={LinkedInlogo} alt="LinkedIn logo" className="mr-4" />
-              </a>
-              <a href={data.speakerTwitter} target="_blank">
-                <img src={twitterlogo} alt="Twitter logo" />
-              </a>
+              {data.speakerLinkedIn !== null ? (
+                <a href={data.speakerLinkedIn} target="_blank" rel="noreferrer">
+                  <img
+                    src={LinkedInlogo}
+                    alt="LinkedIn logo"
+                    className="mr-4"
+                  />
+                </a>
+              ) : (
+                <></>
+              )}
+              {data.speakerTwitter !== null ? (
+                <a href={data.speakerTwitter} target="_blank" rel="noreferrer">
+                  <img src={twitterlogo} alt="Twitter logo" />
+                </a>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </ModalBody>

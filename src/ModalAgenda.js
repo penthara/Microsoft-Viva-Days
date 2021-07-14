@@ -24,48 +24,62 @@ const ModalAgenda = ({ modal, toggle, data }) => {
           <div className="divider"></div>
           <h2 className="text-center py-4">Speakers</h2>
           <div className="speaker-array row">
-            
-            
-                {data.speaker1Id != null ? 
-                <div className="col">
+            {data.speaker1Id != null ? (
+              <div className="col">
                 <img
-                  src={`${Speakers.filter(s=> s.speakerId == data.speaker1Id)[0].speakerImage}`}
+                  src={`${
+                    Speakers.filter((s) => s.speakerId == data.speaker1Id)[0]
+                      .speakerImage
+                  }`}
                   className="speaker-img mb-3"
                   alt="speaker image"
                 />
-                <p className="speaker-name">{Speakers.filter(s=> s.speakerId == data.speaker1Id)[0].speakerName}</p>
+                <p className="speaker-name">
+                  {
+                    Speakers.filter((s) => s.speakerId == data.speaker1Id)[0]
+                      .speakerName
+                  }
+                </p>
               </div>
-                :
-                 null
-              }
+            ) : null}
 
-{data.speaker2Id != null ? 
-                <div className="col">
+            {data.speaker2Id != null ? (
+              <div className="col">
                 <img
-                  src={`${Speakers.filter(s=> s.speakerId == data.speaker2Id)[0].speakerImage}`}
+                  src={`${
+                    Speakers.filter((s) => s.speakerId == data.speaker2Id)[0]
+                      .speakerImage
+                  }`}
                   className="speaker-img mb-3"
                   alt="speaker image"
                 />
-                <p className="speaker-name">{Speakers.filter(s=> s.speakerId == data.speaker2Id)[0].speakerName}</p>
+                <p className="speaker-name">
+                  {
+                    Speakers.filter((s) => s.speakerId == data.speaker2Id)[0]
+                      .speakerName
+                  }
+                </p>
               </div>
-                :
-                 null
-              }
+            ) : null}
 
-{data.speaker3Id != null ? 
-                <div className="col">
+            {data.speaker3Id != null ? (
+              <div className="col">
                 <img
-                  src={`${Speakers.filter(s=> s.speakerId == data.speaker3Id)[0].speakerImage}`}
+                  src={`${
+                    Speakers.filter((s) => s.speakerId == data.speaker3Id)[0]
+                      .speakerImage
+                  }`}
                   className="speaker-img mb-3"
                   alt="speaker image"
                 />
-                <p className="speaker-name">{Speakers.filter(s=> s.speakerId == data.speaker3Id)[0].speakerName}</p>
+                <p className="speaker-name">
+                  {
+                    Speakers.filter((s) => s.speakerId == data.speaker3Id)[0]
+                      .speakerName
+                  }
+                </p>
               </div>
-                :
-                 null
-              }
-
-              
+            ) : null}
           </div>
         </ModalBody>
       </Modal>

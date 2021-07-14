@@ -33,8 +33,8 @@
     "speakerImage": "./images/speakers/Vignesh.jpg",
     "speakerAltText": "Vignesh Ganesan",
     "keynoteSpeaker": "false",
-    "speakerTitle": "Advisory Specialist Master",
-    "speakerSubTitle": "Deloitte India",
+    "speakerTitle": "Enterprise Cloud Architect",
+    "speakerSubTitle": " ",
     "speakerLinkedIn": "https://www.linkedin.com/in/vignesh-ganesan-mcse-mcsa-mct-itilv3-9246384a/",
     "speakerTwitter": "https://twitter.com/cloudvignesh",
     "MVPstatus": "false",
@@ -348,5 +348,19 @@
     "MVPstatus": "true",
     "MicrosoftEmployee": "false",
     "speakerInformation": "Karl Ots is a cloud and cybersecurity expert, as well as international speaker and trainer, with a broad range of deep Azure expertise. He believes that secure cloud technologies are the key to successful digital transformation. He applies his passion as Vice President, Cloud Security Architect at Swiss Re. Karl has been working with Microsoft Azure since 2011 in a variety of forums ranging from large projects to speaking at largest tech conferences, such as Microsoft Ignite. Karl is a Microsoft Certified Trainer (MCT) and a Certified Information Systems Security Professional (CISSP)."
+  },
+  {
+    "speakerId": "26",
+    "speakerName": "Neelam Pawar",
+    "speakerImage": "./images/speakers/Nospeaker.png",
+    "speakerAltText": "Neelam Pawar",
+    "keynoteSpeaker": "false",
+    "speakerTitle": "Cloud Solution Architect",
+    "speakerSubTitle": "Microsoft",
+    "speakerLinkedIn": "https://www.linkedin.com/in/neelam-pawar-16931431/",
+    "speakerTwitter": null,
+    "MVPstatus": "false",
+    "MicrosoftEmployee": "true",
+    "speakerInformation": " "
   }
 ]
