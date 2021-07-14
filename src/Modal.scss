@@ -48,6 +48,9 @@ $base-color-blue: #41b2f1;
 .session-introtext {
   font-size: 1.4rem;
   text-align: justify;
+  span {
+    white-space: pre-line;
+  }
 }
 .bg-grey {
   background-color: #f8f8f8;
@@ -62,6 +65,7 @@ $base-color-blue: #41b2f1;
   width: 90%;
   height: 350px;
   object-fit: cover;
+  object-position: top;
 }
 .speaker-information {
   text-align: justify;

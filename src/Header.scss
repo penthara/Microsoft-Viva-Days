@@ -65,6 +65,8 @@ body::-webkit-scrollbar {
     span {
       display: block;
       font-size: 20px;
+      font-weight: bold;
+      white-space: pre-line;
     }
     h1 {
       font-size: 60px;
