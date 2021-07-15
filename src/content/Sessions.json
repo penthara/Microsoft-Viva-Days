@@ -217,7 +217,7 @@
     "speaker3Id": null,
     "sessionTime": "10:30 AM - 11:15 AM",
     "sessionTitle": "Session for sponsor (Ossisto365)",
-    "sessionDescription": null,
+    "sessionDescription": "Session details will be updated soon",
     "sessionUrl": "http://www.google.com"
   },
   {
@@ -262,6 +262,138 @@
     "sessionTime": "10:30 AM - 11:15 AM",
     "sessionTitle": "Top pitfalls of Microsoft Azure security and how to avoid them",
     "sessionDescription": "Did you know that contrary to popular belief, the most common cloud security threats are not outside attacks, but rather misconfigurations? To fully secure public cloud platforms, we need to understand them deeply. This requires both upskilling existing information security office with cloud expertise and shifting the way security responsibilities are spread across the organization.\n\nI have assessed the security hundreds of solutions built on the Microsoft Azure cloud and found that there are some key security pitfalls that are common across all industry verticals and company sizes. In this session, I will share what these security pitfalls are, why do they matter and how to mitigate them.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "25",
+    "trackId": "3",
+    "speaker1Id": "27",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "10:30 am to 11:30 am",
+    "sessionTitle": "Session for Jasjit (Sponsor session)",
+    "sessionDescription": "Session details will be updated soon",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "26",
+    "trackId": "3",
+    "speaker1Id": "28",
+    "speaker2Id": "29",
+    "speaker3Id": null,
+    "sessionTime": "11:30 am to 12:30 pm",
+    "sessionTitle": "Secure Infrastructure with Microsoft Defender for Identity",
+    "sessionDescription": "In this session, we will talk about Microsoft Defender for Identity, Defender for identity architecture and how can we leverage it to identify, detect, and investigate advanced threats, compromised identities, and malicious insider actions directed at your organization.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "27",
+    "trackId": "3",
+    "speaker1Id": "30",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "12:30 pm to 1:30 pm",
+    "sessionTitle": "Modern Management with MEM Intune & Security Policies",
+    "sessionDescription": "AVD Enrollment Experience with Modern Management Intune. Let's check the significant efforts we all need to put into Moving away from Group policy. CIS baselines are benchmark systems for the traditional VDI and PC management world.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "28",
+    "trackId": "3",
+    "speaker1Id": "31",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "1:30 pm to 2:30 pm",
+    "sessionTitle": "Using the SPF, DKIM and DMARC Frameworks to reduce Spoofing in Office 365",
+    "sessionDescription": "Information theft is becoming rampant. Every week we hear of well known companies being hacked and customer information stoken. Why? Hackers then either sell this information to email hackers, or use it themselves to creatw fake email and messages, targeting both the unsuspecting public, your customers, or even your own users, for financial and other malicious gains.\n\nThis is because Email lacks the ability to verify authenticity of all received mails. Fraudsters have taken advantage of this fundamental flaw to full advantage.\n\n3 Frameworks, SPF in April 2014, DKIM in 2011, and DMARC in 2015. Together, these 3 frameworks work in tandem to help combat email fraud.\n\nMany security devices and email providers have adopted these standards, including Microsoft Office 365 and Google.\n\nHowever, these frameworks are often misunderstood. This session explains how these frameworks help prevent mail fraud and why adopting these frameworks in an organization would help both their own users, and their customers, suppliers or even the general public from being spoofed by fraudsters using the organization's email domain.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "29",
+    "trackId": "3",
+    "speaker1Id": "32",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "2:30 pm to 3:30 pm",
+    "sessionTitle": "Secure your Data - All About Power Platform Data Loss Prevention",
+    "sessionDescription": "To protect data in your organization, you can use Power Platform Admin to create and enforce policies that define the consumer connectors that specific business data can be shared with. These policies are called data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.\n\nThis session will help you through the end-to-end experience of creating Data Loss Prevention and handle data access policies.\n\nHow do we setup?\nIn this session, I will show the end to end demo!\n\nWhat attendees expect to learn?\nThey learn how to setup / deploy Data loss prevention for Power Platform.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "30",
+    "trackId": "3",
+    "speaker1Id": "33",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "3:30 pm to 4:30 pm",
+    "sessionTitle": "Power Platform CoE Starter Kit - Overview by Jeevarajan Kumar",
+    "sessionDescription": "Prerequisites, setup instructions, and individual components of the CoE Starter Kit.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "31",
+    "trackId": "3",
+    "speaker1Id": "34",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "4:30 pm to 5:30 pm",
+    "sessionTitle": "Session for Divya Dogra ,Microsoft",
+    "sessionDescription": "Session description will be updated soon.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "32",
+    "trackId": "3",
+    "speaker1Id": "35",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "5:30 pm to 6:30 pm",
+    "sessionTitle": "Azure AD Verifiable Credentials - verify once, use everywhere",
+    "sessionDescription": "Understand why Microsoft is investing in decentralized identities Understand what Verifiable Credentials are and how they work?\nWe will share scenarios & show some demos for use cases that customers have explored!",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "33",
+    "trackId": "3",
+    "speaker1Id": "36",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "6:30 pm to 7:30 pm",
+    "sessionTitle": "A Day in the Life of an Azure Sentinel Analyst",
+    "sessionDescription": "Learn Azure Sentinel by taking a tour through console as an actual analyst will do every single day as part of a broader SOC environment. Hear how Azure Sentinel has been developed to help modernize and efficientize security to enable security teams to do more in less time.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "34",
+    "trackId": "3",
+    "speaker1Id": "37",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "7:30 pm to 8:30 pm",
+    "sessionTitle": "Azure Sentinel Hunting with KQL queries",
+    "sessionDescription": "Telemetry data collected using the Azure Sentinel is stored into the Log Analytics workspace.\n\nKQL query are the read only commands that are executed over the Log analytics workspace to read the collected telemetry\n\nKQL is the query language used to perform analysis on data to analyze the collected telemetry, represent over the dashboards using the workbooks, and perform hunting in Azure Sentinel to do the proactively hunt for cyber threats. \n\nMost of us come across the situation where we have to write some custom KQL query to configure hunting query or custom alert analytics rule or workbook\n\nIts quite important to know basic of KQL because it can help individual in understanding the telemetry\n\nKQL can help you in projecting data on the Azure Dashboards. Also in setting up the Sentinel Alert rules to generate incidents, alerts\n\nIn this session, I will give brief overview of how KQL is used, wow to write KQL query and approach that need to be used to design KQL queries\n\nThis will help participants in understanding the basics of KQL and structure of the KQL queries.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "35",
+    "trackId": "3",
+    "speaker1Id": "38",
+    "speaker2Id": "39",
+    "speaker3Id": "40",
+    "sessionTime": "8:30 pm to 9:30 pm",
+    "sessionTitle": "Microsoft 365 Virtual Marathon Teams Bombing and Lessons Learned",
+    "sessionDescription": "Running a global event with thousands of attendees spread across 115 countries and speakers in nearly every time zone took serious coordination, but what happens when you have an attacker who comes through the door that everyone else does?\n\nTeams bombing is real and the attackers have tools to ruin the experience for users. We’ll dive into our experience and lessons learned.\n\nIn this session we’ll explore Microsoft Teams security and policies in the context of events and cover security in new webinar features.",
+    "sessionUrl": "http://www.google.com"
+  },
+  {
+    "sessionId": "36",
+    "trackId": "3",
+    "speaker1Id": "41",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "9:30 pm to 10:30 pm",
+    "sessionTitle": "Few Security tips for N-Tier app in Azure",
+    "sessionDescription": "1. Blazor WASM UI gets authenticated and passes the JWT to APIM.\n2. APIM Validates the JWT and routes the request to Web API.\n3. SQL Server and Redis Cache’s credentials are stored in Azure Key Vault.\n4. Web API uses the credentials from Azure Key Vault.\n5. Web API investigates Azure Redis Cache before hitting SQL Azure. (Cache Aside Pattern)\n6. We will perform Dacpac (.sqlproj) for the deployment of SQL Data Store.",
     "sessionUrl": "http://www.google.com"
   }
 ]
