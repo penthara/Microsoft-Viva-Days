@@ -3,6 +3,8 @@ import "./Speaker.scss";
 import SpeakersData from "./content/SpeakersData.json";
 import ModalKeynote from "./ModalKeynote";
 import LinkedInlogo from "./images/website/LinkedInlogo.png";
+import LazyLoad from "react-lazy-load";
+import ImageLoader from "./ImageLoader.js";
 import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from "reactstrap";
 
 export const KeyNoteSpeaker = () => {
@@ -26,19 +28,28 @@ export const KeyNoteSpeaker = () => {
                     key={data.speakerId}
                   >
                     <Card className="keynote-card shadow nopadding ">
-                      <CardImg
-                        className="keynote-image"
-                        top
-                        width="100%"
-                        src={`${data.speakerImage}`}
-                        alt={data.speakerAltText}
-                        onClick={() => toggle(data)}
-                      />
+                      <div className="keynote-image">
+                        <div id="cube">
+                          <div class="square-holder">
+                            <div class="square" id="square"></div>
+                          </div>
+                        </div>
+                        <LazyLoad height={350} debounce={false}>
+                          <ImageLoader
+                            onClick={() => toggle(data)}
+                            src={`${data.speakerImage}`}
+                            alt={data.speakerAltText}
+                          />
+                        </LazyLoad>
+                      </div>
                       <CardBody>
                         <div className="row w-100 flex-nowrap">
-                          <CardTitle tag="h3" className="nopadding col" onClick={() => toggle(data)}>
+                          <CardTitle
+                            tag="h3"
+                            className="nopadding col"
+                            onClick={() => toggle(data)}
+                          >
                             {data.speakerName}
-                            
                           </CardTitle>
                           <a
                             href={data.speakerLinkedIn}
@@ -50,7 +61,6 @@ export const KeyNoteSpeaker = () => {
                               alt="LinkedIn logo"
                               className="card-linkedIn"
                             />
-                           
                           </a>
                         </div>
                         <CardSubtitle

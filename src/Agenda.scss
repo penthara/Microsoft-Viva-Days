@@ -218,4 +218,23 @@ $base-color-blue: #41b2f1;
 .speaker3 {
   display: inline-block;
   padding: 10px;
+  .img-loading {
+    animation: flashAnimation 1.5s cubic-bezier(0.17, 0.37, 0.43, 0.67) infinite;
+    opacity: 0;
+  }
+}
+
+@keyframes flashAnimation {
+  0% {
+    background-color: #fff;
+    opacity: 0;
+  }
+  50% {
+    background-color: #ccc;
+    opacity: 1;
+  }
+  100% {
+    background-color: #fff;
+    opacity: 0;
+  }
 }
