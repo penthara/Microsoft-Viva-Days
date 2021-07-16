@@ -6,6 +6,7 @@ import LinkedInlogo from "./images/website/LinkedInlogo.png";
 import MVPlogo from "./images/website/mvp.jpg";
 import Microsoftlogo from "./images/website/microsoft_logo.png";
 import Twitterlogo from "./images/website/twitterblue.png";
+import LazyLoad from "react-lazy-load";
 import {
   Card,
   CardImg,
@@ -14,6 +15,7 @@ import {
   CardTitle,
   CardSubtitle,
 } from "reactstrap";
+import ImageLoader from "./ImageLoader.js";
 
 export const Speaker = () => {
   const [modal, setModal] = useState(false);
@@ -36,13 +38,24 @@ export const Speaker = () => {
                     key={data.speakerId}
                   >
                     <Card className="speaker-card shadow nopadding">
-                      <CardImg
-                        onClick={() => toggle(data)}
-                        top
-                        className="img-fluid speaker-image"
-                        src={`${data.speakerImage}`}
-                        alt={data.speakerAltText}
-                      />
+                      <div className="speaker-image">
+                        <div id="cube">
+                          <div class="square-holder">
+                            <div class="square" id="square"></div>
+                          </div>
+                        </div>
+                        <LazyLoad
+                          height={350}
+                          debounce={false}
+                        >
+                          <ImageLoader
+                            onClick={() => toggle(data)}
+                            src={`${data.speakerImage}`}
+                            alt={data.speakerAltText}
+                          />
+                        </LazyLoad>
+                      </div>
+
                       <div className="card-title-wrapper">
                         <CardTitle
                           tag="h3"

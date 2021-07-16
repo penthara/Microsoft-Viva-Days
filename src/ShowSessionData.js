@@ -8,6 +8,8 @@ import MicrosoftTeams from "./images/website/MicrosoftTeams.png";
 import Speakers from "./content/SpeakersData.json";
 import EventData from "./content/EventData.json";
 import ModalSpeaker from "./ModalSpeaker";
+import LazyLoad from "react-lazy-load";
+import ImageLoader from "./ImageLoader.js";
 
 export const ShowSessionData = (props) => {
   const [modal, setModal] = useState(false);
@@ -58,26 +60,27 @@ export const ShowSessionData = (props) => {
                       <div>
                         {data.speaker3Id != null ? (
                           <div className="speaker3">
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker3Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                `${
+                            <LazyLoad height={70} width={70} debounce={false}>
+                              <ImageLoader
+                                onClick={() =>
+                                  SpeakerModaltoggle(
+                                    Speakers.filter(
+                                      (s) => s.speakerId == data.speaker3Id
+                                    )[0]
+                                  )
+                                }
+                                src={`${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker3Id
                                   )[0].speakerImage
-                                }`
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
+                                }`}
+                                alt="sxdcfvgbhnjk"
+                                width="50px"
+                                height="50px"
+                                className="agenda-speaker-img"
+                              />
+                            </LazyLoad>
+
                             <span className="agenda-speaker-name">
                               {
                                 Speakers.filter(
@@ -89,26 +92,27 @@ export const ShowSessionData = (props) => {
                         ) : null}
                         {data.speaker2Id != null ? (
                           <div className="speaker2">
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker2Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                `${
+                            <LazyLoad height={70} width={70} debounce={false}>
+                              <ImageLoader
+                                onClick={() =>
+                                  SpeakerModaltoggle(
+                                    Speakers.filter(
+                                      (s) => s.speakerId == data.speaker2Id
+                                    )[0]
+                                  )
+                                }
+                                src={`${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker2Id
                                   )[0].speakerImage
-                                }`
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
+                                }`}
+                                alt="sxdcfvgbhnjk"
+                                width="50px"
+                                height="50px"
+                                className="agenda-speaker-img"
+                              />
+                            </LazyLoad>
+
                             <span className="agenda-speaker-name">
                               {
                                 Speakers.filter(
@@ -121,26 +125,27 @@ export const ShowSessionData = (props) => {
 
                         {data.speaker1Id != null ? (
                           <div className="speaker1">
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker1Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                `${
+                            <LazyLoad height={70} width={70} debounce={false}>
+                              <ImageLoader
+                                onClick={() =>
+                                  SpeakerModaltoggle(
+                                    Speakers.filter(
+                                      (s) => s.speakerId == data.speaker1Id
+                                    )[0]
+                                  )
+                                }
+                                src={`${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker1Id
                                   )[0].speakerImage
-                                }`
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
+                                }`}
+                                alt="sxdcfvgbhnjk"
+                                width="50px"
+                                height="50px"
+                                className="agenda-speaker-img"
+                              />
+                            </LazyLoad>
+
                             <span className="agenda-speaker-name">
                               {
                                 Speakers.filter(
@@ -171,26 +176,26 @@ export const ShowSessionData = (props) => {
                       <div className="speaker-wrapper-teams">
                         {data.speaker3Id != null ? (
                           <div className="speaker3">
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker3Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                `${
+                            <LazyLoad height={70} width={70} debounce={false}>
+                              <ImageLoader
+                                onClick={() =>
+                                  SpeakerModaltoggle(
+                                    Speakers.filter(
+                                      (s) => s.speakerId == data.speaker3Id
+                                    )[0]
+                                  )
+                                }
+                                src={`${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker3Id
                                   )[0].speakerImage
-                                }`
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
+                                }`}
+                                alt="sxdcfvgbhnjk"
+                                width="50px"
+                                height="50px"
+                                className="agenda-speaker-img"
+                              />
+                            </LazyLoad>
                             <span className="agenda-speaker-name">
                               {
                                 Speakers.filter(
@@ -202,26 +207,26 @@ export const ShowSessionData = (props) => {
                         ) : null}
                         {data.speaker2Id != null ? (
                           <div className="speaker2">
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker2Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                `${
+                            <LazyLoad height={70} width={70} debounce={false}>
+                              <ImageLoader
+                                onClick={() =>
+                                  SpeakerModaltoggle(
+                                    Speakers.filter(
+                                      (s) => s.speakerId == data.speaker2Id
+                                    )[0]
+                                  )
+                                }
+                                src={`${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker2Id
                                   )[0].speakerImage
-                                }`
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
+                                }`}
+                                alt="sxdcfvgbhnjk"
+                                width="50px"
+                                height="50px"
+                                className="agenda-speaker-img"
+                              />
+                            </LazyLoad>
                             <span className="agenda-speaker-name">
                               {
                                 Speakers.filter(
@@ -234,26 +239,26 @@ export const ShowSessionData = (props) => {
 
                         {data.speaker1Id != null ? (
                           <div className="speaker1">
-                            <img
-                              onClick={() =>
-                                SpeakerModaltoggle(
-                                  Speakers.filter(
-                                    (s) => s.speakerId == data.speaker1Id
-                                  )[0]
-                                )
-                              }
-                              src={
-                                `${
+                            <LazyLoad height={70} width={70} debounce={false}>
+                              <ImageLoader
+                                onClick={() =>
+                                  SpeakerModaltoggle(
+                                    Speakers.filter(
+                                      (s) => s.speakerId == data.speaker1Id
+                                    )[0]
+                                  )
+                                }
+                                src={`${
                                   Speakers.filter(
                                     (s) => s.speakerId == data.speaker1Id
                                   )[0].speakerImage
-                                }`
-                              }
-                              alt="sxdcfvgbhnjk"
-                              width="50px"
-                              height="50px"
-                              className="agenda-speaker-img"
-                            />
+                                }`}
+                                alt="sxdcfvgbhnjk"
+                                width="50px"
+                                height="50px"
+                                className="agenda-speaker-img"
+                              />
+                            </LazyLoad>
                             <span className="agenda-speaker-name">
                               {
                                 Speakers.filter(
@@ -270,7 +275,7 @@ export const ShowSessionData = (props) => {
                             rel="noreferrer"
                           >
                             <img
-                            title="Click here to join the session"
+                              title="Click here to join the session"
                               src={MicrosoftTeams}
                               alt="MicrosoftTeams"
                               className="teams-image"
