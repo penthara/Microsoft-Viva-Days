@@ -7,7 +7,7 @@
     "speaker3Id": null,
     "sessionTime": "9:30 AM to 9:45 AM",
     "sessionTitle": "Event Opening",
-    "sessionDescription": "",
+    "sessionDescription": " ",
     "sessionUrl": "http://www.google.com"
   },
   {
@@ -18,7 +18,7 @@
     "speaker3Id": null,
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
-    "sessionDescription": "",
+    "sessionDescription": " ",
     "sessionUrl": "http://www.google.com"
   },
   {
