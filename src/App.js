@@ -18,8 +18,8 @@ function App() {
       <Header />
       <CountDownTimer />
       <About />
-      {/* <Donate /> */}
-      {/* <Agenda /> */}
+      <Donate />
+      <Agenda />
       {/* <KeyNoteSpeaker />  */}
       <Speaker />
       <Sponsor />
