@@ -18,7 +18,7 @@ function App() {
       <Header />
       <CountDownTimer />
       <About />
-      {/* <Donate /> */}
+      <Donate />
       {/* <Agenda /> */}
       {/* <KeyNoteSpeaker />  */}
       <Speaker />
