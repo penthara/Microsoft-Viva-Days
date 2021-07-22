@@ -21,7 +21,7 @@ export const KeyNoteSpeaker = () => {
     <>
       <div className="keynote">
         <h1 className="keynote-heading text-center">KeyNote Speakers</h1>
-        <div className="row justify-content-between">
+        <div className="row justify-content-center">
           {SpeakersData.map((data) => {
             return (
               <>
@@ -38,7 +38,7 @@ export const KeyNoteSpeaker = () => {
                           </div>
                         </div>
                         <LazyLoad
-                          height={350}
+                          height={400}
                           debounce={false}
                           className="cursor-click"
                         >

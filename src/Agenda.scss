@@ -35,19 +35,7 @@ $base-color-blue: #41b2f1;
         background-color: rgba(65, 178, 241, 0.1);
         color: rgba(54, 51, 51, 1);
         padding: 1rem 0rem 1.4rem 0rem;
-      }
-      .track-data:hover {
-        box-shadow: 0px 2px 10px 6px #0000001a;
-        .track-head {
-          font-size: 42px;
-          font-weight: 400;
-        }
-        .track-span {
-          font-size: 18px;
-        }
-        .track-data {
-          font-size: 20px;
-        }
+        cursor: pointer;
       }
       .track-head {
         font-size: 36px;
@@ -124,30 +112,6 @@ $base-color-blue: #41b2f1;
         visibility: hidden;
         opacity: 0;
       }
-    }
-  }
-  .trackdata-bg:hover {
-    box-shadow: -6px -4px 14px 4px #0000001a;
-    .event-time {
-      font-size: 22px;
-    }
-    .event-desc {
-      font-size: 1.5rem;
-    }
-  }
-  .event-speakers:hover {
-    .speaker-head {
-      font-size: 1.7rem;
-      font-weight: 400;
-    }
-    img {
-      height: 80px;
-      width: 80px;
-    }
-    .agenda-speaker-name {
-      font-size: 20px;
-      font-weight: 500;
-      padding-top: 20px;
     }
   }
 }
@@ -231,19 +195,6 @@ $base-color-blue: #41b2f1;
             height: 44px;
           }
         }
-        .track-data:hover {
-          box-shadow: 0px 2px 10px 6px #0000001a;
-          .track-head {
-            font-size: 22px;
-            font-weight: 400;
-          }
-          .track-span {
-            font-size: 12px;
-          }
-          .track-data {
-            font-size: 20px;
-          }
-        }
       }
     }
     .trackdata {
@@ -269,19 +220,6 @@ $base-color-blue: #41b2f1;
     }
     .track-list .tracks .track-head {
       font-size: 28px;
-    }
-    .track-list .tracks .track-data:hover {
-      box-shadow: 0px 2px 10px 6px #0000001a;
-      .track-head {
-        font-size: 28px;
-        font-weight: 400;
-      }
-      .track-span {
-        font-size: 15px;
-      }
-      .track-data {
-        font-size: 16px;
-      }
     }
   }
 }

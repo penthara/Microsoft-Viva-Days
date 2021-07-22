@@ -6,7 +6,6 @@ import LinkedInlogo from "./images/website/LinkedInlogo.png";
 import MVPlogo from "./images/website/mvp.jpg";
 import Microsoftlogo from "./images/website/microsoft_logo.png";
 import Twitterlogo from "./images/website/twitterblue.png";
-import LazyLoad from "react-lazy-load";
 import {
   Card,
   CardImg,
@@ -15,6 +14,7 @@ import {
   CardTitle,
   CardSubtitle,
 } from "reactstrap";
+import LazyLoad from "react-lazy-load";
 import ImageLoader from "./ImageLoader.js";
 
 export const Speaker = () => {
@@ -28,7 +28,7 @@ export const Speaker = () => {
     <>
       <div className="speakers" id="speakers">
         <h1 className="speaker-heading text-center">Speakers</h1>
-        <div className="row">
+        <div className="row justify-content-center">
           {SpeakersData.map((data) => {
             return (
               <>
@@ -44,7 +44,7 @@ export const Speaker = () => {
                             <div class="square" id="square"></div>
                           </div>
                         </div>
-                        <LazyLoad height={350} debounce={false}>
+                        <LazyLoad height={400} debounce={false}>
                           <ImageLoader
                             onClick={() => toggle(data)}
                             src={`${data.speakerImage}`}
@@ -53,12 +53,11 @@ export const Speaker = () => {
                         </LazyLoad>
                       </div>
 
-                      <div className="card-title-wrapper">
-                        <CardTitle
-                          tag="h3"
-                          className="text-center "
-                          onClick={() => toggle(data)}
-                        >
+                      <div
+                        className="card-title-wrapper"
+                        onClick={() => toggle(data)}
+                      >
+                        <CardTitle tag="h3" className="text-center ">
                           {data.speakerName}
                         </CardTitle>
                       </div>
