@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./Agenda.scss";
-import {ShowSessionData} from "./ShowSessionData";
+import { ShowSessionData } from "./ShowSessionData";
 import Sessions from "./content/Sessions.json";
 import TrackDetails from "./content/TrackDetails.json";
 import { Container, Row, Col } from "reactstrap";
@@ -19,7 +19,7 @@ export const Agenda = () => {
     }
     setTrackDetails(temptrack);
   };
-  
+
   const [track, setTrack] = useState("1");
 
   const [trackDetailsState, setTrackDetails] = useState(TrackDetails);
@@ -51,11 +51,13 @@ export const Agenda = () => {
                   >
                     <div className="track-head"> {data.trackTitle} </div>
                     <span className="track-span"> {data.trackSubTitle}</span>
+                    <span className="track-date"> {data.trackDate}</span>
                   </div>
                 ) : (
                   <div className="track-data">
                     <div className="track-head"> {data.trackTitle} </div>
                     <span className="track-span"> {data.trackSubTitle}</span>
+                    <span className="track-date"> {data.trackDate}</span>
                   </div>
                 )}
               </Col>
@@ -63,7 +65,7 @@ export const Agenda = () => {
           })}
         </div>
       </div>
-      <ShowSessionData CurrentTrackID={track}/>
+      <ShowSessionData CurrentTrackID={track} />
     </div>
   );
 };
