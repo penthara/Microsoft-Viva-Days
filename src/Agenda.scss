@@ -270,6 +270,19 @@ $base-color-blue: #41b2f1;
     .track-list .tracks .track-head {
       font-size: 28px;
     }
+    .track-list .tracks .track-data:hover {
+      box-shadow: 0px 2px 10px 6px #0000001a;
+      .track-head {
+        font-size: 28px;
+        font-weight: 400;
+      }
+      .track-span {
+        font-size: 15px;
+      }
+      .track-data {
+        font-size: 16px;
+      }
+    }
   }
 }
 
