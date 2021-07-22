@@ -572,5 +572,19 @@
     "MVPstatus": "false",
     "MicrosoftEmployee": "false",
     "speakerInformation": "I am an aspirant of Software Architect. I am passionate about C#, ASP.Net, Azure, Performance testing/tuning, .Net Core, and Docker. I love to learn about new technologies. | Disclaimer: The views/contents shared/authored in this site are mine and not of my employer."
+  },
+  {
+    "speakerId": "42",
+    "speakerName": "Prashant Singh",
+    "speakerImage": "./images/speakers/Prashant.jpg",
+    "speakerAltText": "Prashant Singh",
+    "keynoteSpeaker": "true",
+    "speakerTitle": "Cybersecurity Tech Specialist Lead",
+    "speakerSubTitle": "Microsoft",
+    "speakerLinkedIn": "https://www.linkedin.com/in/ntprashant/",
+    "speakerTwitter": null,
+    "MVPstatus": "false",
+    "MicrosoftEmployee": "true",
+    "speakerInformation": "With 20+ years Professional exp. across variety of Roles including Technical Sales focused on Security, SAAS, Productivity & Communication Solutions; IT Infrastructure Operations & Project Management in Managerial & Individual Contributor capacity.\n\nCurrently Engage in opportunities across the Broad portfolio of Microsoft Cybersecurity Solutions focused on Zero Trust, XDR & Integrated Threat Management, Information Protection and Compliance and across key industry segments including ITES, BFSI & Manufacturing"
   }
 ]

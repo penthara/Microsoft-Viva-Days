@@ -46,28 +46,39 @@ $base-color-blue: #00a1f1;
     padding-top: 5rem;
     line-height: 1.9rem;
     font-size: 1.3rem;
-    span{
-      a{
+    span {
+      a {
         color: $base-color-blue;
-        
       }
     }
   }
   .registration-text {
     padding-top: 5rem;
-    
-      .registration-button{
-        padding: 15px 5%;
+
+    .registration-button {
+      padding: 15px 5%;
       background-color: $base-color-blue;
       border-radius: 40px;
+      text-decoration: none;
       display: inline-block;
-      a {
+      &:hover {
+        transform: scale(1.05);
+        box-shadow: 0px 0px 5px 5px rgba(0, 0, 0, 0.2);
+      }
+      p {
         color: white;
         font-size: 2rem;
-        text-decoration: none;
+        margin: 0;
       }
-      }
-    
+    }
+  }
+}
+@keyframes background1 {
+  from {
+    background-color: $base-color-blue;
+  }
+  to {
+    background-color: #fff;
   }
 }
 

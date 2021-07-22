@@ -1,3 +1,9 @@
+.cursor-none {
+  cursor: initial;
+}
+.cursor-click {
+  cursor: pointer;
+}
 .keynote,
 .speakers {
   padding: 2rem 15%;
@@ -28,7 +34,10 @@ h3 {
 }
 .keynote-card {
   border: none;
-
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem 5px rgba(0, 0, 0, 0.1) !important;
+  }
   .card-body {
     background-color: rgba(65, 178, 241, 0.16);
     min-height: 170px;
@@ -37,15 +46,34 @@ h3 {
     justify-content: space-evenly;
 
     h3 {
-      font-size: 28px;
+      font-size: 32px;
     }
     p {
       font-size: 22px;
       font-weight: 500;
     }
+    a {
+      .card-linkedIn {
+        animation-name: all;
+        animation-duration: 0.5s;
+        &:hover {
+          transform: scale(1.1);
+        }
+      }
+    }
     .card-linkedIn {
-      width: 32px;
-      z-index: 15;
+      width: 40px;
+      height: 40px;
+      object-fit: contain;
+    }
+  }
+  .social-media-array {
+    padding-top: 20px;
+    display: flex;
+    flex-wrap: nowrap;
+    a,
+    div {
+      padding-right: 20px;
     }
   }
 }
@@ -55,12 +83,17 @@ h3 {
 .speaker-card {
   border: none;
   height: 100%;
+  &:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 1rem 5px rgba(0, 0, 0, 0.1) !important;
+  }
   .card-title-wrapper {
     min-height: 100px;
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #41b2f1;
+    cursor: pointer;
   }
   .card-title {
     color: #ffffff;
@@ -84,10 +117,14 @@ h3 {
       padding-top: 20px;
       a {
         padding-right: 20px;
+
         .card-socialmedia {
           width: 40px;
           height: 40px;
           object-fit: contain;
+          &:hover {
+            transform: scale(1.1);
+          }
         }
       }
       div {
@@ -116,6 +153,7 @@ h3 {
 
 .speaker-image {
   position: relative;
+  cursor: pointer;
 }
 .speaker-image img {
   object-fit: cover;

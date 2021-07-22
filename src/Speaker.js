@@ -44,10 +44,7 @@ export const Speaker = () => {
                             <div class="square" id="square"></div>
                           </div>
                         </div>
-                        <LazyLoad
-                          height={350}
-                          debounce={false}
-                        >
+                        <LazyLoad height={350} debounce={false}>
                           <ImageLoader
                             onClick={() => toggle(data)}
                             src={`${data.speakerImage}`}
@@ -66,7 +63,7 @@ export const Speaker = () => {
                         </CardTitle>
                       </div>
                       <CardBody>
-                        <div>
+                        <div className="cursor-click">
                           <CardSubtitle
                             onClick={() => toggle(data)}
                             tag="p"
@@ -85,7 +82,7 @@ export const Speaker = () => {
                               <img
                                 src={MVPlogo}
                                 alt="MVP"
-                                className="card-socialmedia nopadding align-self-start"
+                                className="card-socialmedia nopadding align-self-start cursor-none"
                               />
                             </div>
                           ) : (

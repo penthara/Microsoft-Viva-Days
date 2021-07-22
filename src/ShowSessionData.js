@@ -74,7 +74,7 @@ export const ShowSessionData = (props) => {
                                     (s) => s.speakerId == data.speaker3Id
                                   )[0].speakerImage
                                 }`}
-                                alt="sxdcfvgbhnjk"
+                                alt={data.speakerName}
                                 width="50px"
                                 height="50px"
                                 className="agenda-speaker-img"
@@ -106,7 +106,7 @@ export const ShowSessionData = (props) => {
                                     (s) => s.speakerId == data.speaker2Id
                                   )[0].speakerImage
                                 }`}
-                                alt="sxdcfvgbhnjk"
+                                alt={data.speakerName}
                                 width="50px"
                                 height="50px"
                                 className="agenda-speaker-img"
@@ -139,7 +139,7 @@ export const ShowSessionData = (props) => {
                                     (s) => s.speakerId == data.speaker1Id
                                   )[0].speakerImage
                                 }`}
-                                alt="sxdcfvgbhnjk"
+                                alt={data.speakerName}
                                 width="50px"
                                 height="50px"
                                 className="agenda-speaker-img"
@@ -190,7 +190,7 @@ export const ShowSessionData = (props) => {
                                     (s) => s.speakerId == data.speaker3Id
                                   )[0].speakerImage
                                 }`}
-                                alt="sxdcfvgbhnjk"
+                                alt={data.speakerName}
                                 width="50px"
                                 height="50px"
                                 className="agenda-speaker-img"
@@ -221,7 +221,7 @@ export const ShowSessionData = (props) => {
                                     (s) => s.speakerId == data.speaker2Id
                                   )[0].speakerImage
                                 }`}
-                                alt="sxdcfvgbhnjk"
+                                alt={data.speakerName}
                                 width="50px"
                                 height="50px"
                                 className="agenda-speaker-img"
@@ -253,7 +253,7 @@ export const ShowSessionData = (props) => {
                                     (s) => s.speakerId == data.speaker1Id
                                   )[0].speakerImage
                                 }`}
-                                alt="sxdcfvgbhnjk"
+                                alt={data.speakerName}
                                 width="50px"
                                 height="50px"
                                 className="agenda-speaker-img"

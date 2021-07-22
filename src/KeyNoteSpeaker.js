@@ -6,6 +6,9 @@ import LinkedInlogo from "./images/website/LinkedInlogo.png";
 import LazyLoad from "react-lazy-load";
 import ImageLoader from "./ImageLoader.js";
 import { Card, CardImg, CardBody, CardTitle, CardSubtitle } from "reactstrap";
+import Twitterlogo from "./images/website/twitterblue.png";
+import MVPlogo from "./images/website/mvp.jpg";
+import Microsoftlogo from "./images/website/microsoft_logo.png";
 
 export const KeyNoteSpeaker = () => {
   const [modal, setModal] = useState(false);
@@ -34,7 +37,11 @@ export const KeyNoteSpeaker = () => {
                             <div class="square" id="square"></div>
                           </div>
                         </div>
-                        <LazyLoad height={350} debounce={false}>
+                        <LazyLoad
+                          height={350}
+                          debounce={false}
+                          className="cursor-click"
+                        >
                           <ImageLoader
                             onClick={() => toggle(data)}
                             src={`${data.speakerImage}`}
@@ -43,7 +50,7 @@ export const KeyNoteSpeaker = () => {
                         </LazyLoad>
                       </div>
                       <CardBody>
-                        <div className="row w-100 flex-nowrap">
+                        <div className="row w-100 flex-nowrap cursor-click">
                           <CardTitle
                             tag="h3"
                             className="nopadding col"
@@ -51,25 +58,68 @@ export const KeyNoteSpeaker = () => {
                           >
                             {data.speakerName}
                           </CardTitle>
-                          <a
-                            href={data.speakerLinkedIn}
-                            target="_blank"
-                            className="card-linkedIn nopadding align-self-start"
-                          >
-                            <img
-                              src={LinkedInlogo}
-                              alt="LinkedIn logo"
-                              className="card-linkedIn"
-                            />
-                          </a>
                         </div>
                         <CardSubtitle
                           tag="p"
-                          className="mb-2 text-nowrap text-muted"
+                          className="mb-2 text-muted cursor-click"
                           onClick={() => toggle(data)}
                         >
                           {data.speakerTitle}, {data.speakerSubTitle}
                         </CardSubtitle>
+                        <div className="social-media-array">
+                          {data.MVPstatus === "true" ? (
+                            <div>
+                              <img
+                                src={MVPlogo}
+                                alt="MVP"
+                                className="card-linkedIn nopadding align-self-start cursor-none"
+                              />
+                            </div>
+                          ) : (
+                            <></>
+                          )}
+                          {data.MicrosoftEmployee === "true" ? (
+                            <div>
+                              <img
+                                src={Microsoftlogo}
+                                alt="Microsoft Employee"
+                                className="card-linkedIn nopadding align-self-start"
+                              />
+                            </div>
+                          ) : (
+                            <></>
+                          )}
+                          {data.speakerLinkedIn !== null ? (
+                            <a
+                              href={data.speakerLinkedIn}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <img
+                                src={LinkedInlogo}
+                                alt="LinkedIn logo"
+                                className="card-linkedIn nopadding align-self-start"
+                              />
+                            </a>
+                          ) : (
+                            <></>
+                          )}
+                          {data.speakerTwitter !== null ? (
+                            <a
+                              href={data.speakerTwitter}
+                              target="_blank"
+                              rel="noreferrer"
+                            >
+                              <img
+                                src={Twitterlogo}
+                                alt="Twitter logo"
+                                className="card-linkedIn nopadding align-self-start"
+                              />
+                            </a>
+                          ) : (
+                            <></>
+                          )}
+                        </div>
                       </CardBody>
                     </Card>
                   </div>

@@ -1,7 +1,6 @@
 import React from "react";
 import { Modal, ModalHeader, ModalBody } from "reactstrap";
 import "./Modal.scss";
-import SpeakerImg from "./images/speakers/Speaker1.png";
 import LinkedInlogo from "./images/website/LinkedInlogo.png";
 import twitterlogo from "./images/website/twitterblue.png";
 

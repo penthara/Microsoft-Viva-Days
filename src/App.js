@@ -20,7 +20,7 @@ function App() {
       <About />
       <Donate />
       <Agenda />
-      {/* <KeyNoteSpeaker />  */}
+      <KeyNoteSpeaker />
       <Speaker />
       <Sponsor />
       <UserGroups />
