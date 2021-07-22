@@ -38,6 +38,7 @@ $base-color-blue: #41b2f1;
     height: 130px;
     margin: 0 auto;
     object-fit: cover;
+    object-position: top;
   }
   .speaker-name {
     font-size: 1.3rem;
@@ -87,6 +88,9 @@ $base-color-blue: #41b2f1;
 }
 .image-array img {
   height: 40px;
+  &:hover {
+    transform: scale(1.1);
+  }
 }
 .divider {
   height: 3px;

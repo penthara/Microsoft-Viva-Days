@@ -8,6 +8,8 @@ import DonateImg4 from "./images/website/DonateImg-4.jpg";
 import OpenQuotes from "./images/website/open-quotes.png";
 import ClosedQuotes from "./images/website/closed-quotes.png";
 import HeaderData from "./content/HeaderData.json";
+import LazyLoad from "react-lazy-load";
+import ImageLoader from "./ImageLoader.js";
 
 export const Donate = () => {
   return (
@@ -16,16 +18,24 @@ export const Donate = () => {
         <h1 className="donate-heading"> SUPPORT A CAUSE </h1>
         <Row className="donate-imgs">
           <Col xs={6} md={3} className="donate-imgs1">
-            <img src={DonateImg1} alt="donate-imgs1" className="nav-bar-logo" />
+            <LazyLoad className="dono-images" debounce={false}>
+              <ImageLoader src={DonateImg1} alt="donate-imgs1" />
+            </LazyLoad>
           </Col>
           <Col xs={6} md={3} className="donate-imgs2">
-            <img src={DonateImg2} alt="donate-imgs2" className="nav-bar-logo" />
+            <LazyLoad className="dono-images" debounce={false}>
+              <ImageLoader src={DonateImg2} alt="donate-imgs2" />
+            </LazyLoad>
           </Col>
           <Col xs={6} md={3} className="donate-imgs3">
-            <img src={DonateImg3} alt="donate-imgs3" className="nav-bar-logo" />
+            <LazyLoad className="dono-images" debounce={false}>
+              <ImageLoader src={DonateImg3} alt="donate-imgs3" />
+            </LazyLoad>
           </Col>
           <Col xs={6} md={3} className="donate-imgs4">
-            <img src={DonateImg4} alt="donate-imgs4" className="nav-bar-logo" />
+            <LazyLoad className="dono-images" debounce={false}>
+              <ImageLoader src={DonateImg4} alt="donate-imgs4" />
+            </LazyLoad>
           </Col>
         </Row>
         <div className="donate-quote">

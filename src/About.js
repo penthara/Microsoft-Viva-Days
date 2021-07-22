@@ -12,7 +12,16 @@ export const About = () => {
       </div>
       <div className="about-para-text">
         India Cloud Security Summit , 2021 is a one day virtual event organized
-        by the <span><a href="https://www.meetup.com/Microsoft-365-and-Power-Platform-User-group-India/" target="_blank" rel="noreferrer" >Microsoft 365 , Power Platform & Cloud Security India User group</a></span>
+        by the{" "}
+        <span>
+          <a
+            href="https://www.meetup.com/Microsoft-365-and-Power-Platform-User-group-India/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            Microsoft 365 , Power Platform & Cloud Security India User group
+          </a>
+        </span>
         . This event will completely focus on the Cloud Security services
         related to Microsoft 365 , Microsoft Azure, Microsoft Power Platform
         security and Dynamics 365 . This is the first of its kind from the
@@ -23,17 +32,14 @@ export const About = () => {
         community leaders.
       </div>
       <div className="registration-text">
-      <div className="registration-button">
-      <a
+        <a
+          className="registration-button"
           href={HeaderData[0].registrationLink}
           target="_blank"
           rel="noreferrer"
-          
         >
-          Registrations are free !
+          <p>Registrations are free !</p>
         </a>
-      </div>
-        
       </div>
     </div>
   );
