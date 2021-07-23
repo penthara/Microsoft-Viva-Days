@@ -13,8 +13,8 @@
   {
     "sessionId": "2",
     "trackId": "1",
-    "speaker1Id": null,
-    "speaker2Id": null,
+    "speaker1Id": "42",
+    "speaker2Id": "43",
     "speaker3Id": null,
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
@@ -167,8 +167,8 @@
   {
     "sessionId": "16",
     "trackId": "2",
-    "speaker1Id": null,
-    "speaker2Id": null,
+    "speaker1Id": "42",
+    "speaker2Id": "43",
     "speaker3Id": null,
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
@@ -322,8 +322,8 @@
   {
     "sessionId": "30",
     "trackId": "3",
-    "speaker1Id": null,
-    "speaker2Id": null,
+    "speaker1Id": "42",
+    "speaker2Id": "43",
     "speaker3Id": null,
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
