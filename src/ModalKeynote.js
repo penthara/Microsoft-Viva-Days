@@ -25,20 +25,27 @@ const ModalKeynote = ({ modal, toggle, data }) => {
           <div className="bg-grey p-5">
             <h4 className="mb-4">BIO</h4>
             <p className="speaker-information">{data.speakerInformation}</p>
-            {/* <div className="divider"></div>
-            <h4 className="mb-4">SESSIONS</h4>
-            <p className="speaker-session">
-              How to get started with Office 365 Development
-            </p>
-            <p className="speaker-session">Getting started with MS Graph API</p> */}
+
             <div className="divider"></div>
             <div className="image-array">
-              <a href={data.speakerLinkedIn}>
-                <img src={LinkedInlogo} alt="LinkedIn logo" className="mr-4" />
-              </a>
-              <a href={data.speakerTwitter}>
-                <img src={twitterlogo} alt="LinkedIn logo" />
-              </a>
+              {data.speakerLinkedIn !== null ? (
+                <a href={data.speakerLinkedIn} target="_blank" rel="noreferrer">
+                  <img
+                    src={LinkedInlogo}
+                    alt="LinkedIn logo"
+                    className="mr-4"
+                  />
+                </a>
+              ) : (
+                <></>
+              )}
+              {data.speakerTwitter !== null ? (
+                <a href={data.speakerTwitter} target="_blank" rel="noreferrer">
+                  <img src={twitterlogo} alt="Twitter logo" />
+                </a>
+              ) : (
+                <></>
+              )}
             </div>
           </div>
         </ModalBody>
