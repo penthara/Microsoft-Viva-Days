@@ -34,13 +34,16 @@ h3 {
 }
 .keynote-card {
   border: none;
+  height: 100%;
   .card-body {
     background-color: rgba(65, 178, 241, 0.16);
     min-height: 170px;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    .card-subtitle {
+      white-space: pre-line;
+    }
     h3 {
       font-size: 32px;
     }
