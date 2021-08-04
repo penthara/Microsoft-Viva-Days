@@ -15,7 +15,7 @@
     "trackId": "1",
     "speaker1Id": "42",
     "speaker2Id": "43",
-    "speaker3Id": null,
+    "speaker3Id": "44",
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
     "sessionDescription": " ",
@@ -169,7 +169,7 @@
     "trackId": "2",
     "speaker1Id": "42",
     "speaker2Id": "43",
-    "speaker3Id": null,
+    "speaker3Id": "44",
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
     "sessionDescription": "",
@@ -213,7 +213,7 @@
     "sessionId": "20",
     "trackId": "2",
     "speaker1Id": "18",
-    "speaker2Id": null,
+    "speaker2Id": "45",
     "speaker3Id": null,
     "sessionTime": "1:30 PM to 2:30 PM",
     "sessionTitle": "DevSecOps with AzureDevops and responding to real time events with Azure security center",
@@ -324,7 +324,7 @@
     "trackId": "3",
     "speaker1Id": "42",
     "speaker2Id": "43",
-    "speaker3Id": null,
+    "speaker3Id": "44",
     "sessionTime": "9:45 AM to 10:30 AM",
     "sessionTitle": "Welcome Speech and Keynote",
     "sessionDescription": "",
@@ -367,12 +367,12 @@
   {
     "sessionId": "34",
     "trackId": "3",
-    "speaker1Id": "32",
+    "speaker1Id": "35",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "1:30 PM to 2:30 PM",
-    "sessionTitle": "Secure your Data - All About Power Platform Data Loss Prevention",
-    "sessionDescription": "To protect data in your organization, you can use Power Platform Admin to create and enforce policies that define the consumer connectors that specific business data can be shared with. These policies are called data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.\n\nThis session will help you through the end-to-end experience of creating Data Loss Prevention and handle data access policies.\n\nHow do we setup?\nIn this session, I will show the end to end demo!\n\nWhat attendees expect to learn?\nThey learn how to setup / deploy Data loss prevention for Power Platform.",
+    "sessionTitle": "Azure AD Verifiable Credentials - verify once, use everywhere",
+    "sessionDescription": "Understand why Microsoft is investing in decentralized identities Understand what Verifiable Credentials are and how they work?\nWe will share scenarios & show some demos for use cases that customers have explored!",
     "sessionUrl": "http://www.google.com"
   },
   {
@@ -389,12 +389,12 @@
   {
     "sessionId": "36",
     "trackId": "3",
-    "speaker1Id": null,
+    "speaker1Id": "34",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "3:30 PM to 4:30 PM",
-    "sessionTitle": "TBD",
-    "sessionDescription": "Session description will be updated soon.",
+    "sessionTitle": "Zero Trust for Modern Workplace",
+    "sessionDescription": "Have Zero Trust mindset: Trust nothing, verify everything.",
     "sessionUrl": "http://www.google.com"
   },
   {
@@ -411,12 +411,12 @@
   {
     "sessionId": "38",
     "trackId": "3",
-    "speaker1Id": "35",
+    "speaker1Id": "32",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "5:30 PM to 6:30 PM",
-    "sessionTitle": "Azure AD Verifiable Credentials - verify once, use everywhere",
-    "sessionDescription": "Understand why Microsoft is investing in decentralized identities Understand what Verifiable Credentials are and how they work?\nWe will share scenarios & show some demos for use cases that customers have explored!",
+    "sessionTitle": "Secure your Data - All About Power Platform Data Loss Prevention",
+    "sessionDescription": "To protect data in your organization, you can use Power Platform Admin to create and enforce policies that define the consumer connectors that specific business data can be shared with. These policies are called data loss prevention (DLP) policies. DLP policies ensure that data is managed in a uniform manner across your organization, and they prevent important business data from being accidentally published to connectors such as social media sites.\n\nThis session will help you through the end-to-end experience of creating Data Loss Prevention and handle data access policies.\n\nHow do we setup?\nIn this session, I will show the end to end demo!\n\nWhat attendees expect to learn?\nThey learn how to setup / deploy Data loss prevention for Power Platform.",
     "sessionUrl": "http://www.google.com"
   },
   {
