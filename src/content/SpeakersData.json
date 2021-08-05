@@ -5,8 +5,8 @@
     "speakerImage": "./images/speakers/Gokan.jpg",
     "speakerAltText": "Gokan Ozcifci",
     "keynoteSpeaker": "false",
-    "speakerTitle": "Product Evangelist",
-    "speakerSubTitle": "Valo",
+    "speakerTitle": "Consultant. Entrepreneur. Microsoft Regional Director & MVP",
+    "speakerSubTitle": " ",
     "speakerLinkedIn": "https://www.linkedin.com/in/gokanozcifci/",
     "speakerTwitter": "https://twitter.com/xGokan",
     "MVPstatus": "true",
@@ -481,7 +481,7 @@
     "speakerImage": "./images/speakers/Rohit.jpg",
     "speakerAltText": "Rohit Gulati",
     "keynoteSpeaker": "false",
-    "speakerTitle": "Senior Program Manager",
+    "speakerTitle": "Senior Program Manager, \nIdentity Engineering",
     "speakerSubTitle": "Microsoft",
     "speakerLinkedIn": "https://www.linkedin.com/in/rohit-gulati/",
     "speakerTwitter": "https://twitter.com/MrRohitGulati",
@@ -628,5 +628,19 @@
     "MVPstatus": "false",
     "MicrosoftEmployee": "false",
     "speakerInformation": "Currently working at Maersk technology leading architecture, security & DevOps of Supply Chain Management digital platform. Prior to that was Head of Solution Architecture for Maersk Digital.\n\nA senior technology leader with more than 2 decades of experience in architecture, security, technology strategy, product engineering. digital transformation and cloud native solutions.\nJoji holds a Master degree in Computer Application and an MBA in IT Management."
+  },
+  {
+    "speakerId": "46",
+    "speakerName": "Balaji Sadasivan",
+    "speakerImage": "./images/speakers/Balaji.jpg",
+    "speakerAltText": "Balaji Sadasivan",
+    "keynoteSpeaker": "false",
+    "speakerTitle": "Chief Technology Officer ",
+    "speakerSubTitle": "Ossito 365, Ex.Microsoft",
+    "speakerLinkedIn": "https://www.linkedin.com/in/balajisreenivas/",
+    "speakerTwitter": "https://twitter.com/balajis7",
+    "MVPstatus": "false",
+    "MicrosoftEmployee": "false",
+    "speakerInformation": "A highly motivated and passionate Artificial Intelligence engineer and Advanced Analytics Cloud Solutions Architect with 16+ years of experience driving high priority customer initiatives primarily at Microsoft. Creates unparalleled customer value by developing AI and ML solutions to solve complex business problems in a consultancy role. A deep subject matter expert talented in architecting AI / ML solutions by mapping customer business needs to advanced computation algorithms. Frequently engages in discussions with senior level technology decision makers related to agility, business value of AI/ML, and proposed solutions and processes."
   }
 ]

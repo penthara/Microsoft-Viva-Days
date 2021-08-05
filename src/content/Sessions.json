@@ -256,12 +256,12 @@
   {
     "sessionId": "24",
     "trackId": "2",
-    "speaker1Id": null,
+    "speaker1Id": "46",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "5:30 PM to 6:30 PM",
-    "sessionTitle": "TBD",
-    "sessionDescription": "Session details will be updated soon",
+    "sessionTitle": "Deep dive into Azure AD B2C custom policies",
+    "sessionDescription": "Azure AD B2C provides us with a vast array of options to customize the user login experience. Azure B2C policies is a powerful tool for B2C login experience customization. In this session, we look into how to build Azure B2C custom policies from scratch, add custom claims, read custom claims and insert new orchestration steps etc.",
     "sessionUrl": "http://www.google.com"
   },
   {
