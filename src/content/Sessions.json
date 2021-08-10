@@ -201,12 +201,12 @@
   {
     "sessionId": "19",
     "trackId": "2",
-    "speaker1Id": "26",
+    "speaker1Id": "22",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "12:30 PM to 1:30 PM",
-    "sessionTitle": "Kubernetes Security",
-    "sessionDescription": "Kubernetes security",
+    "sessionTitle": "Build Secure and an efficient cloud landing zone",
+    "sessionDescription": "The cloud environment is similar to laying a foundation in any construction project. All architects have to consider common decisions when designing and laying the foundation for any building. They all share things like concrete, rebar, and conduits to bring in necessary utilities, like plumbing or electricity. Azure landing zones, are very similar as they are all built from the common design elements. While commonalities exist across all environments, each landing zone implementation is customized to support a specific type of structure or cloud operating model. Join me to learn & build secure baseline for your cloud environment.",
     "sessionUrl": "http://www.google.com"
   },
   {
@@ -267,12 +267,12 @@
   {
     "sessionId": "25",
     "trackId": "2",
-    "speaker1Id": "22",
+    "speaker1Id": "26",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "6:30 PM to 7:30 PM",
-    "sessionTitle": "Build Secure and an efficient cloud landing zone",
-    "sessionDescription": "The cloud environment is similar to laying a foundation in any construction project. All architects have to consider common decisions when designing and laying the foundation for any building. They all share things like concrete, rebar, and conduits to bring in necessary utilities, like plumbing or electricity. Azure landing zones, are very similar as they are all built from the common design elements. While commonalities exist across all environments, each landing zone implementation is customized to support a specific type of structure or cloud operating model. Join me to learn & build secure baseline for your cloud environment.",
+    "sessionTitle": "Kubernetes Security",
+    "sessionDescription": "Kubernetes security",
     "sessionUrl": "http://www.google.com"
   },
   {
