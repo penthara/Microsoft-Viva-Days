@@ -400,12 +400,12 @@
   {
     "sessionId": "37",
     "trackId": "3",
-    "speaker1Id": null,
+    "speaker1Id": "27",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "4:30 PM to 5:30 PM",
-    "sessionTitle": "TBD",
-    "sessionDescription": "Session description will be updated soon.",
+    "sessionTitle": "Microsoft Identity Platform and OAuth 2.0 for beginners",
+    "sessionDescription": "Are you a beginner developer in the Microsoft Development eco system? Do you build custom Azure portals or automations that interact with authenticated APIs? Do you work with SPFx and/or MS Teams custom solutions?\n\nIf Yes, attend this session to understand the basics of Authentication available to you and which flow to use for which scenarios.",
     "sessionUrl": "http://www.google.com"
   },
   {
