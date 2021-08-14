@@ -47,5 +47,33 @@
     "OrganizerName": "Mythili Ranganathan",
     "isVolunteer": "true",
     "speakerLinkedIn": "https://www.linkedin.com/in/mythilisampath/"
+  },
+  {
+    "OrganizerID": "8",
+    "OrganizerImage": "./images/website/Jason.jpg",
+    "OrganizerName": "Jason Rivera",
+    "isVolunteer": "true",
+    "speakerLinkedIn": "https://www.linkedin.com/in/riverajason/"
+  },
+  {
+    "OrganizerID": "9",
+    "OrganizerImage": "./images/website/Nishanth.jpg",
+    "OrganizerName": "Nishanth Shreepad",
+    "isVolunteer": "true",
+    "speakerLinkedIn": "https://www.linkedin.com/in/nishanth-shreepad/"
+  },
+  {
+    "OrganizerID": "10",
+    "OrganizerImage": "./images/website/Pooja.jpg",
+    "OrganizerName": "Pooja R.",
+    "isVolunteer": "true",
+    "speakerLinkedIn": "https://www.linkedin.com/in/pooja-r-48066418/"
+  },
+  {
+    "OrganizerID": "10",
+    "OrganizerImage": "./images/website/Rahul.png",
+    "OrganizerName": "Rahul Sahay",
+    "isVolunteer": "true",
+    "speakerLinkedIn": "https://www.linkedin.com/in/rahul-sahay-80112443/"
   }
 ]
