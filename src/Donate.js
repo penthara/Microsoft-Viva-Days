@@ -40,7 +40,7 @@ export const Donate = () => {
         </Row>
         <div className="donate-quote">
           <img src={OpenQuotes} alt="open-quotes" className="open-quotes" />
-          <span className="donate-quote-span">Giving is Recieving</span>
+          <span className="donate-quote-span">Giving is Receiving</span>
           <img
             src={ClosedQuotes}
             alt="closed-quotes"
