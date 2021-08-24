@@ -52,7 +52,7 @@ export const CountDownTimer = () => {
           </Row>
           <Row className="timer-mobile">
             <Col>
-              <CountDown end="August 28, 2021" />
+              <CountDown end="August 28, 2021  09:00" />
             </Col>
           </Row>
         </Container>
