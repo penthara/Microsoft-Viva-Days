@@ -46,12 +46,12 @@
   {
     "sessionId": "5",
     "trackId": "1",
-    "speaker1Id": "3",
+    "speaker1Id": "47",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "12:30 PM to 1:30 PM",
-    "sessionTitle": "Intelligent Compliance and Risk management solutions",
-    "sessionDescription": "Session Details will be updated soon.",
+    "sessionTitle": "M365 Security and Monitoring with Graph API",
+    "sessionDescription": "Security is the first thing customers have in thoughts when they talk about cloud. This is true as information is everything and keeping it secure for any business is top priority. Microsoft Graph API provide many options to connect specifically with security information and also provide ways to automate the process of managing security threats. In this session, we will explore the security Graph APIs and how we can build real world automation with Flow or custom applications to monitor and act upon threats. As a takeaway from this session, you will learn about the capabilities of security Graph APIs and what are use cases in real world.",
     "sessionUrl": "http://www.google.com"
   },
   {
