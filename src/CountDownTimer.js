@@ -31,7 +31,7 @@ export const CountDownTimer = () => {
               </Row>
             </Col>
             <Col>
-              <CountDown end="August 28, 2021" />
+              <CountDown end="August 28, 2021  09:00" />
             </Col>
           </Row>
         </Container>

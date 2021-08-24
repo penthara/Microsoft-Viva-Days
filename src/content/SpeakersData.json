@@ -642,5 +642,19 @@
     "MVPstatus": "false",
     "MicrosoftEmployee": "false",
     "speakerInformation": "A highly motivated and passionate Artificial Intelligence engineer and Advanced Analytics Cloud Solutions Architect with 16+ years of experience driving high priority customer initiatives primarily at Microsoft. Creates unparalleled customer value by developing AI and ML solutions to solve complex business problems in a consultancy role. A deep subject matter expert talented in architecting AI / ML solutions by mapping customer business needs to advanced computation algorithms. Frequently engages in discussions with senior level technology decision makers related to agility, business value of AI/ML, and proposed solutions and processes."
+  },
+  {
+    "speakerId": "47",
+    "speakerName": "Ashish Trivedi",
+    "speakerImage": "./images/speakers/Ashish.jpg",
+    "speakerAltText": "Ashish Trivedi",
+    "keynoteSpeaker": "false",
+    "speakerTitle": "Group Manager | Workplace Security Solution Architect",
+    "speakerSubTitle": "Avanade",
+    "speakerLinkedIn": "https://www.linkedin.com/in/trivediashish/",
+    "speakerTwitter": "https://twitter.com/_ashishtrivedi",
+    "MVPstatus": "true",
+    "MicrosoftEmployee": "false",
+    "speakerInformation": "I am passionate about the everything in improving productivity and enhancing security of the way we work. Given the recent time, security of information is biggest concern of organizations while improving the productivity of user. I work in my day job to provide consulting to organisations in a balancing act on both sides."
   }
 ]
