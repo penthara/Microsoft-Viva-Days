@@ -2,133 +2,133 @@
   {
     "sessionId": "1",
     "trackId": "1",
-    "speaker1Id": "3",
+    "speaker1Id": "1",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "9:30 AM to 9:45 AM",
-    "sessionTitle": "Event Opening",
+    "sessionTime": "9:15 AM to 9:30 AM",
+    "sessionTitle": "Opening note",
     "sessionDescription": " ",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_Njg3ZDgwMjQtZmRjYS00MWFkLTlmOTEtNjNlMDQ1MTIxODM2%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionUrl": null
   },
   {
     "sessionId": "2",
     "trackId": "1",
-    "speaker1Id": "42",
-    "speaker2Id": "43",
-    "speaker3Id": "44",
-    "sessionTime": "9:45 AM to 10:30 AM",
-    "sessionTitle": "Welcome Speech and Keynote",
+    "speaker1Id": "2",
+    "speaker2Id": null,
+    "speaker3Id": null,
+    "sessionTime": "9:30 AM to 10:15 AM",
+    "sessionTitle": "Why does Org require Microsoft VIVA",
     "sessionDescription": " ",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_Njg3ZDgwMjQtZmRjYS00MWFkLTlmOTEtNjNlMDQ1MTIxODM2%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionUrl": null
   },
   {
     "sessionId": "3",
     "trackId": "1",
-    "speaker1Id": "1",
+    "speaker1Id": "3",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "10:30 AM to 11:30 AM",
-    "sessionTitle": "Introduction to Office 365 Security: Configure, Manage and Monitor",
-    "sessionDescription": "Moving data and applications to cloud companies represents new security and need new approaches to IT security. We’ll discover the Office 365 and Azure security features that secure your organization's services and information. Finally, we’ll explore how to leverage your updated skills to monitor and respond to security incidents. When you’re done with this session, you will have the knowledge keep your organization safe & secure in the cloud.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NzFiNzNkMTctOTU2OC00MmFhLTlmYzEtYTIxOTk0ODc2MDUy%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "10:15 AM to 11:00 AM",
+    "sessionTitle": "Viva Learning: LEARNING IN THE FLOW OF WORK",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "4",
     "trackId": "1",
-    "speaker1Id": "2",
+    "speaker1Id": "4",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "11:30 AM to 12:30 PM",
-    "sessionTitle": "Defender for Endpoint + MCAS = <3",
-    "sessionDescription": "Within the M365 E5 licensing, we have a lot of powerful products. Two of them are Microsoft Defender for Endpoint and Microsoft Cloud App Security. In this session I'll go over both platforms, show you some best practices. And I'll show you the power of them both combined in live demo's.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MDNhNWExMjgtMTgxOS00MjUxLTljYjMtMDJmMDUyMTNhYTg1%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "11:00 AM to 11:45 PM",
+    "sessionTitle": "How to setup and manage Microsoft Viva",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "5",
     "trackId": "1",
-    "speaker1Id": "47",
+    "speaker1Id": "5",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "12:30 PM to 1:30 PM",
-    "sessionTitle": "M365 Security and Monitoring with Graph API",
-    "sessionDescription": "Security is the first thing customers have in thoughts when they talk about cloud. This is true as information is everything and keeping it secure for any business is top priority. Microsoft Graph API provide many options to connect specifically with security information and also provide ways to automate the process of managing security threats. In this session, we will explore the security Graph APIs and how we can build real world automation with Flow or custom applications to monitor and act upon threats. As a takeaway from this session, you will learn about the capabilities of security Graph APIs and what are use cases in real world.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_YjU1ZWYxYzMtZDY4My00MDZiLWFlMzItZGVmZWU0M2ZlMjAx%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "11:45 PM to 12:30 PM",
+    "sessionTitle": "Viva Topics & Viva Connection Dashboard",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "6",
     "trackId": "1",
-    "speaker1Id": "4",
-    "speaker2Id": "5",
+    "speaker1Id": "6",
+    "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "1:30 PM to 2:30 PM ",
-    "sessionTitle": "Information Barriers in MS Teams",
-    "sessionDescription": "Information barriers help to define policies that are designed to allow certain segments of users to communicate or to be isolated with each other. \nIn this session, we will explore how to restrict communication and collaboration between groups to avoid a conflict of interest from occurring in your organization.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NjE0NzkxMmQtMWE0ZC00MmZkLWI4ZTgtZjYwODU3ZGUyMzEz%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "12:30 PM to 13:15 PM ",
+    "sessionTitle": "How to be certified in Viva Insights? ",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "7",
     "trackId": "1",
-    "speaker1Id": "6",
+    "speaker1Id": "7",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "2:30 PM to 3:30 PM",
-    "sessionTitle": "Secure Microsoft 365 collaboration with Microsoft Information Protection: a real life scenario",
-    "sessionDescription": "When a working on a new confidential project, you need to make sure that collaboration (inside and outside your organization) is secured.\n\nIn this demo oriented session, as admin first, we walk you through the process of : \n• creating new sensitive information type, \n• creating a new sensitivity label, \n• configuring SPO and Teams site as well as \n• configuring an Insider Risk policy. \n\nThen we look at this environment from the end users point of view and show how these elements enter in action. We take you through the concepts of manual vs automatic labeling within the Microsoft Office environment and show how automatic policies in Microsoft 365 can ensure that information when sent to recipients is properly labelled and protected, even in instances of accidental oversharing. We also look at how Microsoft 365 can use Data Loss Prevention Policy Tips to educate users on the correct course of action, and be flexible enough to allow sharing outside the policy boundary when required.\n\nFinally, we will examine what happens when someone attempts to leak information in a malicious fashion?  How Microsoft 365 Security and Compliance helps to defeat leaks in the first instance and then examine how Activity Explorer in the Data Classification dashboard can be used to detect anomalous activity to be referred to Security for further investigation.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmE5MTRlOTgtYjVjMi00ZTUyLTk4ODYtOWJkZjY0MTlmYTYw%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "13:15 PM to 14:00 PM",
+    "sessionTitle": "Microsoft Viva Connections - Set up and Extend with SPFx",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "8",
     "trackId": "1",
-    "speaker1Id": "7",
+    "speaker1Id": "8",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "3:30 PM to 4:30 PM",
-    "sessionTitle": "Am I Entitled? How to manage access with Azure AD Entitlements",
-    "sessionDescription": "Azure Active Directory offers many tools for managing users who access content and applications.\n\nEntitlements allow internal and external users to requests access to sets of resources, and the lifecycle of the access request to be managed from cradle to grave.\n\nIn this session we will explore a model that allows external users to be easily invited to collaborate, with additional safe-guards in place such as \n• Agreement to terms and conditions \n• Multi-factor authentication \n• Entitlements that manage  \n○ Access to resources such as applications and Microsoft Teams  \n○ Publishing entitlements for internal and external users  \n○ Approvals for requests○ Access reviews",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NDE5ODVkMTQtM2ZiMi00MDcyLTlmYjItZjAzMThhNTI2ODcz%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "14:00 PM to 14:45 PM",
+    "sessionTitle": "Consuming APIs in ACEs to Customize Viva Connection",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "9",
     "trackId": "1",
-    "speaker1Id": "8",
+    "speaker1Id": "9",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "4:30 PM to 5:30 PM",
-    "sessionTitle": "CyberSec and Microsoft 365 in action",
-    "sessionDescription": "Discover how to secure your tenant from A to Z. From phishing, brute force to malware prevention, understand which steps to implement to harden your tenant and which features to use according to your licence level.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NThiNTM2YjktNjIwNS00MzRmLWFmZjUtYjNmNTUyZTY3YWFm%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "14:45 PM to 15:30 PM",
+    "sessionTitle": "Viva Insights: Analytics to Improve Collaboration Behaviours in the Workplace",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "10",
     "trackId": "1",
-    "speaker1Id": "9",
+    "speaker1Id": "10",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "5:30 PM to 6:30 PM",
-    "sessionTitle": "Enhance Your M365 Forms Without Compromising Privacy & Security",
-    "sessionDescription": "There are many 3rd-party solutions offering enhanced forms & workflows for SharePoint Online. Usually customers compare features to decide which solution fits their requirements, and many overlook the most basic question: \n“What really happens when a user fills out a form and submits it? Where does the form’s data go to and where is It stored and processed?” \nIn this session Nimrod Geva, Product Group Manager for KWizCom, will review the types of Forms solutions for M365. \nNimrod will also present KWizCom Forms – a SharePoint-hosted forms & workflow app designed to assure that none of the customers’ data leave their M365 tenant.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_NmY5Zjc2OTktMmJhZC00OGM4LWFjZmMtZDc5Yzg2OWRmMDFk%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "15:30 PM to 16:15 PM",
+    "sessionTitle": "Above and beyond Microsoft Viva",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "11",
     "trackId": "1",
-    "speaker1Id": "10",
+    "speaker1Id": "11",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "6:30 PM to 7:30 PM",
-    "sessionTitle": "Temporary Access Pass - The key for unlocking Passwordless?",
-    "sessionDescription": "Recently, Microsoft announced Temporary Access Pass. Is this the key for unlocking Passwordless in a seamless process? How does it work? In what scenarios will it be used?",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_ODhkZWVlMGItMzJmNy00MmFlLWFmOTAtYzVlYTYxY2QzM2Yy%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "16:15 PM to 17:00 PM",
+    "sessionTitle": "Explore Microsoft Viva with a Tech Realist, an Optimist and a Visionary!",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   },
   {
     "sessionId": "12",
     "trackId": "1",
-    "speaker1Id": "11",
+    "speaker1Id": "12",
     "speaker2Id": null,
     "speaker3Id": null,
-    "sessionTime": "7:30 PM to 8:30 PM",
-    "sessionTitle": "You are Doing IT Security Wrong - Understanding the Threat of Modern Cyber-attacks",
-    "sessionDescription": "Organizations today are vastly unprepared for the threat of modern cyber-attacks. At the same time, the attackers are becoming more sophisticated and the amount of resources at their disposal is increasing. It has become a lucrative business to hack, disrupt, and steal intellectual property from organizations of all sizes and in all business sectors. \n\nWhile the attackers are becoming more sophisticated, organizations have their IT security positioned for threats from the past century, with poor password management techniques, simple ACL based file permissions, and basic firewall and zone-based containment techniques. This makes it easier for attackers to obtain access to critical intellectual property and makes career-ruining disruptions all the more common. \n\nThis session focuses on understanding what is currently wrong with IT security practices and how your organization can change processes, techniques, and tools to provide for a significantly higher level of IT security without necessarily having to implement expensive tools or obtrusive processes. \n\n• Understand the pitfalls of current IT Security practices, including myths around password change policies, allowing logins without providing multiple factors, and the proliferation of ‘always-on’ admin rights. \n• Examine how simple changes in IT strategy can greatly improve your overall IT posture, including providing for up to a 99% improvement in the likelihood of a data credential theft. \n• Determine which easy to deploy tools and features which you may already be licensed for can be used to tighten up IT security within an environment, including solutions such as Windows Hello for Business, Microsoft Defender for Identity, Azure Sentinel, Microsoft Cloud App Security, next-generation firewalls, and more.",
-    "sessionUrl": "https://teams.microsoft.com/l/meetup-join/19%3ameeting_MTVkZDQ4YTUtMWUwYS00NGIyLTlmMTYtZDA1ZjQ2MDQ1NWQ2%40thread.v2/0?context=%7b%22Tid%22%3a%227fc640cd-5b11-4cef-ba34-fc4d5a75bb86%22%2c%22Oid%22%3a%22c66f8d6b-803b-45ba-b3a9-5d043bb53349%22%7d"
+    "sessionTime": "17:00 PM to 17:45 PM",
+    "sessionTitle": "Quiz",
+    "sessionDescription": "TBD",
+    "sessionUrl": null
   }
 ]

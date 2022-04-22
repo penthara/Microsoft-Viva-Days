@@ -1,4 +1,4 @@
-$base-color-blue: #41b2f1;
+$base-color-blue: #431282;
 .modal-header {
   background-color: $base-color-blue;
   padding: 20px 40px;
@@ -98,7 +98,7 @@ $base-color-blue: #41b2f1;
   margin: 20px auto;
 }
 .speaker-session {
-  color: #41b2f1;
+  color: #431282;
   font-weight: 400;
   font-size: 1.3rem;
 }
@@ -119,7 +119,7 @@ $base-color-blue: #41b2f1;
     }
     .speaker-session-time {
       span {
-        background-color: rgba(65, 178, 241, 0.1);
+        background-color: #43128224;
         padding: 5px 15px;
         color: #000;
         justify-content: center;

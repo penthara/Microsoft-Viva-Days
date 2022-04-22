@@ -1,7 +1,7 @@
 import React from "react";
 import "./Footer.scss";
 import footerData from "./content/Footerdata.json";
-import footerLogo from "./images/website/transparentLogo.png";
+import footerLogo from "./images/website/LogoTransparentbg.png";
 import NavbarData from "./content/NavbarData.json";
 import linkedInLogo from "./images/website/LinkedIn-white.png";
 import FaceboolLogo from "./images/website/Facebook-white.png";
