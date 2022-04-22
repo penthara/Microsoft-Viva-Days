@@ -1,4 +1,4 @@
-$base-color-blue: #00a1f1;
+$base-color-blue: #421282;
 
 .about {
   text-align: center;
@@ -21,7 +21,7 @@ $base-color-blue: #00a1f1;
       bottom: -40px;
       width: 80px;
       height: 2px;
-      background-color: #00a1f1;
+      background-color: $base-color-blue;
     }
   }
   .one-day-event {
@@ -36,7 +36,7 @@ $base-color-blue: #00a1f1;
       bottom: -40px;
       width: 80px;
       height: 2px;
-      background-color: #00a1f1;
+      background-color: $base-color-blue;
     }
     span {
       color: $base-color-blue;

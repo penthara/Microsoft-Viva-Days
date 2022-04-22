@@ -15,30 +15,9 @@
     },
     {
         "sponsorId": "3",
-        "sponsorImage": "./images/website/Ossistologo.png",
-        "sponsorAltText": "Ossisto Technologies",
-        "sponsorName": "Ossisto Technologies",
-        "sponsorUrl": "https://ossisto.com/"
-    },
-    {
-        "sponsorId": "4",
-        "sponsorImage": "./images/website/techPlatformLogo.png",
-        "sponsorAltText": "The Tech Platform",
-        "sponsorName": "The Tech Platform",
-        "sponsorUrl": "https://www.thetechplatform.com/"
-    },
-    {
-        "sponsorId": "5",
-        "sponsorImage": "./images/website/kwizlogo.png",
-        "sponsorAltText": "KWizCom",
-        "sponsorName": "KWizCom",
-        "sponsorUrl": "https://kwizcom.com/"
-    },
-    {
-        "sponsorId": "6",
-        "sponsorImage": "./images/website/Hubfly-Logo.png",
-        "sponsorAltText": "HUBFLY",
-        "sponsorName": "HUBFLY",
-        "sponsorUrl": "https://www.hubfly.com/"
+        "sponsorImage": "./images/website/Logo_RapidCircle_web.png",
+        "sponsorAltText": "Rapid Circle",
+        "sponsorName": "Rapid Circle",
+        "sponsorUrl": "https://en.rapidcircle.com/"
     }
 ]

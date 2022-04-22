@@ -5,8 +5,8 @@ body::-webkit-scrollbar {
 }
 .header {
   background: linear-gradient(
-      rgba(0, 150, 234, 0.7) 100%,
-      rgba(0, 150, 234, 0.7) 100%
+    #431282be 100%,
+    #431282be 100%
     ),
     url("./images/website/BG\ Image.png");
   background-repeat: no-repeat;
@@ -94,7 +94,7 @@ body::-webkit-scrollbar {
       a {
         font-size: 25px;
         text-transform: uppercase;
-        color: #479cda !important;
+        color: #431282 !important;
         text-decoration: none;
         font-weight: 700;
       }
@@ -139,7 +139,7 @@ body::-webkit-scrollbar {
       border: 6px solid #ffffff;
       width: auto;
       padding: 20px;
-      background-color: #41b2f1;
+      background-color: #431282;
     }
     span {
       text-transform: uppercase;
@@ -251,7 +251,7 @@ body::-webkit-scrollbar {
 
 /* Color/shape of close button cross */
 .bm-cross {
-  background: #00a1f1;
+  background: #431282;
 }
 
 /*
@@ -265,7 +265,7 @@ Note: Beware of modifying this element as it can break the animations - you shou
 
 /* General sidebar styles */
 .bm-menu {
-  background: #00a1f1;
+  background: #431282;
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;
 }

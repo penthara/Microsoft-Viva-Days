@@ -6,7 +6,7 @@ import Sessions from "./content/Sessions.json";
 import NavbarData from "./content/NavbarData.json";
 import HeaderData from "./content/HeaderData.json";
 // import bgImg from "./images/website/bg-img.png";
-import logo from "./images/website/transparentLogo.png";
+import logo from "./images/website/LogoTransparentbg.png";
 import twitterLogo from "./images/website/twittericon.png";
 import { Navbar, Nav, NavItem, NavLink, Row, Col } from "reactstrap";
 import { isDesktop, isMobile } from "react-device-detect";
@@ -87,7 +87,8 @@ export const Header = () => {
               <Col md={12} xl={6} className=" content-left row">
                 <Row className="siteTitle">
                   <Col>
-                    <span>{data.presentedUserGroup}</span>
+                  
+                    {/* <span>{data.presentedUserGroup}</span> */}
                     <h1>{data.siteTitle}</h1>
                   </Col>
                 </Row>

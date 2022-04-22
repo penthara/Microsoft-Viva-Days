@@ -35,7 +35,7 @@ export const Agenda = () => {
         professionals.
       </div>
       <div className="container-fluid track-list">
-        <div className="row track-row">
+        <div className="row track-row justify-content-center">
           {trackDetailsState.map((data) => {
             return (
               <Col

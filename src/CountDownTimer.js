@@ -18,7 +18,7 @@ export const CountDownTimer = () => {
             <Col>
               <Row>
                 <Col>
-                  <span className="timer-date"> 28th August 2021 </span>
+                  <span className="timer-date"> 14th May 2021 </span>
                 </Col>
               </Row>
               <Row>
@@ -31,7 +31,7 @@ export const CountDownTimer = () => {
               </Row>
             </Col>
             <Col>
-              <CountDown end="August 28, 2021  09:00" />
+              <CountDown end="May 14, 2022  09:15" />
             </Col>
           </Row>
         </Container>
