@@ -25,7 +25,7 @@ export const CountDownTimer = () => {
                 <Col>
                   <span className="timer-title">
                     {" "}
-                    India Cloud Security Summit{" "}
+                    MICROSOFT VIVA DAYS - 2022{" "}
                   </span>
                 </Col>
               </Row>
