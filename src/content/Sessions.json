@@ -18,7 +18,7 @@
     "speaker3Id": null,
     "sessionTime": "9:30 AM to 10:15 AM",
     "sessionTitle": "Why does Org require Microsoft VIVA",
-    "sessionDescription": " ",
+    "sessionDescription": "Microsoft Viva is an employee experience platform that brings together communications, knowledge, learning, resources, and insights. With Viva, foster a culture where people and teams are empowered to be their best from anywhere.\nWe will see the following experiences\n- VIVA Topics\n- VIVA Connections\n- VIVA Learning\n- VIVA Insights\n\n& Yes we will see LIVE Demos.",
     "sessionUrl": null
   },
   {
@@ -29,7 +29,7 @@
     "speaker3Id": null,
     "sessionTime": "10:15 AM to 11:00 AM",
     "sessionTitle": "Viva Learning: LEARNING IN THE FLOW OF WORK",
-    "sessionDescription": "TBD",
+    "sessionDescription": "This Session will help the audience to take a closer look at the Viva Learning offerings and path forward which is introduced with a mission to bring learning in the flow of work for rapid upskilling, reskilling, and developing internal mobility within the organization.\nIt will include a cool demo to configure external Learning Management systems within Viva Learning platform.",
     "sessionUrl": null
   },
   {
@@ -40,7 +40,7 @@
     "speaker3Id": null,
     "sessionTime": "11:00 AM to 11:45 PM",
     "sessionTitle": "How to setup and manage Microsoft Viva",
-    "sessionDescription": "TBD",
+    "sessionDescription": "Administration, Management and Setup of Viva in Admin perspective.",
     "sessionUrl": null
   },
   {
@@ -51,7 +51,7 @@
     "speaker3Id": null,
     "sessionTime": "11:45 PM to 12:30 PM",
     "sessionTitle": "Viva Topics & Viva Connection Dashboard",
-    "sessionDescription": "TBD",
+    "sessionDescription": "Live demo of the creating and managing viva topics alongwith demo on leveraging viva connection dashboard to teams by adding adaptive cards to it.",
     "sessionUrl": null
   },
   {
@@ -69,17 +69,17 @@
     "sessionId": "7",
     "trackId": "1",
     "speaker1Id": "7",
-    "speaker2Id": null,
+    "speaker2Id": "8",
     "speaker3Id": null,
     "sessionTime": "13:15 PM to 14:00 PM",
     "sessionTitle": "Microsoft Viva Connections - Set up and Extend with SPFx",
-    "sessionDescription": "TBD",
+    "sessionDescription": "Viva Connection integration with SharePoint enables a dynamic, engaging, and personalized employee experience for your organization. These innovations power the intelligent workplace, where teams can collaborate and streamline workflows, organizations can engage employees and communicate effectively, and individuals can be more creative and productive with experiences and insights powered by artificial intelligence (AI).\nIn this session we will dive into setting up Viva connections using SharePoint and integrating with Microsoft Teams.\nWe will explore how the Developers can extend Microsoft Viva Connections for building engaging experiences with the widely adopted SharePoint Framework (SPFx).",
     "sessionUrl": null
   },
   {
     "sessionId": "8",
     "trackId": "1",
-    "speaker1Id": "8",
+    "speaker1Id": "9",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "14:00 PM to 14:45 PM",
@@ -90,40 +90,40 @@
   {
     "sessionId": "9",
     "trackId": "1",
-    "speaker1Id": "9",
+    "speaker1Id": "10",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "14:45 PM to 15:30 PM",
     "sessionTitle": "Viva Insights: Analytics to Improve Collaboration Behaviours in the Workplace",
-    "sessionDescription": "TBD",
+    "sessionDescription": "In this session, we are going to understand Viva Insights and its features. We would cover the below agenda.\n\nIntroduction to Viva Insights\nMicrosoft Viva Insights Key Features\nType of Insights\nWalkthrough Insights App\nSetting up Insights for your tenant\nQnA.",
     "sessionUrl": null
   },
   {
     "sessionId": "10",
     "trackId": "1",
-    "speaker1Id": "10",
+    "speaker1Id": "11",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "15:30 PM to 16:15 PM",
     "sessionTitle": "Above and beyond Microsoft Viva",
-    "sessionDescription": "TBD",
+    "sessionDescription": "In this session, I will cover how we can make the most from Microsoft Viva, alongside Dynamics 365 Human Resources covering all challenges around HR departments. It will be a hands-on session with demos and prepare for homework!",
     "sessionUrl": null
   },
   {
     "sessionId": "11",
     "trackId": "1",
-    "speaker1Id": "11",
-    "speaker2Id": null,
+    "speaker1Id": "12",
+    "speaker2Id": "13",
     "speaker3Id": null,
     "sessionTime": "16:15 PM to 17:00 PM",
     "sessionTitle": "Explore Microsoft Viva with a Tech Realist, an Optimist and a Visionary!",
-    "sessionDescription": "TBD",
+    "sessionDescription": "In Microsoft Viva we can ALL have at our fingertips a flexible intranet that reaches Frontline Workers with their own device, accessible learning opportunities, knowledge in the flow of your work and employee insights to help you work smarter not harder.\n\nTowards the end of the year there will be icing on the cake with new features to track our objectives against the company strategies .\n\nNurturing an empathic leadership culture with digital wellbeing features. Taking collaboration, accessibility, employee engagement, empowerment, diversity, and inclusion to a higher humanistic level. These seeded features are available now. You are paying but not consuming!\n\nBy the end of this session you will have explored and discovered:\n\n•The What, the art of the possible business benefits (MVP, Lesley Crook, Viva Visionary in UK)\n\n•The Why, reasoning, logic and roadmaps (MVP, Merethe Stave, Viva Optimist in Norway)\n\n•The How, set up and licensing implications (MVP, Sara Fennah, Viva Realist in UK)",
     "sessionUrl": null
   },
   {
     "sessionId": "12",
     "trackId": "1",
-    "speaker1Id": "12",
+    "speaker1Id": "5",
     "speaker2Id": null,
     "speaker3Id": null,
     "sessionTime": "17:00 PM to 17:45 PM",
