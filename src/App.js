@@ -23,9 +23,9 @@ function App() {
       {/*<KeyNoteSpeaker />*/}
       <Speaker />
       <Sponsor />
-      <UserGroups />
-      <EventTeam />
-      <Footer />
+      {/*<UserGroups />
+      <EventTeam />*/}
+  <Footer />
     </div>
   );
 }
