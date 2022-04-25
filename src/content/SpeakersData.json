@@ -6,7 +6,7 @@
     "speakerAltText": "Vignesh Ganesan",
     "keynoteSpeaker": "false",
     "speakerTitle": "Enterprise Cloud Architect",
-    "speakerSubTitle": " ",
+    "speakerSubTitle": "Pitney Bowes",
     "speakerLinkedIn": "https://www.linkedin.com/in/vignesh-ganesan-mcse-mcsa-mct-itilv3-9246384a/",
     "speakerTwitter": "https://twitter.com/cloudvignesh",
     "MVPstatus": "true",
@@ -104,7 +104,7 @@
     "speakerAltText": "Smita Nachan",
     "keynoteSpeaker": "false",
     "speakerTitle": "Lead Software Engineer",
-    "speakerSubTitle": "TietoEVRY",
+    "speakerSubTitle": " ",
     "speakerLinkedIn": "https://www.linkedin.com/in/smitanachan/",
     "speakerTwitter": "https://twitter.com/smitanachan",
     "MVPstatus": "true",
@@ -147,8 +147,8 @@
     "keynoteSpeaker": "false",
     "speakerTitle": "D365 HR Practice Manager",
     "speakerSubTitle": " ",
-    "speakerLinkedIn": "https://www.linkedin.com/in/viktor-hedberg/",
-    "speakerTwitter": "https://twitter.com/headburgh",
+    "speakerLinkedIn": "https://www.linkedin.com/in/anainesurrutia/",
+    "speakerTwitter": "https://twitter.com/anainesurrutia",
     "MVPstatus": "true",
     "MicrosoftEmployee": "false",
     "speakerInformation": "I'm the first and only female Uruguayan MVP. Specialist in Dynamics 365 Human Resources and employee experience solutions. Community advocate, mentor, speaker, but mostly a cheerleader for almost everything."
@@ -163,7 +163,7 @@
     "speakerSubTitle": "Znrgy Ltd",
     "speakerLinkedIn": "https://www.linkedin.com/in/sarafennah/",
     "speakerTwitter": "https://twitter.com/sfennah",
-    "MVPstatus": "false",
+    "MVPstatus": "true",
     "MicrosoftEmployee": "false",
     "speakerInformation": "I've been training for more years than I care to admit (over 20). I love helping others to advance their owns skills and use of technology, whilst challenging myself to advance my own skills and expertise. Now focused on Microsoft 365, I train from beginner to admin and everyone in between, with a bit of Project, Visio and some SharePoint site building mixed in to keep things fresh."
   },
@@ -178,6 +178,20 @@
     "speakerLinkedIn": "https://www.linkedin.com/in/lesley-crook/",
     "speakerTwitter": "https://twitter.com/Lesley_wolan",
     "MVPstatus": "true",
+    "MicrosoftEmployee": "false",
+    "speakerInformation": "Hi, I’m Lesley Crook a Viva Visionary and MVP Office Apps & Services of 5 years. With a focus on employee engagement, hybrid work, adoption & change management, champions programmes on Yammer, Teams and now Microsoft Viva."
+  },
+  {
+    "speakerId": "14",
+    "speakerName": "Mythili Ranganathan",
+    "speakerImage": "./images/speakers/Nospeaker.png",
+    "speakerAltText": "Mythili Ranganathan",
+    "keynoteSpeaker": "false",
+    "speakerTitle": "Sharepoint Consultant",
+    "speakerSubTitle": "The World Bank",
+    "speakerLinkedIn": "https://www.linkedin.com/in/mythiliranganathan/",
+    "speakerTwitter": null,
+    "MVPstatus": "false",
     "MicrosoftEmployee": "false",
     "speakerInformation": "Hi, I’m Lesley Crook a Viva Visionary and MVP Office Apps & Services of 5 years. With a focus on employee engagement, hybrid work, adoption & change management, champions programmes on Yammer, Teams and now Microsoft Viva."
   }

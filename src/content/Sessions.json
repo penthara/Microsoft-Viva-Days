@@ -124,7 +124,7 @@
     "sessionId": "12",
     "trackId": "1",
     "speaker1Id": "5",
-    "speaker2Id": null,
+    "speaker2Id": "14",
     "speaker3Id": null,
     "sessionTime": "17:00 PM to 17:45 PM",
     "sessionTitle": "Quiz",

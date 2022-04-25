@@ -130,7 +130,10 @@ export const Header = () => {
                   </Col>
                   <Col>
                     <a
-                      href={"https://twitter.com/" + data.twitterHandle}
+                      href={
+                        "https://twitter.com/search?q=" +
+                        encodeURIComponent(data.twitterHandle)
+                      }
                       target="_blank"
                       rel="noreferrer"
                     >

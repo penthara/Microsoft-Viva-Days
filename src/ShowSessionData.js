@@ -268,7 +268,8 @@ export const ShowSessionData = (props) => {
                             </span>
                           </div>
                         ) : null}
-                        <div className="event-teams">
+                        {data.sessionUrl != null ? (
+                          <div className="event-teams">
                           <a
                             href={data.sessionUrl}
                             target="_blank"
@@ -283,6 +284,8 @@ export const ShowSessionData = (props) => {
                             <p class="teams-img__description">J</p>
                           </a>
                         </div>
+                        ) : null}
+                        
                       </div>
                     </Col>
                   </>
