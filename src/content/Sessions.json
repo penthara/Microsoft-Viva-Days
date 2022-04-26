@@ -62,7 +62,7 @@
     "speaker3Id": null,
     "sessionTime": "12:30 PM to 13:15 PM ",
     "sessionTitle": "How to be certified in Viva Insights? ",
-    "sessionDescription": "TBD",
+    "sessionDescription": "Help your employees thrive with Microsoft Viva. But before that, let's see how you can be certified.\n\nThis session will include\n1. Viva Insight learning sources.\n2. What is Viva Insights Practitioner badge?\n3. What is the Viva Insights Specialist badge?\n4. How to prepare?\n5. Time Investment for these courses",
     "sessionUrl": null
   },
   {
@@ -84,7 +84,7 @@
     "speaker3Id": null,
     "sessionTime": "14:00 PM to 14:45 PM",
     "sessionTitle": "Consuming APIs in ACEs to Customize Viva Connection",
-    "sessionDescription": "TBD",
+    "sessionDescription": "In this session, we will learn about how to customize Viva connections by creating an Adaptive Card extension with SPFx. The focus of this session would be on how to consume native and external APIs by creating advanced cards for complex scenarios.\nAgenda\n1. Overview of Adaptive Card Extension(ACEs)\n2. Consuming SharePoint REST API\n3. Consuming Graph API\n4. Consuming External API\n5. Demos and Code walkthrough\n6. QnA",
     "sessionUrl": null
   },
   {
@@ -95,7 +95,7 @@
     "speaker3Id": null,
     "sessionTime": "14:45 PM to 15:30 PM",
     "sessionTitle": "Viva Insights: Analytics to Improve Collaboration Behaviours in the Workplace",
-    "sessionDescription": "In this session, we are going to understand Viva Insights and its features. We would cover the below agenda.\n\nIntroduction to Viva Insights\nMicrosoft Viva Insights Key Features\nType of Insights\nWalkthrough Insights App\nSetting up Insights for your tenant\nQnA.",
+    "sessionDescription": "With Viva Insights, business leaders can gain insight into how work impacts their people and business with insight into organisational resiliency and work culture.\n\nThis session is a deep dive into the organisational insights available with Viva Insights to help improve collaboration behaviours in the workplace. We will explore the available analytics through a live demo, customise them, use templates to define recommendation plans, and explore why this is crucial for organisations in a hybrid workplace.",
     "sessionUrl": null
   },
   {
@@ -128,7 +128,7 @@
     "speaker3Id": null,
     "sessionTime": "17:00 PM to 17:45 PM",
     "sessionTitle": "Quiz",
-    "sessionDescription": "TBD",
+    "sessionDescription": "Quiz",
     "sessionUrl": null
   }
 ]
