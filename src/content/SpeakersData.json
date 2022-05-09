@@ -195,4 +195,19 @@
     "MicrosoftEmployee": "false",
     "speakerInformation": "Hi, I’m Lesley Crook a Viva Visionary and MVP Office Apps & Services of 5 years. With a focus on employee engagement, hybrid work, adoption & change management, champions programmes on Yammer, Teams and now Microsoft Viva."
   }
+  ,
+  {
+    "speakerId": "15",
+    "speakerName": "Merethe Stave",
+    "speakerImage": "./images/speakers/MeretheStave.jpg",
+    "speakerAltText": "Merethe Stave",
+    "keynoteSpeaker": "false",
+    "speakerTitle": "Chief Customer Officer and Senior Cloud Architec",
+    "speakerSubTitle": "CloudWay",
+    "speakerLinkedIn": "https://www.linkedin.com/in/merethestave/",
+    "speakerTwitter": "https://twitter.com/MeretheStave",
+    "MVPstatus": "true",
+    "MicrosoftEmployee": "false",
+    "speakerInformation": "Merethe Stave is Chief Customer Officer and Senior Cloud Architect at CloudWay. She is an Office Apps and Services MVP, was recognized as one of Norway’s 50 leading women in tech 2020 and is a board member of the Norwegian Microsoft 365 Community."
+  }
 ]
