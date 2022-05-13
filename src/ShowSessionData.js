@@ -46,6 +46,7 @@ export const ShowSessionData = (props) => {
                       onClick={() => toggle(data)}
                     >
                       <div className="event-time"> {data.sessionTime} </div>
+                      <div className="IST-label">IST</div>
                     </Col>
                     <Col
                       md={12}
@@ -162,6 +163,7 @@ export const ShowSessionData = (props) => {
                   <>
                     <Col md={12} lg={2} onClick={() => toggle(data)}>
                       <div className="event-time"> {data.sessionTime} </div>
+                      <div className="IST-label">IST</div>
                     </Col>
                     <Col
                       md={12}
