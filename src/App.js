@@ -23,6 +23,14 @@ const theme = createTheme({
       xxl: 2000,
     },
   },
+  palette: {
+    purplePrimary: {
+      main: "#673ab7",
+    },
+    purpleSecondary: {
+      main: '#651fff',
+    },
+  },
 });
 
 window.addEventListener("DOMContentLoaded", function () {

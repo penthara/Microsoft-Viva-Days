@@ -27,9 +27,10 @@ const ScrollToTop = () => {
         <Fab
           compoment="a"
           href="#home"
-          color="primary"
+          color="purplePrimary"
           aria-label="add"
           sx={{
+            color: "white",
             position: "fixed",
             bottom: "2.5rem",
             right: "2.5rem",

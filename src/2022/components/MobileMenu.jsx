@@ -48,7 +48,7 @@ export default function FullScreenDialog({
     >
       <Box
         className="mobileNavParent"
-        sx={{ background: theme.colors.bg.trackSelected }}
+        sx={{ background: "#431282" }}
       >
         <AppBar sx={{ position: "static" }} color="transparent" elevation={0}>
           <Toolbar sx={{ height: "10rem" }}>
