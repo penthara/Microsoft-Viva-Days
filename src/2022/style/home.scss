@@ -31,6 +31,9 @@ $white: #fff;
     border-radius: 100rem;
     font-family: "Roboto";
     padding-inline: max(3%, 40px);
+    &:hover {
+      background-color: #e0e0e0;
+    }
   }
 
   .eventDate {

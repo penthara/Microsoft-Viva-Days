@@ -1,5 +1,6 @@
 import "./App.css";
 import Parent2022 from "./2022/components/Parent2022";
+import Parent2023 from "./2023/components/Parent2023";
 import { createTheme, ThemeProvider } from "@mui/material/styles";
 import {
   Route,
@@ -9,6 +10,7 @@ import {
   BrowserRouter,
 } from "react-router-dom";
 import { theme2022 } from "./2022/style/theme/theme2022";
+import { theme2023 } from "./2023/style/theme/theme2023";
 
 const theme = createTheme({
   breakpoints: {
@@ -28,7 +30,7 @@ const theme = createTheme({
       main: "#673ab7",
     },
     purpleSecondary: {
-      main: '#651fff',
+      main: "#651fff",
     },
   },
 });
@@ -56,18 +58,18 @@ function App() {
             path="/"
             element={
               <ThemeProvider theme={theme}>
-                <Parent2022 theme={theme2022} />
+                <Parent2023 theme={theme2023} />
               </ThemeProvider>
             }
           />
-          {/* <Route
-            path="/2022"
+          <Route
+            path="/may2022"
             element={
               <ThemeProvider theme={theme}>
                 <Parent2022 theme={theme2022} />
               </ThemeProvider>
             }
-          /> */}
+          />
         </Routes>
       </BrowserRouter>
     </div>

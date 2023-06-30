@@ -3,7 +3,7 @@ import { Box, Fab } from "@mui/material";
 import KeyboardArrowUpIcon from "@mui/icons-material/KeyboardArrowUp";
 import { useMediaQuery } from "react-responsive";
 
-const ScrollToTop = () => {
+const ScrollToTop = ({theme}) => {
   const [scroll, setScroll] = React.useState(false);
   const isTabletOrMobile = useMediaQuery({ query: "(max-width: 515px)" });
 
@@ -27,9 +27,9 @@ const ScrollToTop = () => {
         <Fab
           compoment="a"
           href="#home"
-          color="purplePrimary"
           aria-label="add"
           sx={{
+            backgroundColor: theme.colors.text.purple,
             color: "white",
             position: "fixed",
             bottom: "2.5rem",

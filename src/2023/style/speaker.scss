@@ -1,0 +1,70 @@
+$speakersHeadingColor: #636363;
+$borderBottomColor: #5eb3d8;
+$white: #fff;
+$titlebg: #1381fa;
+$subGrey: #606060;
+
+.aug-2023 {
+  .speakersHeadingBox {
+    padding-top: min(15%, 8rem);
+  }
+  .speakersHeading {
+    color: $speakersHeadingColor;
+    width: fit-content;
+    margin: 0 auto;
+    border-bottom: 5px solid $borderBottomColor;
+  }
+  .keynote-box {
+    padding-block: 5rem;
+  }
+
+  .speaker-grid {
+    gap: 5rem;
+  }
+
+  .img-wrapper {
+    width: 30rem;
+    height: 30rem;
+  }
+  .card {
+    max-width: 30rem;
+
+    &-title {
+      &-container {
+        min-height: 8rem;
+        background-color: $titlebg;
+      }
+      // padding: 2rem;
+      color: $white;
+      font-size: 2.4rem;
+    }
+    &-container {
+      // padding-block: 0.5rem;
+      background-color: $white;
+      height: 8rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: flex-start;
+    }
+    &-container > p:last-child {
+      padding-bottom: 0;
+    }
+    &-subtitle {
+      padding: 0.2rem 1.5rem;
+      color: $subGrey;
+      font-size: 2rem;
+    }
+    &-social {
+      padding-inline: 0.5rem;
+    }
+    &-social-img {
+      width: 4rem;
+      padding: 0.5rem;
+      font-size: 4rem;
+    }
+    &-social-icon {
+      font-size: 4rem;
+    }
+  }
+}

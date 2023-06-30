@@ -29,5 +29,8 @@ $borderBottomColor: #421282;
     font-weight: 400;
     text-transform: none;
     padding-inline: max(3%, 40px);
+    &:hover {
+      background-color: #303080 !important;
+    }
   }
 }

@@ -43,7 +43,7 @@ $afterBlue: #217dde;
 $textGrey: #606060;
 $vivaModalHeader: #431282;
 
-.may2023-scroll-dialog {
+.may2022-scroll-dialog {
   font-family: "Roboto";
   .scroll-dialog-title {
     font-weight: 600 !important;
@@ -257,7 +257,7 @@ $vivaModalHeader: #431282;
 }
 
 @media only screen and (max-width: 768px) {
-  .may2023-scroll-dialog {
+  .may2022-scroll-dialog {
     .scroll-dialog-home-title {
       font-size: clamp(
         2.4rem,

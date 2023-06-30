@@ -35,7 +35,7 @@ const Home = ({ theme }) => {
         },
       }}
     >
-      <ScrollTop />
+      <ScrollTop theme={theme} />
       <Box
         className="d-flex justify-content-between align-items-center sectionMaxWidth"
         sx={{
