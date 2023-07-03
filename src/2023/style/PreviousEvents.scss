@@ -1,0 +1,41 @@
+$borderBottomColor: #431282;
+$organizerHeadingColor: #636363;
+
+.aug-2023 {
+  .prevEvents {
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+    .prevEvents-heading {
+        color: $organizerHeadingColor;
+        width: fit-content;
+        margin: 0 auto;
+        border-bottom: 5px solid $borderBottomColor;
+    }
+    .prevEvents-wrapper {
+      width: 60%;
+      padding: 0;
+      margin: 1.25rem auto;
+      transform: scale(1);
+      transition: all 0.3s ease-in;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.02);
+      }
+    }
+  }
+
+  .prevEvents-scroll {
+    display: flex;
+  }
+
+  .prevEventImage {
+    width: auto;
+    margin: auto;
+    height: 40rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .prevEvents .prevEvents-wrapper {
+    width: 100%;
+  }
+}

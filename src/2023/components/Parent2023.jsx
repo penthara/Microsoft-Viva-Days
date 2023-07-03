@@ -14,6 +14,7 @@ import Agenda from "./Agenda";
 import Prizes from "./Prizes";
 import Donate from "./Donate";
 import ErrorBoundary from "./ErrorBoundary";
+import PreviousEvents from "./PreviousEvents";
 import {
   Route,
   Link,
@@ -31,7 +32,7 @@ const Parent2023 = ({ theme }) => {
   const [defaultTrackData, setDefaultTrackData] = useState([]);
 
   useEffect(() => {
-       speakerApi().then((data) => {
+    speakerApi().then((data) => {
       setSpeakerData(data);
     });
     sessionApi().then((data) => {
@@ -86,6 +87,7 @@ const Parent2023 = ({ theme }) => {
       <Sponsors theme={theme} />
       <Box id="eventTeam" />
       <Organizers theme={theme} />
+      {/* <PreviousEvents theme={theme} /> */}
       <Box id="contactUS" />
       <Footer theme={theme} />
     </Box>
