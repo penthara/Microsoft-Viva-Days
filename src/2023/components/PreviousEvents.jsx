@@ -31,6 +31,7 @@ const PreviousEvents = ({ theme }) => {
                     alt="Card"
                     src={data.eventImage}
                     className="prevEventImage"
+                    loading="lazy"
                   />
                 </Card>
               </a>
