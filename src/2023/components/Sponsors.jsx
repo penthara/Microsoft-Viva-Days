@@ -169,7 +169,7 @@ const Sponsors = ({ theme }) => {
         <Box className="sectionMaxWidth" sx={{ paddingBlockEnd: "3rem" }}>
           <Box className="sponsorsHeadingBox">
             <Typography
-              className="text-uppercase text-center sponsorHeading"
+              className="text-uppercase text-center sponsorHeading promoPartners"
               sx={{
                 fontSize: { xs: "3rem", mmb: theme.fontSize.eventDate },
               }}

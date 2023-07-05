@@ -50,3 +50,11 @@ $goldColor: #eaaf0e;
     padding: 5rem;
   }
 }
+
+@media only screen and (max-width: 515px) {
+  .aug-2023{
+    .promoPartners{
+      max-width: 25rem;
+    }
+  }
+}
