@@ -6,10 +6,10 @@ $organizerHeadingColor: #636363;
     margin-top: 5rem;
     margin-bottom: 3rem;
     .prevEvents-heading {
-        color: $organizerHeadingColor;
-        width: fit-content;
-        margin: 0 auto;
-        border-bottom: 5px solid $borderBottomColor;
+      color: $organizerHeadingColor;
+      width: fit-content;
+      margin: 0 auto;
+      border-bottom: 5px solid $borderBottomColor;
     }
     .prevEvents-wrapper {
       width: 60%;
@@ -29,13 +29,16 @@ $organizerHeadingColor: #636363;
   }
 
   .prevEventImage {
-    width: auto;
+    width: 100%;
     margin: auto;
-    height: 40rem;
+    // height: 40rem;
+    box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15) !important;
   }
 }
 @media only screen and (max-width: 768px) {
-  .prevEvents .prevEvents-wrapper {
-    width: 100%;
+  .aug-2023 {
+    .prevEvents .prevEvents-wrapper {
+      width: 90%;
+    }
   }
 }
