@@ -20,7 +20,9 @@ import moment from "moment";
 const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
   console.log("SpeakerModalData from Card", data);
   console.log("isEmpty", sessions);
-  const [additionalSpeakerFields, setAdditionalSpeakerFieldsData] = useState([]);
+  const [additionalSpeakerFields, setAdditionalSpeakerFieldsData] = useState(
+    []
+  );
   const [additionalSpeakerSessionDetails, setAdditionalSpeakerSessionDetails] =
     useState([]);
   const [sessionDetails, setSessionDetails] = useState([]);
@@ -57,8 +59,8 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
         Object.assign(dummyObject, {
           name: sessions[i].title,
           id: sessions[i].id,
-          startsAt:sessions[i].startsAt,
-          endsAt:sessions[i].endsAt,
+          startsAt: sessions[i].startsAt,
+          endsAt: sessions[i].endsAt,
         });
         allSessionDetails.push(dummyObject);
       }
@@ -128,10 +130,8 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
               additionalSpeakerSessionDetails.length > 0 &&
               additionalSpeakerSessionDetails.map((data, idx) => {
                 console.log("dts", data);
-                let session = sessionDetails.find(
-                  (ses) => ses.id == data.id
-                );
-       
+                let session = sessionDetails.find((ses) => ses.id == data.id);
+
                 return (
                   <Box
                     key={idx}
@@ -195,7 +195,6 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       </Typography>
                     </Box>
                   </Box>
-          
                 );
               })}
             <Divider
@@ -208,7 +207,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
             />
             {!isKeynote ? (
               <Box className="card-social session-modal-speaker">
-                {/* {speakerSocial.mvp && (
+                {additionalSpeakerFields.isMVP == "Yes" && (
                   <IconButton
                     href={""}
                     target="_blank"
@@ -221,8 +220,8 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       alt="microsoft-mvp"
                     />
                   </IconButton>
-                )} */}
-                {/* {speakerSocial.microsoft && (
+                )}
+                {additionalSpeakerFields.isMsEmployee == "Yes" && (
                   <IconButton
                     href={""}
                     target="_blank"
@@ -235,10 +234,10 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       alt="microsoft-company"
                     />
                   </IconButton>
-                )} */}
-                {/* {speakerSocial.linkedIn && (
+                )}
+                {additionalSpeakerFields.LinkedIn != null && (
                   <IconButton
-                    href={speakerSocial.linkedIn}
+                    href={additionalSpeakerFields.LinkedIn}
                     aria-label="LinkedIn"
                     target="_blank"
                   >
@@ -248,9 +247,9 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                     />
                   </IconButton>
                 )}
-                {speakerSocial.twitter && (
+                {additionalSpeakerFields.Twitter != null && (
                   <IconButton
-                    href={speakerSocial.twitter}
+                    href={additionalSpeakerFields.Twitter}
                     aria-label="twitter"
                     target="_blank"
                   >
@@ -261,45 +260,44 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       className="card-social-icon"
                     />
                   </IconButton>
-                )} */}
+                )}
               </Box>
             ) : (
-              // <Box className="card-social session-modal-speaker">
-              //   <IconButton
-              //     href={""}
-              //     target="_blank"
-              //     aria-label="MicroSoft"
-              //     disabled
-              //   >
-              //     <img
-              //       src={mslogo}
-              //       className="card-social-img"
-              //       alt="microsoft-company"
-              //     />
-              //   </IconButton>
+              <Box className="card-social session-modal-speaker">
+                <IconButton
+                  href={""}
+                  target="_blank"
+                  aria-label="MicroSoft"
+                  disabled
+                >
+                  <img
+                    src={mslogo}
+                    className="card-social-img"
+                    alt="microsoft-company"
+                  />
+                </IconButton>
 
-              //   <IconButton
-              //     href="https://www.linkedin.com/in/hammadrajjoub/"
-              //     aria-label="LinkedIn"
-              //     target="_blank"
-              //   >
-              //     <LinkedInIcon color="primary" className="card-social-icon" />
-              //   </IconButton>
+                <IconButton
+                  href="https://www.linkedin.com/in/hammadrajjoub/"
+                  aria-label="LinkedIn"
+                  target="_blank"
+                >
+                  <LinkedInIcon color="primary" className="card-social-icon" />
+                </IconButton>
 
-              //   <IconButton
-              //     href="https://twitter.com/iRajjoub"
-              //     aria-label="twitter"
-              //     target="_blank"
-              //   >
-              //     <TwitterIcon
-              //       sx={{
-              //         color: theme.icon.twitter,
-              //       }}
-              //       className="card-social-icon"
-              //     />
-              //   </IconButton>
-              // </Box>
-              ""
+                <IconButton
+                  href="https://twitter.com/iRajjoub"
+                  aria-label="twitter"
+                  target="_blank"
+                >
+                  <TwitterIcon
+                    sx={{
+                      color: theme.icon.twitter,
+                    }}
+                    className="card-social-icon"
+                  />
+                </IconButton>
+              </Box>
             )}
           </Box>
         </DialogContent>

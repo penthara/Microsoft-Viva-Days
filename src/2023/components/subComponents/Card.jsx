@@ -19,12 +19,14 @@ const Card = ({
   twitter,
   mvp,
 }) => {
-  
+
   return (
     <>
       <Box className="card pointer">
-        <Paper elevation={3} className="card-paper" >
-          <Box className="img-wrapper"><img src={image} alt={name} loading="lazy" width="100%" /></Box>
+        <Paper elevation={3} className="card-paper">
+          <Box className="img-wrapper">
+            <img src={image} alt={name} loading="lazy" width="100%" />
+          </Box>
           <Box className="card-content">
             <Box className="card-title-container d-flex justify-content-center align-items-center text-center">
               <Typography className="card-title text-uppercase">
@@ -32,7 +34,9 @@ const Card = ({
               </Typography>
             </Box>
             <Box className="card-container">
-              <Typography className="card-subtitle text-left">{designation}</Typography>
+              <Typography className="card-subtitle text-left">
+                {designation}
+              </Typography>
               <Typography
                 className="card-subtitle text-left"
                 sx={{
@@ -44,7 +48,7 @@ const Card = ({
             </Box>
             <Box className="card-social text-left">
               {mvp && (
-                <IconButton href={""} target="_blank" aria-label="MVP"  disabled>
+                <IconButton href={""} target="_blank" aria-label="MVP" disabled>
                   <img
                     src={mvpLogo}
                     className="card-social-img"
@@ -52,9 +56,13 @@ const Card = ({
                   />
                 </IconButton>
               )}
-             
+
               {linkedIn && (
-                <IconButton href={linkedIn} aria-label="LinkedIn" target="_blank">
+                <IconButton
+                  href={linkedIn}
+                  aria-label="LinkedIn"
+                  target="_blank"
+                >
                   <LinkedInIcon color="primary" className="card-social-icon" />
                 </IconButton>
               )}

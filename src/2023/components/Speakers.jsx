@@ -6,7 +6,7 @@ import Card from "./subComponents/Card";
 import AboutSpeaker from "./subComponents/AboutSpeaker";
 
 const Speakers = ({ theme, speakerData, sessionData }) => {
-  // console.log("speakerData in Speakers.jsx", speakerData);
+  console.log("speakerData in Speakers.jsx", speakerData);
   const [showData, setShowData] = useState(false);
   const [speakerModal, setSpeakerModal] = useState(false);
   const [speakerModalData, setSpeakerModalData] = useState({});
@@ -71,10 +71,7 @@ const Speakers = ({ theme, speakerData, sessionData }) => {
                       company={speakerData.questionAnswers[4].answer}
                       linkedIn={speakerData.questionAnswers[5].answer}
                       twitter={speakerData.questionAnswers[2].answer}
-                      mvp={
-                        speakerData.questionAnswers[7].answer.toLowerCase() ==
-                        "Yes".toLowerCase()
-                      }
+                      mvp={speakerData.questionAnswers[6].answer == "Yes"}
                     />
                   </a>
                 );
