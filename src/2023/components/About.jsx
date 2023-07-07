@@ -35,7 +35,7 @@ const About = ({ theme }) => {
             <Typography
               className="text-capitalize text-center aboutHeadingText"
               sx={{
-                fontSize: { xs: "3rem", mmb: theme.fontSize.aboutHeadingText },
+                fontSize: { xs: "2.5rem", mmb: theme.fontSize.aboutHeadingText },
               }}
             >
               A one-day virtual event that completely focuses on{" "}
@@ -43,7 +43,7 @@ const About = ({ theme }) => {
                 component={"span"}
                 sx={{
                   fontSize: {
-                    xs: "3rem",
+                    xs: "2.5rem",
                     mmb: theme.fontSize.aboutHeadingText,
                   },
                   display: "inline",
@@ -115,22 +115,22 @@ const About = ({ theme }) => {
       >
         <Button
           className="aboutButton"
-          // href={aboutData.eventRegLink}
+          href={aboutData.eventRegLink}
           target="_blank"
           sx={{
             color:"#fff",
             fontSize: theme.fontSize.eventButton,
             backgroundColor: theme.colors.text.purple,
             scale: {
-              xs: "1",
+              xs: "0.7",
               mmb: "1.2",
             },
           }}
-          alt="Coming Soon"
-          aria-label="Coming Soon"
+          alt="Register Now"
+          aria-label="Register Now"
           variant="contained"
         >
-          COMING SOON
+          Register Now
         </Button>
       </Box>
     </>

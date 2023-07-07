@@ -1,4 +1,7 @@
 .aug-2023 {
+  .nav-logo {
+    width: 20rem;
+  }
   .navLayout {
     width: 100% !important;
     position: fixed !important;
@@ -25,5 +28,13 @@
   // }
   .navTextSpace {
     width: fit-content;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aug-2023 {
+    .nav-logo {
+      width: 17rem;
+    }
   }
 }

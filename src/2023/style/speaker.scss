@@ -1,7 +1,7 @@
 $speakersHeadingColor: #636363;
-$borderBottomColor: #5eb3d8;
+$borderBottomColor: #421282;
 $white: #fff;
-$titlebg: #1381fa;
+$titlebg: #431282;
 $subGrey: #606060;
 
 .aug-2023 {
@@ -25,13 +25,18 @@ $subGrey: #606060;
   .img-wrapper {
     width: 30rem;
     height: 30rem;
+    img{
+      object-fit: cover;
+      height: 30rem;
+      object-position: top;
+    }
   }
   .card {
     max-width: 30rem;
 
     &-title {
       &-container {
-        min-height: 8rem;
+        min-height: 7rem;
         background-color: $titlebg;
       }
       // padding: 2rem;
@@ -39,12 +44,12 @@ $subGrey: #606060;
       font-size: 2.4rem;
     }
     &-container {
-      // padding-block: 0.5rem;
       background-color: $white;
       height: 8rem;
       display: flex;
       flex-direction: column;
       justify-content: center;
+      padding-top: 0.8rem;
       align-items: flex-start;
     }
     &-container > p:last-child {

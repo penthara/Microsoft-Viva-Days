@@ -116,9 +116,9 @@ function DrawerAppBar({ theme }) {
                 <img
                   alt="Viva Logo"
                   src={vivaLogo}
+                  className="nav-logo"
                   style={{
                     height: "auto",
-                    width: "17.5rem",
                   }}
                 />
               </Box>

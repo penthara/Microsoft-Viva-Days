@@ -16,7 +16,7 @@ const Parent2022 = ({ theme }) => {
     document.title = 'MS Viva Days - 2022';
   }, []);
   return (
-    <Box className="may-2023">
+    <Box className="may-2022">
       <Navbar theme={theme} />
       <Home theme={theme} />
       <CountdownTimer />

@@ -49,7 +49,7 @@ const Eventinfostripe = ({ theme }) => {
                   fontSize: {
                     xs: "7rem",
                   },
-                  paddingBlock: "1rem"
+                  paddingBlock: "1rem",
                 }}
                 src={sessionsIcon}
                 alt="Session icon"
@@ -60,9 +60,9 @@ const Eventinfostripe = ({ theme }) => {
                 className="eventInfoSubtext text-uppercase text-center"
                 sx={{
                   color: theme.colors.text.primary,
-                  
+                  paddingBlock: "0.5rem",
                   fontSize: {
-                    xs: "4.5rem",
+                    xs: "3.5rem",
                   },
                 }}
               >
@@ -75,7 +75,7 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "2.5rem",
+                    xs: "2rem",
                   },
                 }}
               >
@@ -91,6 +91,8 @@ const Eventinfostripe = ({ theme }) => {
                   fontSize: {
                     xs: "7rem",
                   },
+                  paddingBlock: "1rem",
+
                 }}
                 src={trackIcon}
                 alt="Track icon"
@@ -102,9 +104,9 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "4.5rem",
+                    xs: "3.5rem",
                   },
-                  paddingBlock: "1rem"
+                  paddingBlock: "1rem",
                 }}
               >
                 {apiData.track}
@@ -116,7 +118,7 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "2.5rem",
+                    xs: "2rem",
                   },
                 }}
               >
@@ -146,6 +148,8 @@ const Eventinfostripe = ({ theme }) => {
                   fontSize: {
                     xs: "7rem",
                   },
+                  paddingBlock: "1rem",
+
                 }}
                 src={speakerIcon}
                 alt="Speaker icon"
@@ -157,9 +161,9 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "4.5rem",
+                    xs: "3.5rem",
                   },
-                  paddingBlock: "1rem"
+                  paddingBlock: "1rem",
                 }}
               >
                 {apiData.speaker}
@@ -171,7 +175,7 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "2.5rem",
+                    xs: "2rem",
                   },
                 }}
               >
@@ -187,6 +191,8 @@ const Eventinfostripe = ({ theme }) => {
                   fontSize: {
                     xs: "7rem",
                   },
+                  paddingBlock: "1rem",
+
                 }}
                 src={sponsorIcon}
                 alt="Sponsor icon"
@@ -198,7 +204,7 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "4.5rem",
+                    xs: "3.5rem",
                   },
                   paddingBlock: "1rem",
                 }}
@@ -212,7 +218,7 @@ const Eventinfostripe = ({ theme }) => {
                 sx={{
                   color: theme.colors.text.primary,
                   fontSize: {
-                    xs: "2.5rem",
+                    xs: "2rem",
                   },
                 }}
               >

@@ -17,7 +17,6 @@ const Card = ({
   company,
   linkedIn,
   twitter,
-  microsoft,
   mvp,
 }) => {
   
@@ -33,9 +32,9 @@ const Card = ({
               </Typography>
             </Box>
             <Box className="card-container">
-              <Typography className="card-subtitle">{designation}</Typography>
+              <Typography className="card-subtitle text-left">{designation}</Typography>
               <Typography
-                className="card-subtitle"
+                className="card-subtitle text-left"
                 sx={{
                   fontWeight: "600",
                 }}
@@ -43,7 +42,7 @@ const Card = ({
                 {company}
               </Typography>
             </Box>
-            <Box className="card-social">
+            <Box className="card-social text-left">
               {mvp && (
                 <IconButton href={""} target="_blank" aria-label="MVP"  disabled>
                   <img
@@ -53,15 +52,7 @@ const Card = ({
                   />
                 </IconButton>
               )}
-              {microsoft && (
-                <IconButton href={""} target="_blank" aria-label="MicroSoft" disabled>
-                  <img
-                    src={mslogo}
-                    className="card-social-img"
-                    alt="microsoft-company"
-                  />
-                </IconButton>
-              )}
+             
               {linkedIn && (
                 <IconButton href={linkedIn} aria-label="LinkedIn" target="_blank">
                   <LinkedInIcon color="primary" className="card-social-icon" />

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -18,24 +18,56 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import moment from "moment";
 
 const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
-  console.log("SpeakerModalData", data);
+  console.log("SpeakerModalData from Card", data);
   console.log("isEmpty", sessions);
-  const speakerSocial = {};
-  if (JSON.stringify(data) != "{}") {
-    Object.assign(speakerSocial, {
-      microsoft:
-        data?.categories[0]?.categoryItems[0]?.name == "Yes" &&
-        data?.questionAnswers[0]?.answer.toLowerCase() == "microsoft"
-          ? true
-          : false,
-      mvp: data?.categories[1]?.categoryItems[0]?.name == "Yes",
-      linkedIn: data?.questionAnswers[1]?.answer,
-      twitter: data?.questionAnswers[2]?.answer,
-    });
-  }
+  const [additionalSpeakerFields, setAdditionalSpeakerFieldsData] = useState([]);
+  const [additionalSpeakerSessionDetails, setAdditionalSpeakerSessionDetails] =
+    useState([]);
+  const [sessionDetails, setSessionDetails] = useState([]);
   const handleSpeakerModalClose = () => {
     close(false);
   };
+  // console.log("kysO",Object.keys(data.sessions).length);
+  useEffect(() => {
+    let currentUserDetails = {};
+    if (JSON.stringify(data) != "{}") {
+      Object.assign(currentUserDetails, {
+        Bio: data.questionAnswers[1].answer,
+        Twitter: data.questionAnswers[2].answer,
+        LinkedIn: data.questionAnswers[5].answer,
+        isMVP: data.questionAnswers[6].answer,
+        isMsEmployee: data.questionAnswers[7].answer,
+      });
+    }
+    let currentSpeakerSessionDetails = [];
+    if (JSON.stringify(data) != "{}") {
+      for (let i = 0; i < Object.keys(data.sessions).length; i++) {
+        let dummyObject = {};
+        Object.assign(dummyObject, {
+          name: data.sessions[i].name,
+          id: data.sessions[i].id,
+        });
+        currentSpeakerSessionDetails.push(dummyObject);
+      }
+    }
+    let allSessionDetails = [];
+    if (JSON.stringify(sessions) != "{}") {
+      for (let i = 0; i < Object.keys(sessions).length; i++) {
+        let dummyObject = {};
+        Object.assign(dummyObject, {
+          name: sessions[i].title,
+          id: sessions[i].id,
+          startsAt:sessions[i].startsAt,
+          endsAt:sessions[i].endsAt,
+        });
+        allSessionDetails.push(dummyObject);
+      }
+    }
+    setAdditionalSpeakerFieldsData(currentUserDetails);
+    setAdditionalSpeakerSessionDetails(currentSpeakerSessionDetails);
+    setSessionDetails(allSessionDetails);
+  }, [data, sessions]);
+
   return (
     <div>
       <Dialog
@@ -77,7 +109,12 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
             </Typography>
 
             <Typography className="scroll-dialog-content-box-text text-justify">
-              {data.bio}
+              {additionalSpeakerFields?.Bio}
+              {console.log("currentSpeakerData", additionalSpeakerFields)}
+              {console.log(
+                "currentSpeakerSessionData",
+                additionalSpeakerSessionDetails
+              )}
             </Typography>
             <Divider
               variant="middle"
@@ -87,31 +124,14 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                 marginBlock: "2rem",
               }}
             />
-            {JSON.stringify(data) != "{}" &&
-              data.sessions.map((data, idx) => {
-                // console.log(
-                //   "tst",
-                //   sessions[0].sessions.find((session) => session.id == data.id)
-                // );
-
-                const session = {
-                  startsAt: isKeynote
-                    ? null
-                    : sessions[0].sessions.find(
-                        (session) => session.id == data.id
-                      ).startsAt,
-                  endsAt: isKeynote
-                    ? null
-                    : sessions[0].sessions.find(
-                        (session) => session.id == data.id
-                      ).endsAt,
-                  name: isKeynote
-                    ? null
-                    : sessions[0].sessions.find(
-                        (session) => session.id == data.id
-                      ).title,
-                };
-
+            {sessionDetails.length > 0 &&
+              additionalSpeakerSessionDetails.length > 0 &&
+              additionalSpeakerSessionDetails.map((data, idx) => {
+                console.log("dts", data);
+                let session = sessionDetails.find(
+                  (ses) => ses.id == data.id
+                );
+       
                 return (
                   <Box
                     key={idx}
@@ -139,7 +159,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                           </Typography>
                         </Box>
                       </Box>
-                      <Box
+                      {/* <Box
                         className="session-list session-list-time d-flex justify-content-center align-items-center"
                         sx={{
                           backgroundColor: "#e1e9e9",
@@ -162,7 +182,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                               : moment(session.endsAt).format("LT")}
                           </Typography>
                         </Box>
-                      </Box>
+                      </Box> */}
                     </Box>
                     <Box>
                       <Typography
@@ -175,6 +195,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       </Typography>
                     </Box>
                   </Box>
+          
                 );
               })}
             <Divider
@@ -187,7 +208,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
             />
             {!isKeynote ? (
               <Box className="card-social session-modal-speaker">
-                {speakerSocial.mvp && (
+                {/* {speakerSocial.mvp && (
                   <IconButton
                     href={""}
                     target="_blank"
@@ -200,8 +221,8 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       alt="microsoft-mvp"
                     />
                   </IconButton>
-                )}
-                {speakerSocial.microsoft && (
+                )} */}
+                {/* {speakerSocial.microsoft && (
                   <IconButton
                     href={""}
                     target="_blank"
@@ -214,8 +235,8 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       alt="microsoft-company"
                     />
                   </IconButton>
-                )}
-                {speakerSocial.linkedIn && (
+                )} */}
+                {/* {speakerSocial.linkedIn && (
                   <IconButton
                     href={speakerSocial.linkedIn}
                     aria-label="LinkedIn"
@@ -240,44 +261,45 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       className="card-social-icon"
                     />
                   </IconButton>
-                )}
+                )} */}
               </Box>
             ) : (
-              <Box className="card-social session-modal-speaker">
-                <IconButton
-                  href={""}
-                  target="_blank"
-                  aria-label="MicroSoft"
-                  disabled
-                >
-                  <img
-                    src={mslogo}
-                    className="card-social-img"
-                    alt="microsoft-company"
-                  />
-                </IconButton>
+              // <Box className="card-social session-modal-speaker">
+              //   <IconButton
+              //     href={""}
+              //     target="_blank"
+              //     aria-label="MicroSoft"
+              //     disabled
+              //   >
+              //     <img
+              //       src={mslogo}
+              //       className="card-social-img"
+              //       alt="microsoft-company"
+              //     />
+              //   </IconButton>
 
-                <IconButton
-                  href="https://www.linkedin.com/in/hammadrajjoub/"
-                  aria-label="LinkedIn"
-                  target="_blank"
-                >
-                  <LinkedInIcon color="primary" className="card-social-icon" />
-                </IconButton>
+              //   <IconButton
+              //     href="https://www.linkedin.com/in/hammadrajjoub/"
+              //     aria-label="LinkedIn"
+              //     target="_blank"
+              //   >
+              //     <LinkedInIcon color="primary" className="card-social-icon" />
+              //   </IconButton>
 
-                <IconButton
-                  href="https://twitter.com/iRajjoub"
-                  aria-label="twitter"
-                  target="_blank"
-                >
-                  <TwitterIcon
-                    sx={{
-                      color: theme.icon.twitter,
-                    }}
-                    className="card-social-icon"
-                  />
-                </IconButton>
-              </Box>
+              //   <IconButton
+              //     href="https://twitter.com/iRajjoub"
+              //     aria-label="twitter"
+              //     target="_blank"
+              //   >
+              //     <TwitterIcon
+              //       sx={{
+              //         color: theme.icon.twitter,
+              //       }}
+              //       className="card-social-icon"
+              //     />
+              //   </IconButton>
+              // </Box>
+              ""
             )}
           </Box>
         </DialogContent>

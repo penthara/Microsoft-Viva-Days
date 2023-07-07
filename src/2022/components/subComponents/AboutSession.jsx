@@ -28,7 +28,7 @@ const AboutSession = ({ theme, open, close, data, sessionSpeaker }) => {
         scroll="paper"
         fullWidth
         maxWidth="mmb"
-        className="may2022-scroll-dialog speaker-modal may-2023"
+        className="may2022-scroll-dialog speaker-modal may-2022"
         aria-labelledby="scroll-dialog-title"
         aria-describedby="scroll-dialog-description"
       >

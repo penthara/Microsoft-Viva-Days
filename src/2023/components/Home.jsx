@@ -38,8 +38,9 @@ const Home = ({ theme }) => {
                 mmb: "5rem",
               },
               fontSize: {
-                xs: "3.2rem",
-                mmb: "clamp(4rem, calc(4rem + ((1vw - 0.52rem) * 3.4091)), 7rem)",
+                xs: "4.5rem",
+                md: "8rem",
+                lg: "clamp(10rem, calc(4rem + ((1vw - 0.52rem) * 3.4091)), 7rem)",
               },
             }}
           >
@@ -60,7 +61,7 @@ const Home = ({ theme }) => {
             },
             marginInline: "auto",
             paddingInline: "3rem",
-            minWidth: "25rem",
+            minWidth: "20rem",
             aspectRatio: "2/0.6",
             // borderRadius: "2.5rem",
           }}
@@ -74,8 +75,8 @@ const Home = ({ theme }) => {
               component="img"
               sx={{
                 fontSize: {
-                  xs: "2.5rem",
-                  mmb: "clamp(2rem, calc(2rem + ((1vw - 0.52rem) * 2.8409)), 4.5rem)",
+                  xs: "2rem",
+                  mmb: "3.5rem",
                 },
               }}
               src={calendarIcon}
@@ -88,8 +89,8 @@ const Home = ({ theme }) => {
               sx={{
                 color: theme.colors.text.primary,
                 fontSize: {
-                  xs: "2.5rem",
-                  mmb: "clamp(2rem, calc(2rem + ((1vw - 0.52rem) * 2.8409)), 4.5rem)",
+                  xs: "2rem",
+                  mmb: "3.5rem",
                 },
               }}
             >
@@ -111,8 +112,7 @@ const Home = ({ theme }) => {
             sx={{
               color: theme.colors.text.primary,
               fontSize: {
-                xs: "2.5rem",
-                mmb: "clamp(2.5rem, calc(2.5rem + ((1vw - 0.52rem) * 1.1364)), 3.5rem)",
+                xs: "2rem",
               },
             }}
           >
@@ -124,11 +124,10 @@ const Home = ({ theme }) => {
               color: theme.colors.text.primary,
               fontWeight: "500",
               fontSize: {
-                xs: "2rem",
+                xs: "1.5rem",
               },
               marginTop: {
-                xs: "1.5rem",
-                mmb: "5.5rem",
+                xs: "3rem",
               },
             }}
           >
@@ -136,14 +135,16 @@ const Home = ({ theme }) => {
           </Typography>
           <a href={aboutData.communityLink} target="_blank" rel="noreferrer">
             <Typography
-              className="eventOrg text-capitalize text-center text-underline letterSpacing-4 lineHeight-4"
+              className="eventOrg text-capitalize text-center text-underline letterSpacing-4"
               sx={{
                 color: theme.colors.text.primary,
                 maxWidth: {
-                  xs: "100%",
+                  xs: "30rem",
+                  md: "100%",
                 },
+                lineHeight: "2rem !important",
                 fontSize: {
-                  xs: "2rem",
+                  xs: "1.5rem",
                   // mmb: "clamp(2.3rem, calc(2.3rem + ((1vw - 0.52rem) * 0.7955)), 3rem)",
                 },
                 marginTop: {
@@ -170,23 +171,23 @@ const Home = ({ theme }) => {
           >
             <Button
               className="eventButton"
-              // href={homeData.eventRegLink}
+              href={homeData.eventRegLink}
               target="_blank"
               sx={{
                 color: theme.colors.text.purple,
                 fontSize: theme.fontSize.eventButton,
                 backgroundColor: "#ffffff",
                 scale: {
-                  xs: "1",
+                  xs: "0.7",
                   mmb: "1.2",
                 },
               }}
               variant="contained"
-              alt="Coming Soon"
-              aria-label="Coming Soon"
+              alt="Register Now"
+              aria-label="Register Now"
             >
               {/* {homeData.eventButton} */}
-              Coming Soon
+              Register Now
             </Button>
           </Box>
         </Box>

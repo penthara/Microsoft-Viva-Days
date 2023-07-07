@@ -103,8 +103,8 @@ const About = ({ theme }) => {
             },
             backgroundColor: "#421282",
           }}
-          alt="Coming Soon"
-          aria-label="Coming Soon"
+          alt="Register Now"
+          aria-label="Register Now"
           variant="contained"
         >
           Register Now

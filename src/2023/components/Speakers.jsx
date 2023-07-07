@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import { Typography, Box, Skeleton, Stack } from "@mui/material";
 import "../style/global.scss";
 import "../style/speaker.scss";
@@ -10,6 +10,14 @@ const Speakers = ({ theme, speakerData, sessionData }) => {
   const [showData, setShowData] = useState(false);
   const [speakerModal, setSpeakerModal] = useState(false);
   const [speakerModalData, setSpeakerModalData] = useState({});
+  const [sessionDetails, setSessionDetails] = useState([]);
+  useEffect(() => {
+    if (sessionData.length > 0) {
+      setSessionDetails(sessionData[0].sessions);
+    }
+  }, [sessionData]);
+  console.log("sponsor data", sessionData);
+  console.log("sponsor data details", sessionDetails);
   return (
     <>
       <div>
@@ -26,7 +34,7 @@ const Speakers = ({ theme, speakerData, sessionData }) => {
           </Box>
 
           <Box className="d-flex justify-content-center flex-wrap keynote-box speaker-grid">
-            {speakerData &&
+            {speakerData.length > 0 &&
               speakerData.map((speakerData, idx) => {
                 setTimeout(() => {
                   setShowData(true);
@@ -59,23 +67,13 @@ const Speakers = ({ theme, speakerData, sessionData }) => {
                       theme={theme}
                       image={speakerData.profilePicture}
                       name={speakerData.fullName}
-                      designation={speakerData.questionAnswers[5].answer}
-                      company={
-                        speakerData.categories[0].categoryItems[0].name ==
-                          "Yes" && speakerData.questionAnswers[0].answer
-                      }
-                      linkedIn={speakerData.questionAnswers[1].answer}
+                      designation={speakerData.questionAnswers[0].answer}
+                      company={speakerData.questionAnswers[4].answer}
+                      linkedIn={speakerData.questionAnswers[5].answer}
                       twitter={speakerData.questionAnswers[2].answer}
-                      microsoft={
-                        speakerData.categories[0].categoryItems[0].name ==
-                          "Yes" &&
-                        speakerData.questionAnswers[0].answer.toLowerCase() ==
-                          "microsoft"
-                          ? true
-                          : false
-                      }
                       mvp={
-                        speakerData.categories[1].categoryItems[0].name == "Yes"
+                        speakerData.questionAnswers[7].answer.toLowerCase() ==
+                        "Yes".toLowerCase()
                       }
                     />
                   </a>
@@ -88,7 +86,7 @@ const Speakers = ({ theme, speakerData, sessionData }) => {
           open={speakerModal}
           close={setSpeakerModal}
           data={speakerModalData}
-          sessions={sessionData}
+          sessions={sessionDetails}
         />
       </div>
     </>

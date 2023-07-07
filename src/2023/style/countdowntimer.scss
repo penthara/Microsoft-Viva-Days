@@ -15,7 +15,7 @@ $base-digit-purple: #431282;
   .countDownEventDate {
     color: $base-color-black;
     font-weight: 600 !important;
-    font-size: 4.5rem !important;
+    font-size: 3.5rem !important;
   }
 
   .eventText {
@@ -74,10 +74,17 @@ $base-digit-purple: #431282;
 }
 
 @media (max-width: 768px) {
-  .digits {
-    font-size: 10vw;
-  }
-  .dateUnits {
-    font-size: min(1.5rem, 5vw);
+  .aug-2023 {
+    .digits,
+    .digitDots {
+      font-size: 2.5rem !important;
+    }
+    .dateUnits {
+      font-size: min(1.5rem, 5vw);
+      letter-spacing: 2px !important;
+    }
+    .timerCard {
+      padding: 0.8rem;
+    }
   }
 }
