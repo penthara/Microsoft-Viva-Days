@@ -13,6 +13,7 @@ const Footer = ({ theme }) => {
       className="footer"
       sx={{
         backgroundColor: "#431282",
+        marginTop: "5rem",
       }}
     >
       <Box className="footerWrapper sectionMaxWidth d-flex flex-column justify-content-center">
@@ -127,7 +128,7 @@ const Footer = ({ theme }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconButton alt="LinkedIn" aria-label ="LinkedIn">
+                  <IconButton alt="LinkedIn" aria-label="LinkedIn">
                     <LinkedInIcon
                       sx={{
                         fontSize: "4rem",
@@ -143,9 +144,7 @@ const Footer = ({ theme }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconButton alt="Twitter"
-                  aria-label ="Twitter"
-                  >
+                  <IconButton alt="Twitter" aria-label="Twitter">
                     <TwitterIcon
                       sx={{
                         fontSize: "4rem",
@@ -161,9 +160,7 @@ const Footer = ({ theme }) => {
                   target="_blank"
                   rel="noreferrer"
                 >
-                  <IconButton alt="Facebook"
-                  aria-label ="Facebook"
-                  >
+                  <IconButton alt="Facebook" aria-label="Facebook">
                     <FacebookIcon
                       sx={{
                         fontSize: "4rem",
