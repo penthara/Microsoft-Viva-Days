@@ -112,7 +112,7 @@ const Home = ({ theme }) => {
             sx={{
               color: theme.colors.text.primary,
               fontSize: {
-                xs: "2rem",
+                xs: "2.5rem",
               },
             }}
           >
@@ -124,7 +124,7 @@ const Home = ({ theme }) => {
               color: theme.colors.text.primary,
               fontWeight: "500",
               fontSize: {
-                xs: "1.5rem",
+                xs: "1.8rem",
               },
               marginTop: {
                 xs: "3rem",
@@ -144,7 +144,7 @@ const Home = ({ theme }) => {
                 },
                 lineHeight: "2rem !important",
                 fontSize: {
-                  xs: "1.5rem",
+                  xs: "1.8rem",
                   // mmb: "clamp(2.3rem, calc(2.3rem + ((1vw - 0.52rem) * 0.7955)), 3rem)",
                 },
                 marginTop: {

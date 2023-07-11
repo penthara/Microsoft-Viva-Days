@@ -29,14 +29,14 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
       >
         <Box className="d-flex scroll-dialog-head align-items-center">
           <DialogTitle className="scroll-dialog-title text-uppercase text-start">
-            SPONSORSHIP OPPORTUNITY FOR MICSROSOFT PURVIEW DAYS 2023
+            SPONSORSHIP OPPORTUNITY FOR Microsoft Viva Days 2023
           </DialogTitle>
           <IconButton
             sx={{
               marginRight: "2.4rem",
             }}
             onClick={() => handleModalClose()}
-            aria-label = "close"
+            aria-label="close"
           >
             <CloseIcon className="scroll-dialog-close" />
           </IconButton>
@@ -55,9 +55,8 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
               BECOME OUR SPONSOR
             </Typography>
             <Typography className="scroll-dialog-home-text">
-              The perfect event to be in touch with Microsoft Purview
-              professionals and to take the pulse of the latest innovations and
-              trends in the world of Compliance.
+              The perfect event to be in touch with Microsoft Viva professionals
+              and to take the pulse of the latest innovations.
             </Typography>
           </Box>
           <Box className="d-flex flex-column align-items-center">
@@ -245,7 +244,7 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
                       </li>
                       <div className="Sponsor-divider" />
                       <li>
-                        5% off on Microsoft Purview Days 2023 Sponsorship Fee.
+                        5% off on Microsoft Viva Days 2023 Sponsorship Fee.
                       </li>
                     </ul>
                   </div>
@@ -308,6 +307,11 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
               target="_blank"
               rel="noopener noreferrer"
               sx={{
+                backgroundColor: theme.colors.text.bSponsorPrimary,
+                ":hover": {
+                  backgroundColor: theme.colors.text.bSponsorPrimary,
+                  opacity: 0.9,
+                },
                 color: theme.colors.text.primary,
                 fontSize: {
                   xs: "clamp(1.6rem, calc(1.6rem + ((1vw - 0.32rem) * 2.7273)), 2.8rem) !important",
@@ -322,7 +326,7 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
                 },
               }}
               variant="contained"
-              aria-label = "Become A Sponsor Now"
+              aria-label="Become A Sponsor Now"
             >
               Become A Sponsor Now
             </Button>

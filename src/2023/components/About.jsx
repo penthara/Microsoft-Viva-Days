@@ -35,10 +35,13 @@ const About = ({ theme }) => {
             <Typography
               className="text-capitalize text-center aboutHeadingText"
               sx={{
-                fontSize: { xs: "2.5rem", mmb: theme.fontSize.aboutHeadingText },
+                fontSize: {
+                  xs: "2.5rem",
+                  mmb: theme.fontSize.aboutHeadingText,
+                },
               }}
             >
-              A one-day virtual event that completely focuses on{" "}
+              One-Day Virtual Event Completely Focuses on{" "}
               <Typography
                 component={"span"}
                 sx={{
@@ -52,7 +55,6 @@ const About = ({ theme }) => {
               >
                 Microsoft Viva{" "}
               </Typography>
-              and related technologies.
             </Typography>
           </Box>
           <Box
@@ -73,8 +75,9 @@ const About = ({ theme }) => {
                 },
               }}
             >
-              Microsoft Viva Days, 2023 is a one-day virtual event organized by
-              the{" "}
+              Join us on 12th Aug to learn and experience a technology showcase
+              Microsoft Viva, an integrated employee experience platform,
+              organized by the{" "}
               <a
                 href={aboutData.communityLink}
                 target="_blank"
@@ -96,13 +99,38 @@ const About = ({ theme }) => {
                   group{" "}
                 </Typography>
               </a>
-              . Microsoft Viva is an employee experience platform with
-              functionalities to bring learning, insights, communications, and
-              resources together on one platform. It's powered by Microsoft 365,
-              and companies can experience it via MS Teams . This event is the
-              first of its kind from the Microsoft Community in India and we're
-              planning to cover all aspects of Microsoft Viva in this one day
-              virtual event.
+              followed by the first one we had in{" "}
+              <a
+                href="https://www.microsoftvivadays.com/may2022"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <Typography
+                  component={"span"}
+                  sx={{
+                    fontSize: {
+                      xs: "2rem",
+                      mmb: theme.fontSize.aboutSubheadingText,
+                    },
+                    display: "inline",
+                    color: theme.colors.text.purple,
+                    textDecoration: "underline",
+                  }}
+                >
+                  2022
+                </Typography>
+              </a>
+              .
+              <br />
+              <br /> Deep dive into all the various features and capabilities of
+              the Microsoft Viva modules - Connections, Topics, Insights,
+              Learnings, Goals, Sales, Engages, and Answers through hands-on
+              sessions and labs, live technical demos, and Q&A sessions with
+              Microsoft MVPs, Industry experts, and community leaders.
+              <br /> <br />
+              Register to see how Microsoft Viva can provide AI-powered insights
+              and experiences to help empower and engage your workforce using
+              your existing infrastructure.
             </Typography>
           </Box>
         </Box>
@@ -118,7 +146,7 @@ const About = ({ theme }) => {
           href={aboutData.eventRegLink}
           target="_blank"
           sx={{
-            color:"#fff",
+            color: "#fff",
             fontSize: theme.fontSize.eventButton,
             backgroundColor: theme.colors.text.purple,
             scale: {

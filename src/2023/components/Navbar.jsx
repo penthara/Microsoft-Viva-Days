@@ -29,7 +29,7 @@ const navItems = [
   // { text: "Agenda", id: "agenda" },
   { text: "Sponsors", id: "sponsors" },
   { text: "Contact Us", id: "contactUS" },
-  // { text: "Become A Sponsor", id: "beAsponsor" },
+  { text: "Become A Sponsor", id: "beAsponsor" },
 ];
 // console.log("navItems", navItems);
 
@@ -49,11 +49,11 @@ function DrawerAppBar({ theme }) {
 
   const beASponsor = {
     borderRadius: "5rem",
-    background: navbar ? theme.colors.text.secondary : theme.colors.bg.navWhite,
+    background: navbar ? theme.colors.text.bSponsorPrimary : theme.colors.bg.navWhite,
     transition: "all .3s ease-in-out",
     "&:hover": {
       background: navbar
-        ? theme.colors.text.secondary
+        ? theme.colors.text.bSponsorPrimary
         : theme.colors.bg.navWhite,
       transform: "scale(1.02)",
     },
@@ -164,7 +164,7 @@ function DrawerAppBar({ theme }) {
                                 ? { color: theme.colors.text.primary }
                                 : { color: theme.colors.text.coalBlack }
                               : item.id === "beAsponsor"
-                              ? { color: theme.colors.text.secondary }
+                              ? { color: theme.colors.text.bSponsorPrimary }
                               : { color: theme.colors.text.primary }
                           }
                           className="navText"

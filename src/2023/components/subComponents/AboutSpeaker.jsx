@@ -143,7 +143,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       <Box
                         className="session-list d-flex justify-content-center align-items-center"
                         sx={{
-                          backgroundColor: "#0d2958",
+                          backgroundColor: "#431282",
                           marginRight: "1rem",
                         }}
                       >
@@ -188,7 +188,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                       <Typography
                         className="session-name"
                         sx={{
-                          color: "#0d2958",
+                          color: "#431282",
                         }}
                       >
                         {isKeynote ? "Keynote" : session.name}

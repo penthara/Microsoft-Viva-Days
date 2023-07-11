@@ -5,5 +5,12 @@
         "promoPartnerAltText": "Penthara Technologies",
         "promoPartnerName": "Penthara Technologies",
         "promoPartnerUrl": "https://www.penthara.com"
+    },
+    {
+        "promoPartnerId": 2,
+        "promoPartnerImage": "./2023/assets/logos/VivaExplorersHeader-Image.png",
+        "promoPartnerAltText": "Viva Explorers",
+        "promoPartnerName": "Viva Explorers",
+        "promoPartnerUrl": "https://www.vivaexplorers.com/"
     }
 ]

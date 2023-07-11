@@ -2,6 +2,7 @@ export const theme2023 = {
   colors: {
     text: {
       primary: "#ffffff",
+      bSponsorPrimary: "#431282",
       secondary: "#217DDE",
       blue: "#3CB6FF",
       black: "#363333",
