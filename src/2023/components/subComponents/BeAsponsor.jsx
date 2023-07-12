@@ -86,7 +86,7 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
                       marketing engine through tech event sponsorship.
                     </li>
                     <li>
-                      Present your products & technologies to a global audience
+                      Present yourself to a global audience
                       of IT Pros and developers.
                     </li>
                   </ul>
@@ -244,7 +244,7 @@ const BeAsponsor = ({ theme, open, handleModalClose }) => {
                       </li>
                       <div className="Sponsor-divider" />
                       <li>
-                        5% off on Microsoft Viva Days 2023 Sponsorship Fee.
+                        5% off on Microsoft Viva Days 2024 Sponsorship Fee.
                       </li>
                     </ul>
                   </div>
