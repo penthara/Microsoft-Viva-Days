@@ -124,7 +124,7 @@ const About = ({ theme }) => {
               <br />
               <br /> Deep dive into all the various features and capabilities of
               the Microsoft Viva modules - Connections, Topics, Insights,
-              Learnings, Goals, Sales, Engages, and Answers through hands-on
+              Learning, Goals, Sales, and Engage through hands-on
               sessions and labs, live technical demos, and Q&A sessions with
               Microsoft MVPs, Industry experts, and community leaders.
               <br /> <br />
