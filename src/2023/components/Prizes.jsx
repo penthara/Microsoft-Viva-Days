@@ -56,39 +56,6 @@ const Prizes = ({ theme }) => {
             );
           })}
         </div>
-        <div className="bookPrize-container">
-          <Box className="bookPrizes-wrapper bg-pc">
-            <div className="bookPrizes-parent">
-              {books.map((data) => {
-                return (
-                  <div
-                    key={data.id}
-                    className={`bookPrizes-card bookPrizes-card-${data.id}`}
-                  >
-                    <img
-                      src={data.image}
-                      alt="prize"
-                      className="bookPrizes-card-img"
-                    />
-                  </div>
-                );
-              })}
-            </div>
-            <div>
-              <Typography className="QuizPrizes-card-heading text-uppercase heading-mobile text-center">
-                Win Special discount on Microsoft Press Pearson Store
-              </Typography>
-            </div>
-          </Box>
-          <div className="book-discount">
-            <Box className="discount-box">
-              <Typography className="text-center text-uppercase prizesBookSubheadingText">
-                Upto 70% discount on microsoft Press books, Ebooks & video
-                courses
-              </Typography>
-            </Box>
-          </div>
-        </div>
       </Box>
     </div>
   );
