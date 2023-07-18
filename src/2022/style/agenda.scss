@@ -45,6 +45,9 @@ $borderBottomColor: #421282;
     display: flex;
     flex-direction: row-reverse;
     justify-content: flex-start;
+    &:last-child {
+      width: 30rem;
+    }
   }
   .session-speakers {
     display: flex;

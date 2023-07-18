@@ -159,7 +159,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                           </Typography>
                         </Box>
                       </Box>
-                      {/* <Box
+                      <Box
                         className="session-list session-list-time d-flex justify-content-center align-items-center"
                         sx={{
                           backgroundColor: "#e1e9e9",
@@ -182,7 +182,7 @@ const AboutSpeaker = ({ theme, open, close, data, sessions, isKeynote }) => {
                               : moment(session.endsAt).format("LT")}
                           </Typography>
                         </Box>
-                      </Box> */}
+                      </Box>
                     </Box>
                     <Box>
                       <Typography

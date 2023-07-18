@@ -383,16 +383,9 @@ const staticContributorData = [
 ];
 
 const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
-  const trackOne =
-    session != undefined &&
-    session[0].sessions.filter(
-      (s) => s.room == "1" && s.isPlenumSession == false
-    );
-  const trackTwo =
-    session != undefined && session[0].sessions.filter((s) => s.room == "2");
+  console.log("AgendaSpeaker", speaker);
+  console.log("AgendaSession", session);
 
-  const [currentTrack, setCurrentTrack] = React.useState(defaultTrackData);
-  const [alignment, setAlignment] = React.useState("1");
   const [speakerModal, setSpeakerModal] = React.useState(false);
   const [speakerModalData, setSpeakerModalData] = useState({});
 
@@ -401,21 +394,9 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
 
   const [modalSessionSpeaker, setModalSessionSpeaker] = useState();
 
-  const handleChange = (_, newAlignment) => {
-    if (newAlignment !== null) {
-      setAlignment(newAlignment);
-      if (newAlignment == "1") {
-        setCurrentTrack(trackOne);
-      } else {
-        setCurrentTrack(trackTwo);
-      }
-    }
-  };
-
   return (
     <>
       <div className="agenda">
-        {console.log("trackOne1", session)}
         <Box className="sectionMaxWidth">
           <Box className="speakersHeadingBox">
             <Typography
@@ -430,63 +411,38 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
 
           <Box className="d-flex justify-content-center keynote-box agenda-box">
             <Paper className="agenda-paper" elevation={0}>
-              <ToggleButtonGroup
+              <Box
                 className="agenda-head"
-                variant="contained"
-                exclusive
-                value={alignment}
-                onChange={handleChange}
                 aria-label="outlined primary button group"
               >
-                <ToggleButton
-                  value="1"
+                <Box
                   sx={{
-                    background:
-                      alignment == "1"
-                        ? theme.colors.bg.agendaSelected
-                        : theme.colors.bg.agendaUnSelected,
+                    background: theme.colors.bg.agendaSelected,
                   }}
-                  className="agenda-track t1 d-flex"
+                  className="agenda-track t1 d-flex flex-column"
                 >
                   <Typography
                     sx={{
-                      color:
-                        alignment == "1"
-                          ? theme.colors.text.agendaSelected
-                          : theme.colors.text.agendaUnSelected,
+                      color: theme.colors.text.agendaSelected,
                     }}
                     className="agenda-track-text text-uppercase"
                   >
                     Track I
                   </Typography>
-                </ToggleButton>
-                <ToggleButton
-                  value="2"
-                  sx={{
-                    background:
-                      alignment == "2"
-                        ? theme.colors.bg.agendaSelected
-                        : theme.colors.bg.agendaUnSelected,
-                  }}
-                  className="agenda-track t2 d-flex"
-                >
                   <Typography
                     sx={{
-                      color:
-                        alignment == "2"
-                          ? theme.colors.text.agendaSelected
-                          : theme.colors.text.agendaUnSelected,
+                      color: theme.colors.text.agendaSelected,
                     }}
-                    className="agenda-track-text text-uppercase"
+                    className="agenda-track-subtext"
                   >
-                    Track II
+                    12th Aug 2023
                   </Typography>
-                </ToggleButton>
-              </ToggleButtonGroup>
+                </Box>
+              </Box>
               <Box className="agenda-sessions-container">
-                <Paper elevation={3} className="session-tile">
+                {/* <Paper elevation={3} className="session-tile">
                   <Box className="session-data-container">
-                    <Box className="responsive-wrapper">
+                    <Box className="responsive-wrapper pointer">
                       <Box className="d-flex session-time">
                         <Typography
                           className="session-time-text"
@@ -507,7 +463,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                               mmb: theme.fontSize.aboutSubheadingText,
                             },
                           }}
-                          className="session-title"
+                          className="session-title text-left"
                         >
                           Welcome Note
                         </Typography>
@@ -515,7 +471,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                     </Box>
                     <Box className="speaker-container">
                       <Box className="session-speakers">
-                        <IconButton href={about.trackOne} target="_blank">
+                        <IconButton href={about.track} target="_blank">
                           <SvgIcon
                             sx={{
                               fontSize: "3.2rem",
@@ -606,7 +562,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                 </Paper>
                 <Paper elevation={3} className="session-tile">
                   <Box className="session-data-container">
-                    <Box className="responsive-wrapper">
+                    <Box className="responsive-wrapper pointer">
                       <Box className="d-flex session-time">
                         <Typography
                           className="session-time-text"
@@ -627,7 +583,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                               mmb: theme.fontSize.aboutSubheadingText,
                             },
                           }}
-                          className="session-title"
+                          className="session-title text-left"
                         >
                           Keynote
                         </Typography>
@@ -723,8 +679,8 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                       </Box>
                     </Box>
                   </Box>
-                </Paper>
-                {currentTrack?.map((trackData, idx) => {
+                </Paper> */}
+                {session?.map((trackData, idx) => {
                   return (
                     <Paper key={idx} elevation={3} className="session-tile">
                       <Box className="session-data-container">
@@ -765,7 +721,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                                   mmb: theme.fontSize.aboutSubheadingText,
                                 },
                               }}
-                              className="session-title"
+                              className="session-title text-left"
                             >
                               {trackData.title}
                             </Typography>
@@ -773,15 +729,8 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                         </Box>
 
                         <Box className="speaker-container">
-                          <Box className="session-speakers">
-                            <IconButton
-                              href={
-                                alignment == "1"
-                                  ? about.trackOne
-                                  : about.trackTwo
-                              }
-                              target="_blank"
-                            >
+                          {/* <Box className="session-speakers">
+                            <IconButton href={about.track} target="_blank">
                               <SvgIcon
                                 sx={{
                                   fontSize: "3.2rem",
@@ -836,7 +785,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                                 </svg>
                               </SvgIcon>
                             </IconButton>
-                          </Box>
+                          </Box> */}
 
                           {trackData?.speakers?.map((spkr, idx) => {
                             let spkrimg = speaker.find(
@@ -886,9 +835,9 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                     </Paper>
                   );
                 })}
-                <Paper elevation={3} className="session-tile">
+                {/* <Paper elevation={3} className="session-tile">
                   <Box className="session-data-container">
-                    <Box className="responsive-wrapper">
+                    <Box className="responsive-wrapper pointer">
                       <Box className="d-flex session-time">
                         <Typography
                           className="session-time-text"
@@ -909,7 +858,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                               mmb: theme.fontSize.aboutSubheadingText,
                             },
                           }}
-                          className="session-title"
+                          className="session-title text-left"
                         >
                           Quiz & Closing Note
                         </Typography>
@@ -1035,7 +984,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                       </Box>
                     </Box>
                   </Box>
-                </Paper>
+                </Paper> */}
               </Box>
             </Paper>
           </Box>

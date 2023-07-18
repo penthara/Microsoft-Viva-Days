@@ -26,7 +26,7 @@ const Parent2023 = ({ theme }) => {
   useEffect(() => {
     speakerApi().then((data) => {
       setSpeakerData(data);
-      console.log("Session Data", data);
+      console.log("Speaker Data", data);
 
     });
     sessionApi().then((data) => {
@@ -56,17 +56,17 @@ const Parent2023 = ({ theme }) => {
           sessionData={sessionData}
         />
       </ErrorBoundary>
-      {/* <Box id="agenda" />
-      <ErrorBoundary>
+      <Box id="agenda" />
+      {/* <ErrorBoundary> */}
         {speakerData.length > 0 &&
           sessionData.length > 0 && (
             <Agenda
               theme={theme}
               speaker={speakerData}
-              session={sessionData}
+              session={sessionData[0].sessions}
             />
           )}
-      </ErrorBoundary> */}
+      {/* </ErrorBoundary> */}
       <Box id="prizes" />
       <Prizes theme={theme} />
       {/* <Box id="donate" />

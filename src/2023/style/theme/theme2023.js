@@ -33,8 +33,7 @@ export const theme2023 = {
       footer: "#217DDE",
       eventDate: "rgba(0, 0, 0, 0.24)",
       agendaUnSelected: "rgba(204,233,255,0.75)!important",
-      agendaSelected:
-        "linear-gradient(319.35deg, rgba(33, 125, 222, 0.329) 15.11%, rgba(36, 161, 232, 0.49) 97.82%), #0D2958 !important",
+      agendaSelected: "linear-gradient(180deg, #431282 0%, #5c5acc 100%)",
     },
     navbar: {
       boxShadow: "rgb(0 0 0 / 0.2) 0px 5px 1000px",

@@ -13,7 +13,7 @@ import "../style/global.scss";
 
 const Parent2022 = ({ theme }) => {
   useEffect(() => {
-    document.title = 'MS Viva Days - 2022';
+    document.title = "MS Viva Days - 2022";
   }, []);
   return (
     <Box className="may-2022">
@@ -28,9 +28,7 @@ const Parent2022 = ({ theme }) => {
       </ErrorBoundary>
       <ErrorBoundary>
         <Box id="speakers" />
-        <Speakers
-          theme={theme}
-        />
+        <Speakers theme={theme} />
       </ErrorBoundary>
       <Box id="sponsors" />
       <Sponsors theme={theme} />
