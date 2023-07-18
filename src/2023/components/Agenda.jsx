@@ -447,7 +447,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                         <Typography
                           className="session-time-text"
                           sx={{
-                            color: "#0E9BE3",
+                            color: "#421282",
                             fontSize: { xs: "1.8rem", mmb: "2.2rem" },
                             marginLeft: "1rem",
                           }}
@@ -567,7 +567,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                         <Typography
                           className="session-time-text"
                           sx={{
-                            color: "#0E9BE3",
+                            color: "#421282",
                             fontSize: { xs: "1.8rem", mmb: "2.2rem" },
                             marginLeft: "1rem",
                           }}
@@ -696,7 +696,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                             <Typography
                               className="session-time-text"
                               sx={{
-                                color: "#0E9BE3",
+                                color: "#421282",
                                 fontSize: { xs: "1.8rem", mmb: "2.2rem" },
                                 marginLeft: "1rem",
                               }}
@@ -842,7 +842,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                         <Typography
                           className="session-time-text"
                           sx={{
-                            color: "#0E9BE3",
+                            color: "#421282",
                             fontSize: { xs: "1.8rem", mmb: "2.2rem" },
                             marginLeft: "1rem",
                           }}
