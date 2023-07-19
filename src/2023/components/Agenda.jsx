@@ -427,7 +427,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                     }}
                     className="agenda-track-text text-uppercase"
                   >
-                    Track I
+                    Sessions
                   </Typography>
                   <Typography
                     sx={{
