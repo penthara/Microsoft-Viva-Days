@@ -7,7 +7,7 @@ import {
   ToggleButton,
   Avatar,
   SvgIcon,
-  IconButton,
+  Button,
 } from "@mui/material";
 import moment from "moment-timezone";
 import about from "../store/aug2023/about.json";
@@ -20,6 +20,7 @@ import welcomeSpeaker from "../assets/speakers/vignesh.jpg";
 import keynoteSpeaker from "../assets/speakers/hammad_rajjoub.jpg";
 import Tushar from "../assets/organizers/TusharKumar.jpg";
 import Shrusti from "../assets/speakers/ShrustiShah.jpg";
+import VivaExplorer from "../assets/logoIcons/VivaExplorersHeader-Image.png";
 
 const staticContributorData = [
   {
@@ -696,8 +697,7 @@ const Agenda = ({ theme, speaker, session }) => {
                   ?.filter(
                     (data) =>
                       data.id != "7617ea5b-3616-4cd7-899d-68c9a498b3ec" &&
-                      data.id != "b9ea879f-d988-410c-901f-6ebdf6d99597" &&
-                      data.id != "520924"
+                      data.id != "b9ea879f-d988-410c-901f-6ebdf6d99597"
                   )
                   .map((trackData, idx) => {
                     return (
@@ -747,8 +747,9 @@ const Agenda = ({ theme, speaker, session }) => {
                             </Box>
                           </Box>
 
-                          <Box className="speaker-container">
-                            {/* <Box className="session-speakers">
+                          {trackData.id != "520924" ? (
+                            <Box className="speaker-container">
+                              {/* <Box className="session-speakers">
                             <IconButton href={about.track} target="_blank">
                               <SvgIcon
                                 sx={{
@@ -806,50 +807,69 @@ const Agenda = ({ theme, speaker, session }) => {
                             </IconButton>
                           </Box> */}
 
-                            {trackData?.speakers?.map((spkr, idx) => {
-                              let spkrimg = speaker.find(
-                                (s) => s.id == spkr.id
-                              ).profilePicture;
+                              {trackData?.speakers?.map((spkr, idx) => {
+                                let spkrimg = speaker.find(
+                                  (s) => s.id == spkr.id
+                                ).profilePicture;
 
-                              let speakerData = speaker.find(
-                                (s) => s.id == spkr.id
-                              );
-                              return (
-                                <>
-                                  <Box key={idx} className="session-speakers">
-                                    <a
-                                      onClick={() => {
-                                        setSpeakerModal(true);
-                                        setSpeakerModalData(speakerData);
-                                      }}
-                                    >
-                                      <Avatar
-                                        className="pointer"
-                                        src={spkrimg}
-                                        sx={{
-                                          width: 80,
-                                          height: 80,
-                                          marginBottom: "1rem",
+                                let speakerData = speaker.find(
+                                  (s) => s.id == spkr.id
+                                );
+                                return (
+                                  <>
+                                    <Box key={idx} className="session-speakers">
+                                      <a
+                                        onClick={() => {
+                                          setSpeakerModal(true);
+                                          setSpeakerModalData(speakerData);
                                         }}
-                                      />
-                                    </a>
-                                    <Typography
-                                      className="text-center speaker-name"
-                                      sx={{
-                                        color: theme.colors.text.bodyGrey,
-                                        fontSize: {
-                                          xs: "1.5rem",
-                                          mmb: theme.fontSize.footerSubTxt,
-                                        },
-                                      }}
-                                    >
-                                      {spkr.name}
-                                    </Typography>
-                                  </Box>
-                                </>
-                              );
-                            })}
-                          </Box>
+                                      >
+                                        <Avatar
+                                          className="pointer"
+                                          src={spkrimg}
+                                          sx={{
+                                            width: 80,
+                                            height: 80,
+                                            marginBottom: "1rem",
+                                          }}
+                                        />
+                                      </a>
+                                      <Typography
+                                        className="text-center speaker-name"
+                                        sx={{
+                                          color: theme.colors.text.bodyGrey,
+                                          fontSize: {
+                                            xs: "1.5rem",
+                                            mmb: theme.fontSize.footerSubTxt,
+                                          },
+                                        }}
+                                      >
+                                        {spkr.name}
+                                      </Typography>
+                                    </Box>
+                                  </>
+                                );
+                              })}
+                            </Box>
+                          ) : (
+                            <Box className="speaker-container">
+                              <Box className="session-speakers">
+                                <Button href={about.track} target="_blank">
+                                  <img
+                                    src={VivaExplorer}
+                                    alt="Viva Explorer Logo"
+                                    onClick={() => {
+                                      setSessionModal(true);
+                                      setSessionModalData(trackData);
+                                      setModalSessionSpeaker(
+                                        trackData.speakers
+                                      );
+                                    }}
+                                  />
+                                </Button>
+                              </Box>
+                            </Box>
+                          )}
                         </Box>
                       </Paper>
                     );
