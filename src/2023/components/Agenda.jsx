@@ -696,7 +696,8 @@ const Agenda = ({ theme, speaker, session }) => {
                   ?.filter(
                     (data) =>
                       data.id != "7617ea5b-3616-4cd7-899d-68c9a498b3ec" &&
-                      data.id != "b9ea879f-d988-410c-901f-6ebdf6d99597"
+                      data.id != "b9ea879f-d988-410c-901f-6ebdf6d99597" &&
+                      data.id != "520924"
                   )
                   .map((trackData, idx) => {
                     return (
