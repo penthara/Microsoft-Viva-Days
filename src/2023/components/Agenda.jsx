@@ -123,86 +123,92 @@ const staticContributorData = [
     profilePicture: Shrusti,
     sessions: [
       {
-        id: "8c13b06b-d43a-4615-abe3-0ac805939849",
-        name: "Quiz & Closing Note",
+        id: "501279",
+        name: "Empower employees using viva engage and keep every employee in the flow of work using connection",
       },
+      { id: "b9ea879f-d988-410c-901f-6ebdf6d99597", name: "Quiz" },
     ],
     isTopSpeaker: false,
-    links: [],
+    links: [
+      {
+        linkType: "Twitter",
+        title: "Twitter",
+        url: null,
+      },
+      {
+        linkType: "LinkedIn",
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/shrushti-shah-bba565162/",
+      },
+    ],
     questionAnswers: [
-      {
-        id: 50129,
-        question: "Company Name",
-        questionType: "Short_Text",
-        answer: "Rapid Circle",
-        sort: 0,
-        answerExtra: null,
-      },
-      {
-        id: 50130,
-        question: "LinkedIn ID",
-        questionType: "Short_Text",
-        answer: "https://www.linkedin.com/in/shrushti-shah-bba565162/",
-        sort: 1,
-        answerExtra: null,
-      },
-      {
-        id: 50131,
-        question: "Twitter ID",
-        questionType: "Short_Text",
-        answer: null,
-        sort: 2,
-        answerExtra: null,
-      },
-      {
-        id: 50132,
-        question: "Instagram ID",
-        questionType: "Short_Text",
-        answer: "-",
-        sort: 3,
-        answerExtra: null,
-      },
-      {
-        id: 50133,
-        question: "WhatsApp no.",
-        questionType: "Short_Text",
-        answer: "-",
-        sort: 4,
-        answerExtra: null,
-      },
       {
         id: 52209,
         question: "Designation",
         questionType: "Short_Text",
         answer: "Cloud & Microsoft 365 Consultant",
+        sort: 1,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Bio",
+        questionType: "Long_Text",
+        answer:
+          "Speaker, Working professional with 4.5+ years of experience as SharePoint Framework Developer, Building usecases in Microsoft Teams and Microsoft Power Platform based on the latest features by Microsoft.",
+        sort: 2,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Twitter",
+        questionType: "Long_Text",
+        answer: null,
+        sort: 3,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Custom TagLine",
+        questionType: "Long_Text",
+        answer: "Cloud & Microsoft 365 Consultant",
+        sort: 4,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Company",
+        questionType: "Long_Text",
+        answer: "Rapid Circle",
         sort: 5,
         answerExtra: null,
       },
-    ],
-    categories: [
       {
-        id: 50127,
-        name: "Can we mention your company name on the poster?",
-        categoryItems: [
-          {
-            id: 171335,
-            name: "Yes",
-          },
-        ],
-        sort: 0,
+        id: 52209,
+        question: "LinkedIn",
+        questionType: "Long_Text",
+        answer: "https://www.linkedin.com/in/shrushti-shah-bba565162/",
+        sort: 6,
+        answerExtra: null,
       },
       {
-        id: 50128,
-        name: "Are you currently a Microsoft MVP?",
-        categoryItems: [
-          {
-            id: 171337,
-            name: "Yes",
-          },
-        ],
-        sort: 1,
+        id: 52209,
+        question: "isMVP",
+        questionType: "Long_Text",
+        answer: "Yes",
+        sort: 7,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "isMicrosoftEmployee",
+        questionType: "Long_Text",
+        answer: "No",
+        sort: 7,
+        answerExtra: null,
       },
     ],
+    categories: [],
   },
   {
     id: "3",
@@ -686,56 +692,62 @@ const Agenda = ({ theme, speaker, session }) => {
                     </Box>
                   </Box>
                 </Paper> */}
-                {session?.filter((data)=>data.id != "7617ea5b-3616-4cd7-899d-68c9a498b3ec").map((trackData, idx) => {
-                  return (
-                    <Paper key={idx} elevation={3} className="session-tile">
-                      <Box className="session-data-container">
-                        <Box
-                          onClick={() => {
-                            setSessionModal(true);
-                            setSessionModalData(trackData);
-                            setModalSessionSpeaker(trackData.speakers);
-                          }}
-                          className="responsive-wrapper pointer"
-                        >
-                          <Box className="d-flex session-time">
-                            <Typography
-                              className="session-time-text"
-                              sx={{
-                                color: "#421282",
-                                fontSize: { xs: "1.8rem", mmb: "2.2rem" },
-                                marginLeft: "1rem",
-                              }}
-                            >
-                              {moment
-                                .utc(trackData.startsAt, null)
-                                .tz("Asia/Kolkata")
-                                .format("hh:mm A")}{" "}
-                              -{" "}
-                              {moment
-                                .utc(trackData.endsAt, null)
-                                .tz("Asia/Kolkata")
-                                .format("hh:mm A")}{" "}
-                              {"IST"}
-                            </Typography>
+                {session
+                  ?.filter(
+                    (data) =>
+                      data.id != "7617ea5b-3616-4cd7-899d-68c9a498b3ec" &&
+                      data.id != "b9ea879f-d988-410c-901f-6ebdf6d99597"
+                  )
+                  .map((trackData, idx) => {
+                    return (
+                      <Paper key={idx} elevation={3} className="session-tile">
+                        <Box className="session-data-container">
+                          <Box
+                            onClick={() => {
+                              setSessionModal(true);
+                              setSessionModalData(trackData);
+                              setModalSessionSpeaker(trackData.speakers);
+                            }}
+                            className="responsive-wrapper pointer"
+                          >
+                            <Box className="d-flex session-time">
+                              <Typography
+                                className="session-time-text"
+                                sx={{
+                                  color: "#421282",
+                                  fontSize: { xs: "1.8rem", mmb: "2.2rem" },
+                                  marginLeft: "1rem",
+                                }}
+                              >
+                                {moment
+                                  .utc(trackData.startsAt, null)
+                                  .tz("Asia/Kolkata")
+                                  .format("hh:mm A")}{" "}
+                                -{" "}
+                                {moment
+                                  .utc(trackData.endsAt, null)
+                                  .tz("Asia/Kolkata")
+                                  .format("hh:mm A")}{" "}
+                                {"IST"}
+                              </Typography>
+                            </Box>
+                            <Box className="session-title-container">
+                              <Typography
+                                sx={{
+                                  fontSize: {
+                                    xs: "2rem",
+                                    mmb: theme.fontSize.aboutSubheadingText,
+                                  },
+                                }}
+                                className="session-title text-left"
+                              >
+                                {trackData.title}
+                              </Typography>
+                            </Box>
                           </Box>
-                          <Box className="session-title-container">
-                            <Typography
-                              sx={{
-                                fontSize: {
-                                  xs: "2rem",
-                                  mmb: theme.fontSize.aboutSubheadingText,
-                                },
-                              }}
-                              className="session-title text-left"
-                            >
-                              {trackData.title}
-                            </Typography>
-                          </Box>
-                        </Box>
 
-                        <Box className="speaker-container">
-                          {/* <Box className="session-speakers">
+                          <Box className="speaker-container">
+                            {/* <Box className="session-speakers">
                             <IconButton href={about.track} target="_blank">
                               <SvgIcon
                                 sx={{
@@ -793,55 +805,55 @@ const Agenda = ({ theme, speaker, session }) => {
                             </IconButton>
                           </Box> */}
 
-                          {trackData?.speakers?.map((spkr, idx) => {
-                            let spkrimg = speaker.find(
-                              (s) => s.id == spkr.id
-                            ).profilePicture;
+                            {trackData?.speakers?.map((spkr, idx) => {
+                              let spkrimg = speaker.find(
+                                (s) => s.id == spkr.id
+                              ).profilePicture;
 
-                            let speakerData = speaker.find(
-                              (s) => s.id == spkr.id
-                            );
-                            return (
-                              <>
-                                <Box key={idx} className="session-speakers">
-                                  <a
-                                    onClick={() => {
-                                      setSpeakerModal(true);
-                                      setSpeakerModalData(speakerData);
-                                    }}
-                                  >
-                                    <Avatar
-                                      className="pointer"
-                                      src={spkrimg}
-                                      sx={{
-                                        width: 80,
-                                        height: 80,
-                                        marginBottom: "1rem",
+                              let speakerData = speaker.find(
+                                (s) => s.id == spkr.id
+                              );
+                              return (
+                                <>
+                                  <Box key={idx} className="session-speakers">
+                                    <a
+                                      onClick={() => {
+                                        setSpeakerModal(true);
+                                        setSpeakerModalData(speakerData);
                                       }}
-                                    />
-                                  </a>
-                                  <Typography
-                                    className="text-center speaker-name"
-                                    sx={{
-                                      color: theme.colors.text.bodyGrey,
-                                      fontSize: {
-                                        xs: "1.5rem",
-                                        mmb: theme.fontSize.footerSubTxt,
-                                      },
-                                    }}
-                                  >
-                                    {spkr.name}
-                                  </Typography>
-                                </Box>
-                              </>
-                            );
-                          })}
+                                    >
+                                      <Avatar
+                                        className="pointer"
+                                        src={spkrimg}
+                                        sx={{
+                                          width: 80,
+                                          height: 80,
+                                          marginBottom: "1rem",
+                                        }}
+                                      />
+                                    </a>
+                                    <Typography
+                                      className="text-center speaker-name"
+                                      sx={{
+                                        color: theme.colors.text.bodyGrey,
+                                        fontSize: {
+                                          xs: "1.5rem",
+                                          mmb: theme.fontSize.footerSubTxt,
+                                        },
+                                      }}
+                                    >
+                                      {spkr.name}
+                                    </Typography>
+                                  </Box>
+                                </>
+                              );
+                            })}
+                          </Box>
                         </Box>
-                      </Box>
-                    </Paper>
-                  );
-                })}
-                {/* <Paper elevation={3} className="session-tile">
+                      </Paper>
+                    );
+                  })}
+                <Paper elevation={3} className="session-tile">
                   <Box className="session-data-container">
                     <Box className="responsive-wrapper pointer">
                       <Box className="d-flex session-time">
@@ -853,7 +865,7 @@ const Agenda = ({ theme, speaker, session }) => {
                             marginLeft: "1rem",
                           }}
                         >
-                          {" 05:30 PM - 06:00 PM IST"}
+                          {" 07:15 PM - 07:30 PM IST"}
                         </Typography>
                       </Box>
                       <Box className="session-title-container">
@@ -866,13 +878,13 @@ const Agenda = ({ theme, speaker, session }) => {
                           }}
                           className="session-title text-left"
                         >
-                          Quiz & Closing Note
+                          Quiz
                         </Typography>
                       </Box>
                     </Box>
                     <Box className="speaker-container">
-                      <Box className="session-speakers">
-                        <IconButton href={about.trackOne} target="_blank">
+                      {/* <Box className="session-speakers">
+                        <IconButton href={about} target="_blank">
                           <SvgIcon
                             sx={{
                               fontSize: "3.2rem",
@@ -927,8 +939,8 @@ const Agenda = ({ theme, speaker, session }) => {
                             </svg>
                           </SvgIcon>
                         </IconButton>
-                      </Box>
-                      <Box className="session-speakers">
+                      </Box> */}
+                      {/* <Box className="session-speakers">
                         <a
                           onClick={() => {
                             setSpeakerModal(true);
@@ -957,7 +969,7 @@ const Agenda = ({ theme, speaker, session }) => {
                         >
                           Tushar Kumar
                         </Typography>
-                      </Box>
+                      </Box> */}
                       <Box className="session-speakers">
                         <a
                           onClick={() => {
@@ -990,7 +1002,7 @@ const Agenda = ({ theme, speaker, session }) => {
                       </Box>
                     </Box>
                   </Box>
-                </Paper> */}
+                </Paper>
               </Box>
             </Paper>
           </Box>
