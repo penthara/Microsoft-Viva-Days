@@ -213,86 +213,92 @@ const staticContributorData = [
     tagLine: "-",
     profilePicture: welcomeSpeaker,
     sessions: [
-      { id: "1c8f362b-9a7e-454a-9822-a450b8f782f2", name: "Welcome Note" },
+      { id: "7617ea5b-3616-4cd7-899d-68c9a498b3ec", name: "Welcome Note" },
     ],
     isTopSpeaker: false,
-    links: [],
+    links: [
+      {
+        linkType: "Twitter",
+        title: "Twitter",
+        url: "https://twitter.com/cloudvignesh",
+      },
+      {
+        linkType: "LinkedIn",
+        title: "LinkedIn",
+        url: "https://www.linkedin.com/in/vignesh-ganesan-i-microsoft-mvp-and-mct-9246384a/",
+      },
+    ],
     questionAnswers: [
-      {
-        id: 50129,
-        question: "Company Name",
-        questionType: "Short_Text",
-        answer: "Avanade",
-        sort: 0,
-        answerExtra: null,
-      },
-      {
-        id: 50130,
-        question: "LinkedIn ID",
-        questionType: "Short_Text",
-        answer:
-          "https://www.linkedin.com/in/vignesh-ganesan-i-microsoft-mvp-and-mct-9246384a/",
-        sort: 1,
-        answerExtra: null,
-      },
-      {
-        id: 50131,
-        question: "Twitter ID",
-        questionType: "Short_Text",
-        answer: "https://twitter.com/cloudvignesh",
-        sort: 2,
-        answerExtra: null,
-      },
-      {
-        id: 50132,
-        question: "Instagram ID",
-        questionType: "Short_Text",
-        answer: "-",
-        sort: 3,
-        answerExtra: null,
-      },
-      {
-        id: 50133,
-        question: "WhatsApp no.",
-        questionType: "Short_Text",
-        answer: "-",
-        sort: 4,
-        answerExtra: null,
-      },
       {
         id: 52209,
         question: "Designation",
         questionType: "Short_Text",
         answer:
           "Modern Workplace Architect (Modern Work, Security & Compliance and Employee Experience )",
+        sort: 1,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Bio",
+        questionType: "Long_Text",
+        answer:
+          "Vignesh Ganesan is an Enterprise Cloud Architect with 10+ years of experience . He specializes in technical presales, designing and implementing SaaS, IaaS and PaaS environments including on-premises and hybrid infrastructures. In addition to that he also has a sound knowledge in designing and implementing security solutions for customers using native cloud controls along with 3rd party tools to build a secure Cloud environment. During his stint with Microsoft , he designed technical solutions that can meet his customer’s needs and helped in driving their Digital Transformation so that they can get the best out of their Office 365, EMS & Azure implementation . He has worked on many products/technologies so far such as Active Directory , Windows Server , SharePoint & Exchange Server , Microsoft 365 , Azure AD ,Azure IaaS & PaaS , Slack , Google Workspace&Enterprise Mobility & Security etc .He has spoken on plethora of user groups , conferences & events across the globe and you can find all his work on his blog site i.e. Vignesh’s SharePoint Thought’s and his YouTube Channel . Over the years he has written almost 400 technical articles and has involved himself in many technical community related engagements for which he was awarded the prestigious C Sharp corner MVP award three times in a row for all his contributions . He always has a thirst to constantly learn something new which is what made him to complete almost 18+ Microsoft certifications.",
+        sort: 2,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Twitter",
+        questionType: "Long_Text",
+        answer: "https://twitter.com/cloudvignesh",
+        sort: 3,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Custom TagLine",
+        questionType: "Long_Text",
+        answer:
+          "Modern Workplace Architect (Modern Work, Security & Compliance and Employee Experience )",
+        sort: 4,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "Company",
+        questionType: "Long_Text",
+        answer: "",
         sort: 5,
         answerExtra: null,
       },
-    ],
-    categories: [
       {
-        id: 50127,
-        name: "Can we mention your company name on the poster?",
-        categoryItems: [
-          {
-            id: 171335,
-            name: "Yes",
-          },
-        ],
-        sort: 0,
+        id: 52209,
+        question: "LinkedIn",
+        questionType: "Long_Text",
+        answer:
+          "https://www.linkedin.com/in/vignesh-ganesan-i-microsoft-mvp-and-mct-9246384a/",
+        sort: 6,
+        answerExtra: null,
       },
       {
-        id: 50128,
-        name: "Are you currently a Microsoft MVP?",
-        categoryItems: [
-          {
-            id: 171337,
-            name: "Yes",
-          },
-        ],
-        sort: 1,
+        id: 52209,
+        question: "isMVP",
+        questionType: "Long_Text",
+        answer: "Yes",
+        sort: 7,
+        answerExtra: null,
+      },
+      {
+        id: 52209,
+        question: "isMicrosoftEmployee",
+        questionType: "Long_Text",
+        answer: "No",
+        sort: 7,
+        answerExtra: null,
       },
     ],
+    categories: [],
   },
   {
     id: "4",
@@ -382,7 +388,7 @@ const staticContributorData = [
   },
 ];
 
-const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
+const Agenda = ({ theme, speaker, session }) => {
   console.log("AgendaSpeaker", speaker);
   console.log("AgendaSession", session);
 
@@ -440,7 +446,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                 </Box>
               </Box>
               <Box className="agenda-sessions-container">
-                {/* <Paper elevation={3} className="session-tile">
+                <Paper elevation={3} className="session-tile">
                   <Box className="session-data-container">
                     <Box className="responsive-wrapper pointer">
                       <Box className="d-flex session-time">
@@ -470,7 +476,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                       </Box>
                     </Box>
                     <Box className="speaker-container">
-                      <Box className="session-speakers">
+                      {/* <Box className="session-speakers">
                         <IconButton href={about.track} target="_blank">
                           <SvgIcon
                             sx={{
@@ -526,7 +532,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                             </svg>
                           </SvgIcon>
                         </IconButton>
-                      </Box>
+                      </Box> */}
                       <Box className="session-speakers">
                         <a
                           onClick={() => {
@@ -560,7 +566,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                     </Box>
                   </Box>
                 </Paper>
-                <Paper elevation={3} className="session-tile">
+                {/* <Paper elevation={3} className="session-tile">
                   <Box className="session-data-container">
                     <Box className="responsive-wrapper pointer">
                       <Box className="d-flex session-time">
@@ -680,7 +686,7 @@ const Agenda = ({ theme, speaker, session, defaultTrackData }) => {
                     </Box>
                   </Box>
                 </Paper> */}
-                {session?.map((trackData, idx) => {
+                {session?.filter((data)=>data.id != "7617ea5b-3616-4cd7-899d-68c9a498b3ec").map((trackData, idx) => {
                   return (
                     <Paper key={idx} elevation={3} className="session-tile">
                       <Box className="session-data-container">
