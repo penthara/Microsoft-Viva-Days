@@ -702,6 +702,7 @@ const Agenda = ({ theme, speaker, session }) => {
                   .map((trackData, idx) => {
                     return (
                       <Paper key={idx} elevation={3} className="session-tile">
+                        {console.log("trackDT", trackData.id)}
                         <Box className="session-data-container">
                           <Box
                             onClick={() => {
@@ -815,6 +816,7 @@ const Agenda = ({ theme, speaker, session }) => {
                                 let speakerData = speaker.find(
                                   (s) => s.id == spkr.id
                                 );
+                                console.log("ThisisSPKRDATA", speakerData);
                                 return (
                                   <>
                                     <Box key={idx} className="session-speakers">
@@ -1042,6 +1044,8 @@ const Agenda = ({ theme, speaker, session }) => {
             data={sessionModalData}
             sessionSpeaker={modalSessionSpeaker}
             speaker={speaker}
+            sessions={session}
+            spkrModalData={speakerModalData}
           />
         </Box>
       </div>

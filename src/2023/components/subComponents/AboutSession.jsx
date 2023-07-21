@@ -16,6 +16,7 @@ import "../../style/sponsorModal.scss";
 import "../../style/modalSpeaker.scss";
 import "../../style/agenda.scss";
 import "../../style/sessionModal.scss";
+import AboutSpeaker from "./AboutSpeaker";
 
 const AboutSession = ({
   theme,
@@ -24,12 +25,19 @@ const AboutSession = ({
   data,
   sessionSpeaker,
   speaker,
+  sessions
 }) => {
-  const [isVivaSession, setIsVivaSession] = useState(false);
-
   const handleSessionModalClose = () => {
     close(false);
   };
+
+  const [speakerModal, setSpeakerModal] = React.useState(false);
+  const [speakerModalData, setSpeakerModalData] = useState({});
+
+  // const [sessionModal, setSessionModal] = React.useState(false);
+  // const [sessionModalData, setSessionModalData] = useState({});
+
+  // const [modalSessionSpeaker, setModalSessionSpeaker] = useState();
   return (
     <div>
       <Dialog
@@ -85,71 +93,82 @@ const AboutSession = ({
               }}
             />
             <Box className="speaker-container aboutSpeaker-container">
-              {!isVivaSession
-                ? sessionSpeaker?.map((spkr, idx) => {
-                    let spkrimg = speaker.find(
-                      (s) => s.id == spkr.id
-                    ).profilePicture;
+              {console.log("ttttt", data)}
+              {data != undefined &&
+                sessionSpeaker?.map((spkr, idx) => {
+                  let spkrimg = speaker.find(
+                    (s) => s.id == spkr.id
+                  ).profilePicture;
 
-                    return (
-                      <Box key={idx} className="session-speakers">
-                        <Avatar
-                          src={spkrimg}
-                          sx={{
-                            width: 80,
-                            height: 80,
-                            marginBottom: "1rem",
-                          }}
-                        />
-                        <Typography
-                          className="text-center speaker-name"
-                          sx={{
-                            color: theme.colors.text.bodyGrey,
-                            fontSize: {
-                              xs: "1.5rem",
-                              mmb: theme.fontSize.footerSubTxt,
-                            },
-                          }}
-                        >
-                          {spkr.name}
-                        </Typography>
-                      </Box>
-                    );
-                  })
-                : sessionSpeaker?.map((spkr, idx) => {
-                    let spkrimg = speaker.find(
-                      (s) => s.id == spkr.id
-                    ).profilePicture;
+                  let speakerData = speaker.find((s) => s.id == spkr.id);
 
-                    return (
-                      <Button key={idx} className="session-speakers">
-                        <Avatar
-                          src={spkrimg}
-                          sx={{
-                            width: 80,
-                            height: 80,
-                            marginBottom: "1rem",
-                          }}
-                        />
-                        <Typography
-                          className="text-center speaker-name"
-                          sx={{
-                            color: theme.colors.text.bodyGrey,
-                            fontSize: {
-                              xs: "1.5rem",
-                              mmb: theme.fontSize.footerSubTxt,
-                            },
-                          }}
-                        >
-                          {spkr.name}
-                        </Typography>
-                      </Button>
-                    );
-                  })}
+                  return data.id != "520924" ? (
+                    <Box key={idx} className="session-speakers">
+                      <Avatar
+                        src={spkrimg}
+                        sx={{
+                          width: 80,
+                          height: 80,
+                          marginBottom: "1rem",
+                        }}
+                      />
+                      <Typography
+                        className="text-center speaker-name"
+                        sx={{
+                          color: theme.colors.text.bodyGrey,
+                          fontSize: {
+                            xs: "1.5rem",
+                            mmb: theme.fontSize.footerSubTxt,
+                          },
+                        }}
+                      >
+                        {spkr.name}
+                      </Typography>
+                    </Box>
+                  ) : (
+                    <Button
+                      onClick={() => {
+                        setSpeakerModal(true);
+                        setSpeakerModalData(speakerData);
+                      }}
+                      key={idx}
+                      className="session-speakers"
+                    >
+                      <Avatar
+                        src={spkrimg}
+                        sx={{
+                          width: 80,
+                          height: 80,
+                          marginBottom: "1rem",
+                        }}
+                      />
+                      <Typography
+                        className="text-center speaker-name"
+                        sx={{
+                          color: theme.colors.text.bodyGrey,
+                          fontSize: {
+                            xs: "1.5rem",
+                            mmb: theme.fontSize.footerSubTxt,
+                          },
+                        }}
+                      >
+                        {spkr.name}
+                      </Typography>
+                    </Button>
+                  );
+                })}
             </Box>
           </Box>
         </DialogContent>
       </Dialog>
+      <AboutSpeaker
+        theme={theme}
+        open={speakerModal}
+        sessionOpen={open}
+        close={setSpeakerModal}
+        data={speakerModalData}
+        sessions={sessions}
+      />
     </div>
   );
 };
