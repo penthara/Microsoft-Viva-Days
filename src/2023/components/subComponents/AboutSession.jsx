@@ -1,10 +1,11 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import {
   Avatar,
   Dialog,
   DialogContent,
   DialogTitle,
   Box,
+  Button,
   Typography,
   IconButton,
   Divider,
@@ -24,6 +25,8 @@ const AboutSession = ({
   sessionSpeaker,
   speaker,
 }) => {
+  const [isVivaSession, setIsVivaSession] = useState(false);
+
   const handleSessionModalClose = () => {
     close(false);
   };
@@ -82,36 +85,67 @@ const AboutSession = ({
               }}
             />
             <Box className="speaker-container aboutSpeaker-container">
-              {sessionSpeaker?.map((spkr, idx) => {
-                let spkrimg = speaker.find(
-                  (s) => s.id == spkr.id
-                ).profilePicture;
+              {!isVivaSession
+                ? sessionSpeaker?.map((spkr, idx) => {
+                    let spkrimg = speaker.find(
+                      (s) => s.id == spkr.id
+                    ).profilePicture;
 
-                return (
-                  <Box key={idx} className="session-speakers">
-                    <Avatar
-                      src={spkrimg}
-                      sx={{
-                        width: 80,
-                        height: 80,
-                        marginBottom: "1rem",
-                      }}
-                    />
-                    <Typography
-                      className="text-center speaker-name"
-                      sx={{
-                        color: theme.colors.text.bodyGrey,
-                        fontSize: {
-                          xs: "1.5rem",
-                          mmb: theme.fontSize.footerSubTxt,
-                        },
-                      }}
-                    >
-                      {spkr.name}
-                    </Typography>
-                  </Box>
-                );
-              })}
+                    return (
+                      <Box key={idx} className="session-speakers">
+                        <Avatar
+                          src={spkrimg}
+                          sx={{
+                            width: 80,
+                            height: 80,
+                            marginBottom: "1rem",
+                          }}
+                        />
+                        <Typography
+                          className="text-center speaker-name"
+                          sx={{
+                            color: theme.colors.text.bodyGrey,
+                            fontSize: {
+                              xs: "1.5rem",
+                              mmb: theme.fontSize.footerSubTxt,
+                            },
+                          }}
+                        >
+                          {spkr.name}
+                        </Typography>
+                      </Box>
+                    );
+                  })
+                : sessionSpeaker?.map((spkr, idx) => {
+                    let spkrimg = speaker.find(
+                      (s) => s.id == spkr.id
+                    ).profilePicture;
+
+                    return (
+                      <Button key={idx} className="session-speakers">
+                        <Avatar
+                          src={spkrimg}
+                          sx={{
+                            width: 80,
+                            height: 80,
+                            marginBottom: "1rem",
+                          }}
+                        />
+                        <Typography
+                          className="text-center speaker-name"
+                          sx={{
+                            color: theme.colors.text.bodyGrey,
+                            fontSize: {
+                              xs: "1.5rem",
+                              mmb: theme.fontSize.footerSubTxt,
+                            },
+                          }}
+                        >
+                          {spkr.name}
+                        </Typography>
+                      </Button>
+                    );
+                  })}
             </Box>
           </Box>
         </DialogContent>
