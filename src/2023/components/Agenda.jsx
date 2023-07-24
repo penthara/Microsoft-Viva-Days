@@ -807,6 +807,12 @@ const Agenda = ({ theme, speaker, session }) => {
                               </SvgIcon>
                             </IconButton>
                           </Box> */}
+                              {trackData.id ==
+                                "3838e772-52d5-4631-9490-54276814f3ee" && (
+                                <Box className="session-speakers">
+                                  <Typography variant="h4">TBD</Typography>
+                                </Box>
+                              )}
 
                               {trackData?.speakers?.map((spkr, idx) => {
                                 let spkrimg = speaker.find(
@@ -1045,7 +1051,6 @@ const Agenda = ({ theme, speaker, session }) => {
             sessionSpeaker={modalSessionSpeaker}
             speaker={speaker}
             sessions={session}
-            spkrModalData={speakerModalData}
           />
         </Box>
       </div>

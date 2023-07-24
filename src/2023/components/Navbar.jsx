@@ -26,9 +26,9 @@ const navItems = [
   { text: "About", id: "about" },
   { text: "Speakers", id: "speakers" },
 
-  // { text: "Agenda", id: "agenda" },
+  { text: "Agenda", id: "agenda" },
   { text: "Sponsors", id: "sponsors" },
-  { text: "Contact Us", id: "contactUS" },
+  // { text: "Contact Us", id: "contactUS" },
   { text: "Become A Sponsor", id: "beAsponsor" },
 ];
 // console.log("navItems", navItems);
