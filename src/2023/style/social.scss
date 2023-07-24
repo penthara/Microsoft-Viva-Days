@@ -11,7 +11,15 @@ $black: #000000;
     }
   }
   .socialText {
-    font-size: 1.8rem;
+    font-size: 2.5rem;
     font-weight: 400;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aug-2023 {
+      .socialText {
+      font-size: 2rem;
+    }
   }
 }

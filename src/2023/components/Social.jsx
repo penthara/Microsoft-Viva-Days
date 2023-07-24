@@ -35,7 +35,7 @@ const Social = ({ theme }) => {
             className="d-flex flex-row justify-content-center align-items-center social-wrapper"
           >
             <TwitterIcon className="socialText" />
-            <Typography className="socialText">@MsVivaDays2023</Typography>
+            <Typography className="socialText">#MsVivaDays2023</Typography>
           </a>
         </Box>
         <Box sx={socialPadding}>
@@ -48,18 +48,6 @@ const Social = ({ theme }) => {
           >
             <TwitterIcon className="socialText" />
             <Typography className="socialText">#MsVivaDays</Typography>
-          </a>
-        </Box>
-        <Box sx={socialPadding}>
-          {/* Change to Anchor */}
-          <a
-            target="_blank"
-            rel="noreferrer"
-            href={footer.footerTwitter}
-            className="d-flex flex-row justify-content-center align-items-center social-wrapper"
-          >
-            <TwitterIcon className="socialText" />
-            <Typography className="socialText">#msvivaday</Typography>
           </a>
         </Box>
       </Box>
