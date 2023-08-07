@@ -62,8 +62,8 @@ const Organizers = ({ theme }) => {
             >
               Co-Organizers
             </Typography>
-          </Box> */}
-          {/* <Box className="marginTop5" sx={{ paddingTop: "1.5rem" }} />
+          </Box>
+          <Box className="marginTop5" sx={{ paddingTop: "1.5rem" }} />
           <Box className="d-flex justify-content-evenly flex-wrap align-items-center organizersCard">
             {organizersData
               .filter((org) => org.isCoOrganizer === "true")
@@ -78,7 +78,7 @@ const Organizers = ({ theme }) => {
                   />
                 );
               })}
-          </Box>
+          </Box> */}
           <Box className="organizerSubHeadingBox">
             <Typography
               className="text-center organizerSubHeading"
@@ -104,7 +104,7 @@ const Organizers = ({ theme }) => {
                   />
                 );
               })}
-          </Box> */}
+          </Box>
         </Box>
       </div>
     </>
