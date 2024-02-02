@@ -15,9 +15,11 @@ import Prizes from "./Prizes";
 import Donate from "./Donate";
 import ErrorBoundary from "./ErrorBoundary";
 import PreviousEvents from "./PreviousEvents";
+import VideoPlayer from "./VideoPlayer/VideoPlayer"
 import { Box } from "@mui/material";
 import "../style/global.scss";
 import { speakerApi, sessionApi, scheduleGridApi } from "../services/EventData";
+
 
 const Parent2023 = ({ theme }) => {
   const [speakerData, setSpeakerData] = useState([]);
@@ -47,6 +49,8 @@ const Parent2023 = ({ theme }) => {
       <Box id="about" />
       <About theme={theme} />
       <Eventinfostripe theme={theme} />
+      <Box id="Playlist" />
+      <VideoPlayer theme={theme}/>
       <ErrorBoundary>
         <Box id="speakers" />
         {/* <KeynoteSpeaker theme={theme} /> */}

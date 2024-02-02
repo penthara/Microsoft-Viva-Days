@@ -484,7 +484,7 @@ const Agenda = ({ theme, speaker, session }) => {
                       </Box>
                     </Box>
                     <Box className="speaker-container">
-                      <Box className="session-speakers">
+                      {/* <Box className="session-speakers">
                         <IconButton
                           sx={{ minWidth: "6rem" }}
                           href={about.track}
@@ -544,7 +544,7 @@ const Agenda = ({ theme, speaker, session }) => {
                             </svg>
                           </SvgIcon>
                         </IconButton>
-                      </Box>
+                      </Box> */}
                       <Box className="session-speakers">
                         <a
                           onClick={() => {
@@ -755,7 +755,7 @@ const Agenda = ({ theme, speaker, session }) => {
 
                           {trackData.id != "520924" ? (
                             <Box className="speaker-container">
-                              <Box className="session-speakers">
+                              {/* <Box className="session-speakers">
                                 <IconButton
                                   sx={{ minWidth: "6rem" }}
                                   href={about.track}
@@ -818,7 +818,7 @@ const Agenda = ({ theme, speaker, session }) => {
                                     </svg>
                                   </SvgIcon>
                                 </IconButton>
-                              </Box>
+                              </Box> */}
                               {trackData.id ==
                                 "3838e772-52d5-4631-9490-54276814f3ee" && (
                                 <Box className="session-speakers">
@@ -873,7 +873,7 @@ const Agenda = ({ theme, speaker, session }) => {
                             </Box>
                           ) : (
                             <Box className="speaker-container">
-                              <Box className="session-speakers">
+                              {/* <Box className="session-speakers">
                                 <IconButton
                                   sx={{ minWidth: "6rem" }}
                                   href={about.track}
@@ -936,7 +936,7 @@ const Agenda = ({ theme, speaker, session }) => {
                                     </svg>
                                   </SvgIcon>
                                 </IconButton>
-                              </Box>
+                              </Box> */}
                               <Box className="session-speakers">
                                 <Button target="_blank">
                                   <img
@@ -1075,7 +1075,7 @@ const Agenda = ({ theme, speaker, session }) => {
                           Tushar Kumar
                         </Typography>
                       </Box> */}
-                      <Box className="session-speakers">
+                      {/* <Box className="session-speakers">
                         <IconButton
                           sx={{ minWidth: "6rem" }}
                           href={about.track}
@@ -1135,7 +1135,7 @@ const Agenda = ({ theme, speaker, session }) => {
                             </svg>
                           </SvgIcon>
                         </IconButton>
-                      </Box>
+                      </Box> */}
                       <Box className="session-speakers">
                         <a
                           onClick={() => {
